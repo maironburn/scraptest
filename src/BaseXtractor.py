@@ -38,3 +38,6 @@ class BaseXtractor(object):
         return self._response
 
 
+if __name__ == '__main__':
+    kw = {'url': ''}
+    bx = BaseXtractor(kw)

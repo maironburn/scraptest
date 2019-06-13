@@ -1,4 +1,4 @@
 
-LOGGER_NAME="Scarpy Torrents"
-LOG_FILE = "/home/dmb/SmartDocumentParser.log"
+LOGGER_NAME="ScrapyT"
+LOG_FILE = "/home/dmb/ScrapyT.log"
 

@@ -11,7 +11,7 @@ class BaseXtractor(object):
     url = None
     _response = None
     logger = None
-    _soup = None
+    _bs = None
 
     def __init__(self, **kw):
 
@@ -20,7 +20,7 @@ class BaseXtractor(object):
         if kw:
             self.url = kw.get('url', None)
             if self.response:
-                self._soup = BeautifulSoup(self.response, "html.parser")
+                self._bs = BeautifulSoup(self._response, "html.parser")
 
     @property
     def response(self):
@@ -37,7 +37,12 @@ class BaseXtractor(object):
 
         return self._response
 
+    @property
+    def bs(self):
+
+        return self._bs
+
 
 if __name__ == '__main__':
-    kw = {'url': ''}
+    kw = {'url': 'https://www.geeksforgeeks.org/dealing-with-rows-and-columns-in-pandas-dataframe/'}
     bx = BaseXtractor(kw)

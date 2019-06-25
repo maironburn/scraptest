@@ -1,31 +1,30 @@
 from os import path
 import json
 import pprint
+import importlib
 
 from setuptools.command.setopt import config_file
-
 from settings.sites.sites_json import json_data
 pp = pprint.PrettyPrinter(indent=4)
 
 
-def loadGlobalConfigFromJSON(sites_json):
+def loadGlobalConfigFromJSON(config_file):
 
-    json_data = {}
-    def load_json(config_file):
+    if path.exists(config_file):
+        with open(config_file) as cf:
+            return json.load(cf, encoding='utf-8')
 
-        nonlocal json_data
-        if path.exists(config_file):
-            with open(config_file) as cf:
-                return json.load(cf, encoding='utf-8')
+    elif isinstance(config_file, str):
+        return json.loads(config_file, encoding='utf-8')
 
-        elif isinstance(config_file, str):
-            return json.loads(config_file, encoding='utf-8')
-
-    return load_json
+    return None
 
 
 if __name__ == '__main__':
-    config_file = "../settings/sites_json.py"
-    load_data = loadGlobalConfigFromJSON(json_data)
-    load_data(json_data)
-    print ("")
+
+    loaded_data = loadGlobalConfigFromJSON(json_data)
+
+    if loaded_data:
+        divx= loaded_data.get('divx', None)
+        pp = pprint.PrettyPrinter(indent=4)
+        pp.pprint(loaded_data)

@@ -2,9 +2,9 @@ json_data='''
 {
         "divx":
                     {
-                        "url_base" : "http://json.parser.online.fr/",
-                        "content1" : {
-                            "url_suffix"	    : "url_base_+_content0",
+                        "url_base" : "https://grantorrent.net/",
+                        "peliculas" : {
+                            "url_suffix"	    : "categoria/HDRip/",
                             "class_handler"     : "src.Models.TestClass",
                             "nombre"	      	: "nombre_content",
                             "ano"		      	: "ano_content"

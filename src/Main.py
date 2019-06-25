@@ -1,5 +1,5 @@
-from src.BaseXtractor import BaseXtractor
-from utils.Utils import loadGlobalConfigFromJSON
+from src.base_xtractor import BaseXtractor
+from utils.utils import loadGlobalConfigFromJSON
 from settings.sites import sites_json
 
 json_data=loadGlobalConfigFromJSON()

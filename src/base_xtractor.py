@@ -1,10 +1,8 @@
 #! /bin/env/python
 
 import requests
-import urllib.request
-import time
 from bs4 import BeautifulSoup
-from utils.Logger.AppLogger import AppLogger
+from logger.AppLogger import AppLogger
 
 
 class BaseXtractor(object):
@@ -16,7 +14,7 @@ class BaseXtractor(object):
     def __init__(self, **kw):
 
         self.logger = AppLogger.create_rotating_log()
-        self.logger.info("Inicializado Logger")
+        self.logger.info("Inicializado logger")
         if kw:
             self.url = kw.get('url', None)
             if self.response:

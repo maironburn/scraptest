@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from src.BaseXtractor import BaseXtractor
+from src.base_xtractor import BaseXtractor
 
 try:
     pass

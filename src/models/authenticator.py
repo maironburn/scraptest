@@ -19,6 +19,7 @@ class Authenticator(object):
 
         self.auth_types = {'basic_auth': HTTPBasicAuth(self._user, self._pwd),
                            'digest_auth': HTTPDigestAuth(self._user, self._pwd),
+                           ''' pip install requests-oauthlib '''
                            'oauth_auth': OAuth1('YOUR_APP_KEY', 'YOUR_APP_SECRET',
                                                 'USER_OAUTH_TOKEN', 'USER_OAUTH_TOKEN_SECRET')
                            }

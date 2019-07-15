@@ -1,0 +1,62 @@
+bankia = {
+
+    'url_base': '',
+
+    'login_url': '',
+    # metodo de logado (standar, reconocimiento de imgs...whatever)
+    'headless': False,
+
+    'login_method': '',
+    # acciones a realizar antes de poder hacer login (deshacerse de popups, clicks sobre botones...)
+    'pre_login_actions': [],
+    # acciones a realizar despues del login (q no forman parte del workflow)
+    'post_login_actions': [],
+
+    # credenciales para la autenticacion
+    'credentials': {
+        'user': '',
+        'enterprise_id': '',
+        'pin': ''
+    }
+    ,
+    # identificacion de los elmentos del formulario de login
+    'login_form': {
+        # Xpath
+        'user': '',
+        'enterprise_id': '',
+        'pin': '',
+        'submit': ""
+    }
+    ,
+    # periodicidad de las consultas ( @TBD )
+    'checking_time': ''
+    ,
+    # elemento sobre el q interactuar / condicion posterior de espera para continuar el wf
+    '''
+        @param: xpath
+        @param: expect_cond: condicion de espera (xpath del elemento que debe estar visible y clickable
+                       de momento solo he tenido esta casuistica (ec.element_to_be_clickable)
+        @param: mode : fill (para los textinput) | click (botones y enlace)
+              Si el modo es fill llevara un campo de datos asociados...hardcodeado ahora mismo
+              ya veremos como lo enchufo dp
+              
+            Dejo muestra, uno de cada tipo definido hasta el momento
+        
+        @param: callback: por si se requieren acciones adicionales en algun paso del workflow
+    '''
+
+    'workflow': [
+        # click con condiciones de espera
+        {'xpath': "//td[(@scope='row')]/a", 'expect_cond': "//button[(@ng-click='showSearch = !showSearch')]",
+         'mode': 'click'},
+
+        # click sobre la lupa (sin condiciones de espera)
+
+        {'xpath': "//button[(@ng-click='showSearch = !showSearch')]",
+         'mode': 'click'},
+        # el fill de un text input
+        {'xpath': "//input[(@name='daysimpleDateFrom')]", 'mode': 'fill', 'data': '06'},
+
+    ]
+
+}

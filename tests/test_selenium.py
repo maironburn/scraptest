@@ -1,24 +1,21 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from common_config import SELENIUM_DRIVER_PATH
-from src.selenium_loader import start
-from src.models.bank import *
-from utils.utils import load_json_bank_skel
-from bs4 import BeautifulSoup
-from src.controllers.helper import doLogin, check_dnd, do_workflow
+from src.controllers.selenium_controller import start
+from src.helpers.common_helper import load_json_bank_from_skel
+# from bs4 import BeautifulSoup < -- sopa preciosa aun no te he necesitado :( !!
+from src.controllers.selenium_controller import standard_login,login_bello, check_dnd, do_workflow
 from time import sleep
-from selenium.webdriver.common.by import By
 
 print("{}".format(SELENIUM_DRIVER_PATH))
 driver = start()
-# add options ? for session_id, headless ?
 # kw = {'driver': driver, 'name': 'bankia'}
-bankia = load_json_bank_skel('bankia')
-page = doLogin(driver, bankia)
+# bankia = load_json_bank_from_skel('bankia')
+babucha = load_json_bank_from_skel('babucha')
+auth_method = babucha.get('login_method')
+page = auth_method(driver, babucha)
 sleep(10)
-check_dnd(driver, bankia)
-do_workflow(driver, bankia.get('workflow'))
-
+check_dnd(driver, babucha)
+do_workflow(driver, babucha.get('workflow'))
+driver.close()
 # bank = Bank(kw)
 
 #
@@ -38,4 +35,3 @@ do_workflow(driver, bankia.get('workflow'))
 # elem.send_keys("pycon")
 # elem.send_keys(Keys.RETURN)
 # assert "No results found." not in driver.page_source
-# driver.close()

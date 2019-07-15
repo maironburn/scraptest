@@ -1,32 +1,56 @@
 # -*- coding: utf-8 -*-
-
-from settings.sites.json_bank_skel import *
-from utils.utils import load_json_bank_skel
-
+from src.helpers.common_helper import load_json_bank_from_skel
+from logger.app_logger import AppLogger
+from src.models.cuenta import Cuenta
 
 class Bank(object):
-    _driver = None
     _name = None
     _json_data = None
+    _logger = None
+    _cuentas_asociadas = []
 
     def __init__(self, kw):
-        self._driver = kw.get('driver', None)
+
         self._name = kw.get('name', None)
+        self._logger = AppLogger.create_rotating_log()
+        if self.name:
+            self._json_data = self.load_skel()
 
-        if self.driver and self.name:
-            #self.json_data = jso(self.name)
-            print("way out of here")
-    def load_data(self):
-        pass
+    def load_skel(self):
 
-    @property
-    def driver(self):
-        return self._driver
+        try:
+            self._json_data = load_json_bank_from_skel(self.name)
+            self._logger.info('{} -> Loaded skel from : {}'.format(self.__class__.name, self.name))
+            return self._json_data
+
+        except Exception as lse:
+            self._logger.error("{}-> exception loading skel {} -> {}".format(self.__class__.name, self.name, lse))
+
+        return None
 
     @property
     def name(self):
         return self._name
 
+    @name.setter
+    def name(self, value):
+        if value:
+            self._name = value
+
     @property
     def json_data(self):
         return self._json_data
+
+    @json_data.setter
+    def json_data(self, value):
+        if value:
+            self._json_data = value
+
+    @property
+    def cuentas_asociadas(self):
+        return self._cuentas_asociadas
+
+    @cuentas_asociadas.setter
+    def cuentas_asociadas(self, value):
+        if isinstance(value,Cuenta):
+            self._cuentas_asociadas = value

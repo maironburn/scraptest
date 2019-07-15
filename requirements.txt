@@ -1,0 +1,15 @@
+numpy==1.16.4
+opencv-python==4.1.0.25
+Pillow==6.1.0
+PyAutoGUI==0.9.45
+PyGetWindow==0.0.6
+PyMsgBox==1.0.7
+pypiwin32==223
+PyRect==0.1.4
+PyScreeze==0.1.22
+PyTweening==1.0.3
+pywin32==224
+selenium==3.141.0
+urllib3==1.25.3
+win32core==221.36
+win32gui==221.6

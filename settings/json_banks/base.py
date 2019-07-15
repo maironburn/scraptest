@@ -33,7 +33,17 @@ bankia = {
     ,
     # elemento sobre el q interactuar / condicion posterior de espera para continuar el wf
     '''
-        @param: xpath
+        @param: tipo, determina el modo a captura del elemento
+        
+        en el metodo que lanza el workflow hay un diccionario con las posibles opciones de captura:
+                dict_search_method = {'xpath': driver.find_element_by_xpath,
+                                      'class': driver.find_element_by_class_name,
+                                      'id': driver.find_element_by_id,
+                                      'link_text' : driver.find_element_by_link_text,
+                                      'partial_link_text' : driver.find_element_by_partial_link_text
+                              }
+                              
+        @param: target, expresion del elemento a capturar
         @param: expect_cond: condicion de espera (xpath del elemento que debe estar visible y clickable
                        de momento solo he tenido esta casuistica (ec.element_to_be_clickable)
         @param: mode : fill (para los textinput) | click (botones y enlace)

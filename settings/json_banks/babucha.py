@@ -39,10 +39,10 @@ babucha = {
 
                  # click sobre la lupa (sin condiciones de espera)
 
-                 {'xpath': "//button[(@ng-click='showSearch = !showSearch')]",
+                 {'tipo': 'xpath', 'target': "//button[(@ng-click='showSearch = !showSearch')]",
                   'mode': 'click'},
                  #el fill de un text input
-                 {'xpath': "//input[(@name='daysimpleDateFrom')]", 'mode': 'fill', 'data': '06'},
+                 {'tipo': 'xpath', 'target': "//input[(@name='daysimpleDateFrom')]", 'mode': 'fill', 'data': '06'},
 
                  ]
 

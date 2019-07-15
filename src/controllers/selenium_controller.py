@@ -132,7 +132,6 @@ def do_workflow(driver, list_workflow):
                               'id': driver.find_element_by_id,
                               'link_text' : driver.find_element_by_link_text,
                               'partial_link_text' : driver.find_element_by_partial_link_text
-
                               }
         for w in list_workflow:
             # tipo de busqueda para localizar al elemento

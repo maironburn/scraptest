@@ -5,7 +5,7 @@ __pycache__/
 .idea
 # C extensions
 *.so
-
+/img/temps_imgs
 # Distribution / packaging
 .Python
 build/

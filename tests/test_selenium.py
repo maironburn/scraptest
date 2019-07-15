@@ -2,7 +2,7 @@ from common_config import SELENIUM_DRIVER_PATH
 from src.controllers.selenium_controller import start
 from src.helpers.common_helper import load_json_bank_from_skel
 # from bs4 import BeautifulSoup < -- sopa preciosa aun no te he necesitado :( !!
-from src.controllers.selenium_controller import standard_login,login_bello, check_dnd, do_workflow
+from src.controllers.selenium_controller import standard_login,login_bello, check_dnd, do_workflow, pre_login_actions
 from time import sleep
 
 print("{}".format(SELENIUM_DRIVER_PATH))
@@ -10,11 +10,14 @@ driver = start()
 # kw = {'driver': driver, 'name': 'bankia'}
 # bankia = load_json_bank_from_skel('bankia')
 babucha = load_json_bank_from_skel('babucha')
+#unicaja = load_json_bank_from_skel('unicaja')
+#driver.get(babucha.get('login_url'))
+
 auth_method = babucha.get('login_method')
-page = auth_method(driver, babucha)
+
+driver = auth_method(driver, babucha)
 sleep(10)
-check_dnd(driver, babucha)
-do_workflow(driver, babucha.get('workflow'))
+#do_workflow(driver, babucha.get('workflow'))
 driver.close()
 # bank = Bank(kw)
 

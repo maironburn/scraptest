@@ -21,7 +21,6 @@ interesante:  Enable popup blocking with chromedriver
 https://bugs.chromium.org/p/chromedriver/issues/detail?id=1291
 '''
 
-
 def start(start_opc=None):
     options = webdriver.ChromeOptions()
     options.add_argument("--start-maximized")
@@ -30,6 +29,13 @@ def start(start_opc=None):
     if driver:
         return driver
     return None
+
+
+
+
+
+
+
 
 
 '''
@@ -88,11 +94,14 @@ def login_bello(driver, dict_bank):
         element = driver.find_element_by_xpath(login_form.get('pin'))
         element.send_keys('%')
         sleep(10)
-        teclado = Teclado({'bankname': 'kutxabank'})
+        teclado = Teclado({'bankname': 'unicaja'})
         # element = driver.find_element_by_xpath(login_form.get('user'))
         teclado.write(credentials.get('pin'))
         submit = driver.find_element_by_xpath(login_form.get('submit'))
         submit.click()
+
+
+        #driver.get('https://www.kutxabank.es/NASApp/BesaideNet2/Gestor?PRESTACION=login&FUNCION=login&ACCION=preseleccion')
 
         return driver
 
@@ -119,6 +128,43 @@ def check_dnd(driver, dict_bank):
                     print("buscando condicion dnd: {} -> xpath: {}".format(k, v))
 
 
+
+# def pre_login_actions(driver, dict_bank):
+#
+#     dict_search_method = {'xpath': driver.find_element_by_xpath,
+#                           'class': driver.find_element_by_class_name,
+#                           'id': driver.find_element_by_id,
+#                           'link_text': driver.find_element_by_link_text,
+#                           'partial_link_text': driver.find_element_by_partial_link_text
+#                           }
+#
+#     if driver:
+#         pre_login_actions = dict_bank.get('pre_login_actions', None)
+#         if pre_login_actions:
+#             for pla in pre_login_actions:
+#                 try:
+#                     tipo= pla.get('tipo')
+#                     element = dict_search_method.get(tipo)(pla.get('target'))
+#                     element.click()
+#
+#                 except Exception as e:
+#                     print("buscando condicion dnd: {} -> xpath: {}".format(k, v))
+
+def pre_login_actions(driver, dict_bank):
+
+
+    if driver:
+        pre_login_actions = dict_bank.get('pre_login_actions', None)
+        if pre_login_actions:
+            for pla in pre_login_actions:
+                try:
+                    element = driver.find_element_by_xpath(pla.get('target'))
+                    element.click()
+
+                except Exception as e:
+                    print("buscando condicion dnd: {} -> xpath: {}".format(k, v))
+
+
 '''
 ejecuta secuencialmente el workflow definido en el skel
 '''
@@ -130,15 +176,16 @@ def do_workflow(driver, list_workflow):
         dict_search_method = {'xpath': driver.find_element_by_xpath,
                               'class': driver.find_element_by_class_name,
                               'id': driver.find_element_by_id,
-                              'link_text' : driver.find_element_by_link_text,
-                              'partial_link_text' : driver.find_element_by_partial_link_text
+                              'link_text': driver.find_element_by_link_text,
+                              'partial_link_text': driver.find_element_by_partial_link_text
                               }
+
         for w in list_workflow:
             # tipo de busqueda para localizar al elemento
             tipo = w.get('tipo')
             element = dict_search_method.get(tipo)(w.get('target'))
-
             sleep(2)
+
             if w.get('mode') == 'click':
                 element.click()
 

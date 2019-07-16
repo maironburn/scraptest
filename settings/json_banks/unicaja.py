@@ -12,8 +12,14 @@ unicaja = {
     # acciones a realizar antes de poder hacer login (deshacerse de popups, clicks sobre botones...)
     'pre_login_actions': [
         # boton acceso al area de clientes
+        # <a target="_self" class="link-button btn-bg-red aceptarCookies" title="ACEPTAR Y SEGUIR NAVEGANDO">
+        #                     ACEPTAR Y SEGUIR NAVEGANDO
+        #                   </a>
+        {'tipo': 'xpath', 'target': "//div[@class='content']//div[@class='blockFaldon']//div[@class='botton-faldon']//div//a[@class='link-button btn-bg-red aceptarCookies'][contains(text(),'ACEPTAR Y SEGUIR NAVEGANDO')]", 'mode': 'click',
+         'description': 'ventana configuracion de cookies'}
+        ,
         {'tipo': 'xpath', 'target': "//a[@id='/content/unicaja/es/es_header_composer_button1']", 'mode': 'swap_window',
-         'description': 'click en acceso a clientes'}
+         'description': 'click en Acceso al area de clientes', 'ec' : {'tipo': 'xpath', 'target': "//input[@id='user']"}}
 
     ],
 
@@ -23,7 +29,6 @@ unicaja = {
     # credenciales para la autenticacion
     'credentials': {
         'user': '',
-        'enterprise_id': '',
         'pin': ''
     }
     ,

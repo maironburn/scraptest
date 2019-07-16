@@ -52,7 +52,9 @@ class Teclado(object):
         if isinstance(boton, Boton):
             self._dataset.update({boton.name: boton})
 
-    def write(self, text):
+    def write(self, text, case_sensitive=False):
+        if not case_sensitive:
+            text=text.lower()
         for i in text:
             if i in self.dataset.keys():
                 move_and_click(self.dataset.get(i))

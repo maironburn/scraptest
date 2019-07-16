@@ -44,8 +44,8 @@ class SeleniumController(object):
     def do_the_process(self):
 
         try:
-            # en funcion del metodo definido en el skel se llamara a un metodo de logado u otro
-
+            # independientemente de que halla acciones prelogin ...lo primero es abrir la url de la web
+            self.driver.get(self.bank.get('login_url'))
             # comprobamos si son necesarias llevar a cabo acciones antes de iniciar el proceso de logado
             if self.bank.get('pre_login_actions'):
                 self._logger.debug("Se requieren acciones previas al logado")
@@ -94,7 +94,8 @@ class SeleniumController(object):
             'class': self.driver.find_element_by_class_name,
             'id': self.driver.find_element_by_id,
             'link_text': self.driver.find_element_by_link_text,
-            'partial_link_text': self.driver.find_element_by_partial_link_text
+            'partial_link_text': self.driver.find_element_by_partial_link_text,
+            'css_selector': self.driver.find_element_by_css_selector
         }
 
     def load_finds_method_references(self):
@@ -105,7 +106,8 @@ class SeleniumController(object):
             'class': self.driver.find_elements_by_class_name,
             'id': self.driver.find_elements_by_id,
             'link_text': self.driver.find_elements_by_link_text,
-            'partial_link_text': self.driver.find_elements_by_partial_link_text
+            'partial_link_text': self.driver.find_elements_by_partial_link_text,
+            'css_selector': self.driver.find_elements_by_css_selector
         }
 
     '''
@@ -130,12 +132,11 @@ class SeleniumController(object):
             WebDriverWait(self.driver, 20).until(ec.number_of_windows_to_be(2))
             new_windows = [window for window in self.driver.window_handles if window != current][0]
             self.driver.switch_to.window(new_windows)
-            self.current_windows = new_windows
-
+            sleep(5)
 
     def standard_login(self):
         if self.driver:
-            self.driver.get(self.bank.get('login_url'))
+
             self.current_windows = self.driver.window_handles[0]
             credentials = self.bank.get('credentials')
             login_form = self.bank.get('login_form')
@@ -171,7 +172,7 @@ class SeleniumController(object):
 
     def login_bello(self):
         if self.driver:
-            self.driver.get(self.bank.get('login_url'))
+
             credentials = self.bank.get('credentials')
             login_form = self.bank.get('login_form')
 
@@ -188,9 +189,9 @@ class SeleniumController(object):
             tipo = login_form.get('pin')['tipo']
             target = login_form.get('pin')['target']
             element = self.find_method[tipo](target)
-            element.clear()
+
             element.send_keys('%')
-            sleep(5)
+            sleep(2)
 
             teclado = Teclado({'bankname': self.bank.get('bankname')})
             teclado.write(credentials.get('pin'))
@@ -227,6 +228,8 @@ class SeleniumController(object):
                     mode = actions.get('mode')
                     self._logger.info(
                         "{} -> tipo busqueda: {} , expresion: {} , mode: {}".format(desc, tipo, target, mode))
+
+
                     if len(self.finds_method[tipo](target)):
                         self._logger.info("matched condition {} !! ".format(desc))
                         elem = self.find_method[tipo](target)
@@ -235,7 +238,7 @@ class SeleniumController(object):
 
                         if mode == 'swap_window':
                             self.swap_window(elem)
-
+                        sleep(2)
                 except Exception as e:
                     pass
                     # print("buscando condicion dnd: {} -> xpath: {}".format(k, v))

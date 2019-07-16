@@ -29,6 +29,7 @@ class SeleniumController(object):
     _bank = None
     _logger = None
     _dict_navigated_elements = []
+    _current_window = None
     find_method = None
 
     def __init__(self, kw):
@@ -71,7 +72,6 @@ class SeleniumController(object):
     '''
     @:param, lista de opciones con las que inicializar el driver de selenium
     '''
-
     def start(self, default_opc=["--start-maximized"]):
 
         options = webdriver.ChromeOptions()
@@ -114,9 +114,29 @@ class SeleniumController(object):
         usuario, pwd y [algun otro dato adicional]
     '''
 
+    '''
+    
+        apertura de nuevo tab
+        @:param, element_that_cause_the_swapping (elemento que causa el swap)
+        
+    '''
+
+    def swap_window(self, element_that_cause_the_swapping=None):
+
+        current = self.driver.window_handles[0]
+        if element_that_cause_the_swapping:
+            element_that_cause_the_swapping.click()
+
+            WebDriverWait(self.driver, 20).until(ec.number_of_windows_to_be(2))
+            new_windows = [window for window in self.driver.window_handles if window != current][0]
+            self.driver.switch_to.window(new_windows)
+            self.current_windows = new_windows
+
+
     def standard_login(self):
         if self.driver:
             self.driver.get(self.bank.get('login_url'))
+            self.current_windows = self.driver.window_handles[0]
             credentials = self.bank.get('credentials')
             login_form = self.bank.get('login_form')
 
@@ -129,7 +149,7 @@ class SeleniumController(object):
                     target = login_form.get(k)['target']
                     self._logger.info("Buscando por {} -> {}".format(tipo, target))
                     if len(self.finds_method[tipo](target)):
-                        self._logger.info("elemento encontrado: {}".format(k))
+                        self._logger.info("Elemento encontrado: {}".format(k))
                         elem = self.find_method[tipo](target)
                         elem.send_keys(credentials[k])
 
@@ -213,17 +233,12 @@ class SeleniumController(object):
                         if mode == 'click':
                             elem.click()
 
+                        if mode == 'swap_window':
+                            self.swap_window(elem)
+
                 except Exception as e:
                     pass
                     # print("buscando condicion dnd: {} -> xpath: {}".format(k, v))
-
-    '''
-    ejecuta secuencialmente el workflow definido en el skel
-    '''
-
-    def element_finded(self, tipo_find, target):
-
-        pass
 
     def do_workflow(self):
         try:
@@ -294,5 +309,9 @@ class SeleniumController(object):
     def navigated_elements(self, value):
         if isinstance(value, list):
             self._navigated_elements = value
+
+    @property
+    def current_windows(self):
+        return self._current_window
 
     # </editor-fold>

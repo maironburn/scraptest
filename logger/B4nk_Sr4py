@@ -148,3 +148,15 @@ INFO: 07/16/2019 12:30:17 PM Buscando por xpath -> //input[@id='pass2']
 INFO: 07/16/2019 12:30:18 PM elemento encontrado: pin
 INFO: 07/16/2019 12:30:18 PM elemento encontrado: pin
 INFO: 07/16/2019 12:30:18 PM elemento encontrado: pin
+INFO: 07/16/2019 02:59:09 PM <property object at 0x000001AE23344C78> -> Loaded skel from : unicaja
+INFO: 07/16/2019 02:59:09 PM <property object at 0x000001AE23344C78> -> Loaded skel from : bankia
+INFO: 07/16/2019 02:59:09 PM <property object at 0x000001AE23344C78> -> Loaded skel from : bankia
+INFO: 07/16/2019 02:59:14 PM Evaluando acciones pre login
+INFO: 07/16/2019 02:59:14 PM Evaluando acciones pre login
+INFO: 07/16/2019 02:59:14 PM Evaluando acciones pre login
+INFO: 07/16/2019 02:59:14 PM click en acceso a clientes -> tipo busqueda: xpath , expresion: //a[@id='/content/unicaja/es/es_header_composer_button1'] , mode: swap_window
+INFO: 07/16/2019 02:59:14 PM click en acceso a clientes -> tipo busqueda: xpath , expresion: //a[@id='/content/unicaja/es/es_header_composer_button1'] , mode: swap_window
+INFO: 07/16/2019 02:59:14 PM click en acceso a clientes -> tipo busqueda: xpath , expresion: //a[@id='/content/unicaja/es/es_header_composer_button1'] , mode: swap_window
+ERROR: 07/16/2019 02:59:16 PM Error duante el workflow
+ERROR: 07/16/2019 02:59:16 PM Error duante el workflow
+ERROR: 07/16/2019 02:59:16 PM Error duante el workflow

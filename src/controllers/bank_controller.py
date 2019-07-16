@@ -68,6 +68,6 @@ class BankController(object):
 if __name__ == '__main__':
     bancos = ['unicaja', 'bankia']
     bc = BankController({'banknames': bancos})
-    bc.extract_movements("bankia")
+    bc.extract_movements("unicaja")
 
     pass

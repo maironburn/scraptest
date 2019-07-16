@@ -1,20 +1,20 @@
 from src.controllers.selenium_controller import SeleniumController as sc
 
 unicaja = {
-    'bankname' : "unicaja",
+    'bankname': "unicaja",
     'url_base': 'https://www.unicajabanco.es/es/empresas-y-autonomos',
 
     'login_url': 'https://www.unicajabanco.es/es/empresas-y-autonomos',
     # metodo de logado (standar, reconocimiento de imgs...whatever)
     'headless': False,
 
-    'login_method': sc.login_bello,
+    'login_method': 'login_bello',
     # acciones a realizar antes de poder hacer login (deshacerse de popups, clicks sobre botones...)
     'pre_login_actions': [
-        # aceptar cookies
-        {'tipo': 'xpath', 'target': "//a[(@target='_self')]", 'mode': 'click', 'description': 'cierre de mensaje informativo'},
-        # area de clientes
-        {'tipo': 'xpath', 'target': "//a[(@title=' Ir a Acceso clientes ')]", 'mode': 'click', 'description': 'cierre de mensaje informativo'}
+        # boton acceso al area de clientes
+        {'tipo': 'xpath', 'target': "//a[@id='/content/unicaja/es/es_header_composer_button1']", 'mode': 'swap_window',
+         'description': 'click en acceso a clientes'}
+
     ],
 
     # acciones a realizar despues del login (q no forman parte del workflow)
@@ -22,18 +22,16 @@ unicaja = {
 
     # credenciales para la autenticacion
     'credentials': {
-        'user': '',
+        'user': '05238978S',
         'enterprise_id': '',
-        'pin': ''
+        'pin': 'JAZMIN10'
     }
     ,
     # identificacion de los elmentos del formulario de login
     'login_form': {
-        # Xpath
-        'user': "//input[(@id='clave')]",
-        'enterprise_id': '',
-        'pin': '',
-        'submit': ""
+        'user': {'tipo': 'xpath', 'target': "//input[@id='user']"},
+        'pin': {'tipo': 'xpath', 'target': "//input[@id='clave']"},
+        'submit': {'tipo': 'xpath', 'target': "//div[6]//input[1]"}
     }
     ,
     # periodicidad de las consultas ( @TBD )

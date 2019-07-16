@@ -22,9 +22,9 @@ unicaja = {
 
     # credenciales para la autenticacion
     'credentials': {
-        'user': '05238978S',
+        'user': '',
         'enterprise_id': '',
-        'pin': 'JAZMIN10'
+        'pin': ''
     }
     ,
     # identificacion de los elmentos del formulario de login

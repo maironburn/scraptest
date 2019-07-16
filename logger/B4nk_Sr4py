@@ -1,119 +1,150 @@
-INFO: 07/15/2019 09:09:17 AM mapeado Boton: 0, coords x: 730 , y: 417
-INFO: 07/15/2019 09:09:17 AM mapeado Boton: 1, coords x: 758 , y: 418
-INFO: 07/15/2019 09:09:17 AM mapeado Boton: 2, coords x: 814 , y: 445
-INFO: 07/15/2019 09:09:17 AM mapeado Boton: 3, coords x: 786 , y: 446
-INFO: 07/15/2019 09:09:17 AM mapeado Boton: 4, coords x: 702 , y: 417
-INFO: 07/15/2019 09:09:18 AM mapeado Boton: 5, coords x: 786 , y: 418
-INFO: 07/15/2019 09:09:18 AM mapeado Boton: 6, coords x: 730 , y: 445
-INFO: 07/15/2019 09:09:18 AM mapeado Boton: 7, coords x: 702 , y: 445
-INFO: 07/15/2019 09:09:18 AM mapeado Boton: 8, coords x: 814 , y: 417
-INFO: 07/15/2019 09:09:19 AM mapeado Boton: 9, coords x: 758 , y: 445
-INFO: 07/15/2019 09:25:13 AM mapeado Boton: 0, coords x: 730 , y: 417
-INFO: 07/15/2019 09:25:14 AM mapeado Boton: 1, coords x: 814 , y: 418
-INFO: 07/15/2019 09:25:14 AM mapeado Boton: 2, coords x: 786 , y: 417
-INFO: 07/15/2019 09:25:14 AM mapeado Boton: 3, coords x: 758 , y: 418
-INFO: 07/15/2019 09:25:14 AM mapeado Boton: 4, coords x: 730 , y: 445
-INFO: 07/15/2019 09:25:15 AM mapeado Boton: 5, coords x: 814 , y: 446
-INFO: 07/15/2019 09:25:15 AM mapeado Boton: 6, coords x: 786 , y: 445
-INFO: 07/15/2019 09:25:15 AM mapeado Boton: 7, coords x: 702 , y: 417
-INFO: 07/15/2019 09:25:15 AM mapeado Boton: 8, coords x: 702 , y: 445
-INFO: 07/15/2019 09:25:15 AM mapeado Boton: 9, coords x: 758 , y: 445
-INFO: 07/15/2019 09:27:38 AM mapeado Boton: 0, coords x: 702 , y: 445
-INFO: 07/15/2019 09:27:38 AM mapeado Boton: 1, coords x: 730 , y: 418
-INFO: 07/15/2019 09:27:38 AM mapeado Boton: 2, coords x: 814 , y: 445
-INFO: 07/15/2019 09:27:39 AM mapeado Boton: 3, coords x: 814 , y: 418
-INFO: 07/15/2019 09:27:39 AM mapeado Boton: 4, coords x: 758 , y: 417
-INFO: 07/15/2019 09:27:39 AM mapeado Boton: 5, coords x: 730 , y: 446
-INFO: 07/15/2019 09:27:39 AM mapeado Boton: 6, coords x: 786 , y: 445
-INFO: 07/15/2019 09:27:40 AM mapeado Boton: 7, coords x: 758 , y: 445
-INFO: 07/15/2019 09:27:40 AM mapeado Boton: 8, coords x: 786 , y: 417
-INFO: 07/15/2019 09:27:40 AM mapeado Boton: 9, coords x: 702 , y: 417
-INFO: 07/15/2019 09:30:59 AM mapeado Boton: 0, coords x: 1434 , y: 398
-INFO: 07/15/2019 09:30:59 AM mapeado Boton: 1, coords x: 1462 , y: 427
-INFO: 07/15/2019 09:31:00 AM mapeado Boton: 2, coords x: 1406 , y: 398
-INFO: 07/15/2019 09:31:00 AM mapeado Boton: 3, coords x: 1490 , y: 427
-INFO: 07/15/2019 09:31:00 AM mapeado Boton: 4, coords x: 1406 , y: 426
-INFO: 07/15/2019 09:31:00 AM mapeado Boton: 5, coords x: 1462 , y: 399
-INFO: 07/15/2019 09:31:00 AM mapeado Boton: 6, coords x: 1378 , y: 426
-INFO: 07/15/2019 09:31:01 AM mapeado Boton: 7, coords x: 1490 , y: 398
-INFO: 07/15/2019 09:31:01 AM mapeado Boton: 8, coords x: 1434 , y: 426
-INFO: 07/15/2019 09:31:01 AM mapeado Boton: 9, coords x: 1378 , y: 398
-INFO: 07/15/2019 09:53:53 AM mapeado Boton: 0, coords x: 1406 , y: 426
-INFO: 07/15/2019 09:53:53 AM mapeado Boton: 1, coords x: 1434 , y: 399
-INFO: 07/15/2019 09:53:53 AM mapeado Boton: 2, coords x: 1378 , y: 398
-INFO: 07/15/2019 09:53:53 AM mapeado Boton: 3, coords x: 1462 , y: 399
-INFO: 07/15/2019 09:53:53 AM mapeado Boton: 4, coords x: 1434 , y: 426
-INFO: 07/15/2019 09:53:54 AM mapeado Boton: 5, coords x: 1406 , y: 399
-INFO: 07/15/2019 09:53:54 AM mapeado Boton: 6, coords x: 1462 , y: 426
-INFO: 07/15/2019 09:53:54 AM mapeado Boton: 7, coords x: 1490 , y: 426
-INFO: 07/15/2019 09:53:54 AM mapeado Boton: 8, coords x: 1378 , y: 426
-INFO: 07/15/2019 09:53:54 AM mapeado Boton: 9, coords x: 1490 , y: 398
-INFO: 07/15/2019 10:23:09 AM mapeado Boton: 0, coords x: 1378 , y: 426
-INFO: 07/15/2019 10:23:10 AM mapeado Boton: 1, coords x: 1378 , y: 399
-INFO: 07/15/2019 10:23:10 AM mapeado Boton: 2, coords x: 1490 , y: 398
-INFO: 07/15/2019 10:23:10 AM mapeado Boton: 3, coords x: 1462 , y: 399
-INFO: 07/15/2019 10:23:10 AM mapeado Boton: 4, coords x: 1406 , y: 398
-INFO: 07/15/2019 10:23:11 AM mapeado Boton: 5, coords x: 1434 , y: 399
-INFO: 07/15/2019 10:23:11 AM mapeado Boton: 6, coords x: 1406 , y: 426
-INFO: 07/15/2019 10:23:11 AM mapeado Boton: 7, coords x: 1490 , y: 426
-INFO: 07/15/2019 10:23:11 AM mapeado Boton: 8, coords x: 1434 , y: 426
-INFO: 07/15/2019 10:23:11 AM mapeado Boton: 9, coords x: 1462 , y: 426
-INFO: 07/15/2019 10:38:59 AM mapeado Boton: 0, coords x: 1406 , y: 398
-INFO: 07/15/2019 10:38:59 AM mapeado Boton: 1, coords x: 1490 , y: 427
-INFO: 07/15/2019 10:38:59 AM mapeado Boton: 2, coords x: 1434 , y: 398
-INFO: 07/15/2019 10:38:59 AM mapeado Boton: 3, coords x: 1462 , y: 399
-INFO: 07/15/2019 10:39:00 AM mapeado Boton: 4, coords x: 1378 , y: 398
-INFO: 07/15/2019 10:39:00 AM mapeado Boton: 5, coords x: 1434 , y: 427
-INFO: 07/15/2019 10:39:00 AM mapeado Boton: 6, coords x: 1406 , y: 426
-INFO: 07/15/2019 10:39:00 AM mapeado Boton: 7, coords x: 1462 , y: 426
-INFO: 07/15/2019 10:39:00 AM mapeado Boton: 8, coords x: 1378 , y: 426
-INFO: 07/15/2019 10:39:01 AM mapeado Boton: 9, coords x: 1490 , y: 398
-INFO: 07/15/2019 10:43:09 AM mapeado Boton: 0, coords x: 1490 , y: 398
-INFO: 07/15/2019 10:43:09 AM mapeado Boton: 1, coords x: 1378 , y: 399
-INFO: 07/15/2019 10:43:09 AM mapeado Boton: 2, coords x: 1406 , y: 398
-INFO: 07/15/2019 10:43:10 AM mapeado Boton: 3, coords x: 1378 , y: 427
-INFO: 07/15/2019 10:43:10 AM mapeado Boton: 4, coords x: 1462 , y: 426
-INFO: 07/15/2019 10:43:10 AM mapeado Boton: 5, coords x: 1462 , y: 399
-INFO: 07/15/2019 10:43:10 AM mapeado Boton: 6, coords x: 1490 , y: 426
-INFO: 07/15/2019 10:43:10 AM mapeado Boton: 7, coords x: 1406 , y: 426
-INFO: 07/15/2019 10:43:11 AM mapeado Boton: 8, coords x: 1434 , y: 426
-INFO: 07/15/2019 10:43:11 AM mapeado Boton: 9, coords x: 1434 , y: 398
-INFO: 07/15/2019 11:52:01 AM mapeado Boton: 0, coords x: 1406 , y: 397
-INFO: 07/15/2019 11:52:02 AM mapeado Boton: 1, coords x: 1491 , y: 398
-INFO: 07/15/2019 11:52:02 AM mapeado Boton: 2, coords x: 1378 , y: 426
-INFO: 07/15/2019 11:52:02 AM mapeado Boton: 3, coords x: 1461 , y: 425
-INFO: 07/15/2019 11:52:02 AM mapeado Boton: 4, coords x: 1462 , y: 398
-INFO: 07/15/2019 11:52:02 AM mapeado Boton: 5, coords x: 1435 , y: 425
-INFO: 07/15/2019 11:52:03 AM mapeado Boton: 6, coords x: 1378 , y: 397
-INFO: 07/15/2019 11:52:03 AM mapeado Boton: 7, coords x: 1489 , y: 425
-INFO: 07/15/2019 11:52:03 AM mapeado Boton: 8, coords x: 1433 , y: 397
-INFO: 07/15/2019 11:52:03 AM mapeado Boton: 9, coords x: 1407 , y: 425
-INFO: 07/15/2019 11:52:04 AM mapeado Boton: a, coords x: 1461 , y: 398
-INFO: 07/15/2019 11:52:04 AM mapeado Boton: b, coords x: 1434 , y: 398
-INFO: 07/15/2019 11:52:04 AM mapeado Boton: c, coords x: 1868 , y: 61
-INFO: 07/15/2019 11:52:05 AM mapeado Boton: cancel, coords x: 226 , y: 852
-INFO: 07/15/2019 11:52:05 AM mapeado Boton: d, coords x: 1407 , y: 397
-INFO: 07/15/2019 11:52:05 AM mapeado Boton: e, coords x: 1378 , y: 397
-INFO: 07/15/2019 11:52:05 AM mapeado Boton: ene, coords x: 1866 , y: 56
-INFO: 07/15/2019 11:52:06 AM mapeado Boton: f, coords x: 1493 , y: 399
-INFO: 07/15/2019 11:52:06 AM mapeado Boton: g, coords x: 1462 , y: 426
-INFO: 07/15/2019 11:52:06 AM mapeado Boton: h, coords x: 1895 , y: 93
-INFO: 07/15/2019 11:52:06 AM mapeado Boton: i, coords x: 1491 , y: 398
-INFO: 07/15/2019 11:52:06 AM mapeado Boton: j, coords x: 1490 , y: 399
-INFO: 07/15/2019 11:52:07 AM mapeado Boton: k, coords x: 1896 , y: 93
-INFO: 07/15/2019 11:52:07 AM mapeado Boton: l, coords x: 1493 , y: 399
-INFO: 07/15/2019 11:52:07 AM mapeado Boton: m, coords x: 1866 , y: 60
-INFO: 07/15/2019 11:52:07 AM mapeado Boton: n, coords x: 1896 , y: 93
-INFO: 07/15/2019 11:52:07 AM mapeado Boton: o, coords x: 1406 , y: 397
-INFO: 07/15/2019 11:52:08 AM mapeado Boton: ok, coords x: 56 , y: 52
-INFO: 07/15/2019 11:52:08 AM mapeado Boton: p, coords x: 1865 , y: 60
-INFO: 07/15/2019 11:52:08 AM mapeado Boton: q, coords x: 163 , y: 733
-INFO: 07/15/2019 11:52:08 AM mapeado Boton: r, coords x: 1407 , y: 426
-INFO: 07/15/2019 11:52:08 AM mapeado Boton: s, coords x: 1435 , y: 426
-INFO: 07/15/2019 11:52:09 AM mapeado Boton: t, coords x: 1491 , y: 399
-INFO: 07/15/2019 11:52:09 AM mapeado Boton: u, coords x: 1406 , y: 399
-INFO: 07/15/2019 11:52:09 AM mapeado Boton: v, coords x: 1406 , y: 428
-INFO: 07/15/2019 11:52:09 AM mapeado Boton: w, coords x: 1298 , y: 841
-INFO: 07/15/2019 11:52:09 AM mapeado Boton: x, coords x: 1895 , y: 92
-INFO: 07/15/2019 11:52:10 AM mapeado Boton: y, coords x: 1491 , y: 398
-INFO: 07/15/2019 11:52:10 AM mapeado Boton: z, coords x: 1378 , y: 427
+INFO: 07/16/2019 09:23:34 AM <property object at 0x0000020E9E959C28> -> Loaded skel from : unicaja
+INFO: 07/16/2019 09:23:34 AM <property object at 0x0000020E9E959C28> -> Loaded skel from : bankia
+INFO: 07/16/2019 09:23:34 AM <property object at 0x0000020E9E959C28> -> Loaded skel from : bankia
+INFO: 07/16/2019 10:54:35 AM <property object at 0x00000200232B4AE8> -> Loaded skel from : unicaja
+INFO: 07/16/2019 10:54:35 AM <property object at 0x00000200232B4AE8> -> Loaded skel from : bankia
+INFO: 07/16/2019 10:54:35 AM <property object at 0x00000200232B4AE8> -> Loaded skel from : bankia
+INFO: 07/16/2019 10:55:31 AM <property object at 0x000001F5B50D4B38> -> Loaded skel from : unicaja
+INFO: 07/16/2019 10:55:31 AM <property object at 0x000001F5B50D4B38> -> Loaded skel from : bankia
+INFO: 07/16/2019 10:55:31 AM <property object at 0x000001F5B50D4B38> -> Loaded skel from : bankia
+INFO: 07/16/2019 10:56:51 AM <property object at 0x000002D1ED684BD8> -> Loaded skel from : unicaja
+INFO: 07/16/2019 10:56:51 AM <property object at 0x000002D1ED684BD8> -> Loaded skel from : bankia
+INFO: 07/16/2019 10:56:51 AM <property object at 0x000002D1ED684BD8> -> Loaded skel from : bankia
+INFO: 07/16/2019 10:57:21 AM <property object at 0x0000024C7C359C28> -> Loaded skel from : unicaja
+INFO: 07/16/2019 10:57:37 AM <property object at 0x0000024C7C359C28> -> Loaded skel from : bankia
+INFO: 07/16/2019 10:57:37 AM <property object at 0x0000024C7C359C28> -> Loaded skel from : bankia
+INFO: 07/16/2019 10:59:00 AM <property object at 0x000002D8BE5D9B88> -> Loaded skel from : unicaja
+INFO: 07/16/2019 10:59:05 AM <property object at 0x000002D8BE5D9B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 10:59:05 AM <property object at 0x000002D8BE5D9B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:00:28 AM <property object at 0x0000017A6A07BB38> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:00:32 AM <property object at 0x0000017A6A07BB38> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:00:32 AM <property object at 0x0000017A6A07BB38> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:01:44 AM <property object at 0x0000021780D9AAE8> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:01:44 AM <property object at 0x0000021780D9AAE8> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:01:44 AM <property object at 0x0000021780D9AAE8> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:03:45 AM <property object at 0x0000021F04384AE8> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:03:45 AM <property object at 0x0000021F04384AE8> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:03:45 AM <property object at 0x0000021F04384AE8> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:06:38 AM <property object at 0x000001A905147B88> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:06:38 AM <property object at 0x000001A905147B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:06:38 AM <property object at 0x000001A905147B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:09:04 AM <property object at 0x0000016D3D0F7AE8> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:09:04 AM <property object at 0x0000016D3D0F7AE8> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:09:04 AM <property object at 0x0000016D3D0F7AE8> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:09:45 AM <property object at 0x0000021284B54A98> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:09:45 AM <property object at 0x0000021284B54A98> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:09:45 AM <property object at 0x0000021284B54A98> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:12:40 AM <property object at 0x000002B6885ABB88> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:12:40 AM <property object at 0x000002B6885ABB88> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:12:40 AM <property object at 0x000002B6885ABB88> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:15:21 AM <property object at 0x0000015630579B88> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:15:21 AM <property object at 0x0000015630579B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:15:21 AM <property object at 0x0000015630579B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:18:03 AM <property object at 0x00000285BD1A3B38> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:18:03 AM <property object at 0x00000285BD1A3B38> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:18:03 AM <property object at 0x00000285BD1A3B38> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:19:44 AM <property object at 0x000002C1AD807B38> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:19:44 AM <property object at 0x000002C1AD807B38> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:19:44 AM <property object at 0x000002C1AD807B38> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:29:00 AM <property object at 0x000001D4C0EB3B38> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:29:00 AM <property object at 0x000001D4C0EB3B38> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:29:00 AM <property object at 0x000001D4C0EB3B38> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:30:29 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:30:29 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:30:29 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:31:38 AM <property object at 0x000001F58B344C28> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:31:38 AM <property object at 0x000001F58B344C28> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:31:38 AM <property object at 0x000001F58B344C28> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:32:01 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:32:01 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:32:01 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:34:09 AM <property object at 0x000001771BE32AE8> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:34:09 AM <property object at 0x000001771BE32AE8> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:34:09 AM <property object at 0x000001771BE32AE8> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:34:15 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:34:15 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:34:15 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:34:15 AM elemento encontrado: user
+INFO: 07/16/2019 11:34:15 AM elemento encontrado: user
+INFO: 07/16/2019 11:34:15 AM elemento encontrado: user
+INFO: 07/16/2019 11:34:46 AM <property object at 0x0000019BFE232B38> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:34:46 AM <property object at 0x0000019BFE232B38> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:34:46 AM <property object at 0x0000019BFE232B38> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:34:59 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:34:59 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:34:59 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:35:02 AM elemento encontrado: user
+INFO: 07/16/2019 11:35:02 AM elemento encontrado: user
+INFO: 07/16/2019 11:35:02 AM elemento encontrado: user
+INFO: 07/16/2019 11:48:18 AM <property object at 0x000002953F164B88> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:48:18 AM <property object at 0x000002953F164B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:48:18 AM <property object at 0x000002953F164B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:48:40 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:48:40 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:48:40 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:48:41 AM elemento encontrado: user
+INFO: 07/16/2019 11:48:41 AM elemento encontrado: user
+INFO: 07/16/2019 11:48:41 AM elemento encontrado: user
+INFO: 07/16/2019 11:49:00 AM <property object at 0x0000027EE2B98B38> -> Loaded skel from : unicaja
+INFO: 07/16/2019 11:49:00 AM <property object at 0x0000027EE2B98B38> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:49:00 AM <property object at 0x0000027EE2B98B38> -> Loaded skel from : bankia
+INFO: 07/16/2019 11:49:14 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:49:14 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:49:14 AM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 11:49:15 AM elemento encontrado: user
+INFO: 07/16/2019 11:49:15 AM elemento encontrado: user
+INFO: 07/16/2019 11:49:15 AM elemento encontrado: user
+INFO: 07/16/2019 12:10:12 PM <property object at 0x000002A35A355B88> -> Loaded skel from : unicaja
+INFO: 07/16/2019 12:10:12 PM <property object at 0x000002A35A355B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 12:10:12 PM <property object at 0x000002A35A355B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 12:10:35 PM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 12:10:35 PM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 12:10:35 PM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 12:10:45 PM elemento encontrado: user
+INFO: 07/16/2019 12:10:45 PM elemento encontrado: user
+INFO: 07/16/2019 12:10:45 PM elemento encontrado: user
+INFO: 07/16/2019 12:14:49 PM <property object at 0x0000015E01CC7B88> -> Loaded skel from : unicaja
+INFO: 07/16/2019 12:14:49 PM <property object at 0x0000015E01CC7B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 12:14:49 PM <property object at 0x0000015E01CC7B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 12:15:11 PM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 12:15:11 PM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 12:15:11 PM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 12:15:12 PM elemento encontrado: user
+INFO: 07/16/2019 12:15:12 PM elemento encontrado: user
+INFO: 07/16/2019 12:15:12 PM elemento encontrado: user
+INFO: 07/16/2019 12:15:21 PM Buscando por xpath -> //input[(@ng-model=='login.contract')]
+INFO: 07/16/2019 12:15:21 PM Buscando por xpath -> //input[(@ng-model=='login.contract')]
+INFO: 07/16/2019 12:15:21 PM Buscando por xpath -> //input[(@ng-model=='login.contract')]
+INFO: 07/16/2019 12:17:38 PM <property object at 0x000001B2386A7B88> -> Loaded skel from : unicaja
+INFO: 07/16/2019 12:17:38 PM <property object at 0x000001B2386A7B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 12:17:38 PM <property object at 0x000001B2386A7B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 12:17:58 PM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 12:17:58 PM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 12:17:58 PM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 12:18:08 PM elemento encontrado: user
+INFO: 07/16/2019 12:18:08 PM elemento encontrado: user
+INFO: 07/16/2019 12:18:08 PM elemento encontrado: user
+INFO: 07/16/2019 12:18:12 PM Buscando por xpath -> //input[(@ng-model=='login.contract')]
+INFO: 07/16/2019 12:18:12 PM Buscando por xpath -> //input[(@ng-model=='login.contract')]
+INFO: 07/16/2019 12:18:12 PM Buscando por xpath -> //input[(@ng-model=='login.contract')]
+INFO: 07/16/2019 12:29:32 PM <property object at 0x000001C678B67B88> -> Loaded skel from : unicaja
+INFO: 07/16/2019 12:29:32 PM <property object at 0x000001C678B67B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 12:29:32 PM <property object at 0x000001C678B67B88> -> Loaded skel from : bankia
+INFO: 07/16/2019 12:29:48 PM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 12:29:48 PM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 12:29:48 PM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 07/16/2019 12:29:50 PM elemento encontrado: user
+INFO: 07/16/2019 12:29:50 PM elemento encontrado: user
+INFO: 07/16/2019 12:29:50 PM elemento encontrado: user
+INFO: 07/16/2019 12:30:08 PM Buscando por xpath -> //input[@id='nContrato']
+INFO: 07/16/2019 12:30:08 PM Buscando por xpath -> //input[@id='nContrato']
+INFO: 07/16/2019 12:30:08 PM Buscando por xpath -> //input[@id='nContrato']
+INFO: 07/16/2019 12:30:11 PM elemento encontrado: enterprise_id
+INFO: 07/16/2019 12:30:11 PM elemento encontrado: enterprise_id
+INFO: 07/16/2019 12:30:11 PM elemento encontrado: enterprise_id
+INFO: 07/16/2019 12:30:17 PM Buscando por xpath -> //input[@id='pass2']
+INFO: 07/16/2019 12:30:17 PM Buscando por xpath -> //input[@id='pass2']
+INFO: 07/16/2019 12:30:17 PM Buscando por xpath -> //input[@id='pass2']
+INFO: 07/16/2019 12:30:18 PM elemento encontrado: pin
+INFO: 07/16/2019 12:30:18 PM elemento encontrado: pin
+INFO: 07/16/2019 12:30:18 PM elemento encontrado: pin

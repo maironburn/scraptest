@@ -1,20 +1,20 @@
-from src.controllers.selenium_controller import login_bello
+from src.controllers.selenium_controller import SeleniumController as sc
 
 unicaja = {
-
+    'bankname' : "unicaja",
     'url_base': 'https://www.unicajabanco.es/es/empresas-y-autonomos',
 
     'login_url': 'https://www.unicajabanco.es/es/empresas-y-autonomos',
     # metodo de logado (standar, reconocimiento de imgs...whatever)
     'headless': False,
 
-    'login_method': login_bello,
+    'login_method': sc.login_bello,
     # acciones a realizar antes de poder hacer login (deshacerse de popups, clicks sobre botones...)
     'pre_login_actions': [
         # aceptar cookies
-        {'tipo': 'xpath', 'target': "//a[(@target='_self')]"},
+        {'tipo': 'xpath', 'target': "//a[(@target='_self')]", 'mode': 'click', 'description': 'cierre de mensaje informativo'},
         # area de clientes
-        {'tipo': 'xpath', 'target': "//a[(@title=' Ir a Acceso clientes ')]"}
+        {'tipo': 'xpath', 'target': "//a[(@title=' Ir a Acceso clientes ')]", 'mode': 'click', 'description': 'cierre de mensaje informativo'}
     ],
 
     # acciones a realizar despues del login (q no forman parte del workflow)
@@ -22,9 +22,9 @@ unicaja = {
 
     # credenciales para la autenticacion
     'credentials': {
-        'user': '05238978S',
+        'user': '',
         'enterprise_id': '',
-        'pin': 'JAZMIN10'
+        'pin': ''
     }
     ,
     # identificacion de los elmentos del formulario de login

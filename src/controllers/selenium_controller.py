@@ -6,6 +6,8 @@ from time import sleep
 from selenium import webdriver
 from src.models.teclado import Teclado
 from common_config import SELENIUM_DRIVER_PATH
+from logger.app_logger import AppLogger
+from slugify import slugify
 
 '''
 incializa el driver 
@@ -21,190 +23,276 @@ interesante:  Enable popup blocking with chromedriver
 https://bugs.chromium.org/p/chromedriver/issues/detail?id=1291
 '''
 
-def start(start_opc=None):
-    options = webdriver.ChromeOptions()
-    options.add_argument("--start-maximized")
-    driver = webdriver.Chrome(SELENIUM_DRIVER_PATH, chrome_options=options)
 
-    if driver:
-        return driver
-    return None
+class SeleniumController(object):
+    _driver = None
+    _bank = None
+    _logger = None
+    _dict_navigated_elements = []
+    find_method = None
 
+    def __init__(self, kw):
 
+        self._logger = AppLogger.create_rotating_log() if kw.get('logger', None) is None else kw.get('logger')
+        if kw.get('bank', None):
+            self.bank = kw.get('bank')
+            self.start() if kw.get('selenium_opts', None) is None else self.start(kw.get('selenium_opts'))
+            self.find_method = self.load_find_method_references()
+            self.finds_method = self.load_finds_method_references()
 
+    def do_the_process(self):
 
+        try:
+            # en funcion del metodo definido en el skel se llamara a un metodo de logado u otro
 
+            # comprobamos si son necesarias llevar a cabo acciones antes de iniciar el proceso de logado
+            if self.bank.get('pre_login_actions'):
+                self._logger.debug("Se requieren acciones previas al logado")
+                self.pre_post_login_actions(self.bank.get('pre_login_actions'), stage="pre")
 
+            auth_meth = self.bank.get('login_method')
+            self.loggin_dict_meth = {'standard_login': self.standard_login,
+                                     'login_bello': self.login_bello
+                                     }
 
+            self.loggin_dict_meth[auth_meth]()
 
+            # comprobamos si son necesarias llevar a cabo acciones posteriores al logado
+            if self.bank.get('post_login_actions'):
+                self._logger.debug("Se requieren acciones posteriores al logado")
+                self.pre_post_login_actions(self.bank.get('post_login_actions'), stage="post")
 
-'''
-login estandar
-    Se entiende un formulario de login simple
-    usuario, pwd y [algun otro dato adicional]
-'''
+            self.do_workflow()
 
+        except Exception as ex:
 
-def standard_login(driver, dict_bank):
-    if driver:
-        driver.get(dict_bank.get('login_url'))
-        credentials = dict_bank.get('credentials')
-        login_form = dict_bank.get('login_form')
+            print("peto")
 
-    try:
+    '''
+    @:param, lista de opciones con las que inicializar el driver de selenium
+    '''
 
-        for k, v in login_form.items():
-            if k in credentials.keys():
-                elem = driver.find_element_by_xpath(v)
-                elem.send_keys(credentials[k])
+    def start(self, default_opc=["--start-maximized"]):
 
-        submit = driver.find_element_by_xpath(login_form.get('submit'))
-        submit.click()
+        options = webdriver.ChromeOptions()
+        for opc in default_opc:
+            options.add_argument(opc)
 
-        return driver
+        self._driver = webdriver.Chrome(SELENIUM_DRIVER_PATH, chrome_options=options)
 
-    except NoSuchElementException as nse:
-        print("no enconcontrado")
+        if self._driver:
+            self.load_find_method_references()
+            return self._driver
 
-    return False
+        return None
 
+    def load_find_method_references(self):
 
-'''
-login precioso de reconocimiento de imagenes
-'''
+        return {
+            'name': self.driver.find_element_by_name,
+            'xpath': self.driver.find_element_by_xpath,
+            'class': self.driver.find_element_by_class_name,
+            'id': self.driver.find_element_by_id,
+            'link_text': self.driver.find_element_by_link_text,
+            'partial_link_text': self.driver.find_element_by_partial_link_text
+        }
 
+    def load_finds_method_references(self):
 
-def login_bello(driver, dict_bank):
-    if driver:
-        driver.get(dict_bank.get('login_url'))
-        credentials = dict_bank.get('credentials')
-        login_form = dict_bank.get('login_form')
+        return {
+            'name': self.driver.find_elements_by_name,
+            'xpath': self.driver.find_elements_by_xpath,
+            'class': self.driver.find_elements_by_class_name,
+            'id': self.driver.find_elements_by_id,
+            'link_text': self.driver.find_elements_by_link_text,
+            'partial_link_text': self.driver.find_elements_by_partial_link_text
+        }
 
-    try:
+    '''
+    login estandar
+        Se entiende un formulario de login simple
+        usuario, pwd y [algun otro dato adicional]
+    '''
 
-        # for k, v in login_form.items():
-        #     if k in credentials.keys():
-        #         elem = driver.find_element_by_id(v)
-        #         elem.send_keys(credentials[k])
+    def standard_login(self):
+        if self.driver:
+            self.driver.get(self.bank.get('login_url'))
+            credentials = self.bank.get('credentials')
+            login_form = self.bank.get('login_form')
 
-        element = driver.find_element_by_xpath(login_form.get('user'))
-        element.clear()
-        element.send_keys(credentials.get('user'))
-        sleep(2)
-        element = driver.find_element_by_xpath(login_form.get('pin'))
-        element.send_keys('%')
-        sleep(10)
-        teclado = Teclado({'bankname': 'unicaja'})
-        # element = driver.find_element_by_xpath(login_form.get('user'))
-        teclado.write(credentials.get('pin'))
-        submit = driver.find_element_by_xpath(login_form.get('submit'))
-        submit.click()
+        try:
+            self._logger.debug("Inciando proceso standard de logado")
+            for k, v in login_form.items():
+                if k in credentials.keys():
+                    # verificamos existencia del elemento target
+                    tipo = login_form.get(k)['tipo']
+                    target = login_form.get(k)['target']
+                    self._logger.info("Buscando por {} -> {}".format(tipo, target))
+                    if len(self.finds_method[tipo](target)):
+                        self._logger.info("elemento encontrado: {}".format(k))
+                        elem = self.find_method[tipo](target)
+                        elem.send_keys(credentials[k])
 
+            e_submit = login_form.get('submit')
+            submit = self.find_method[e_submit['tipo']](e_submit['target'])
+            submit.click()
 
-        #driver.get('https://www.kutxabank.es/NASApp/BesaideNet2/Gestor?PRESTACION=login&FUNCION=login&ACCION=preseleccion')
+            return self.driver
 
-        return driver
+        except NoSuchElementException as nse:
+            self._logger.error("Elemento no encontrado: {}".format(k))
+            pass
 
-    except NoSuchElementException as nse:
-        print("no enconcontrado")
+        return False
 
-    return False
+    '''
+    login precioso de reconocimiento de imagenes
+    '''
 
+    def login_bello(self):
+        if self.driver:
+            self.driver.get(self.bank.get('login_url'))
+            credentials = self.bank.get('credentials')
+            login_form = self.bank.get('login_form')
 
-'''
-@todo : tu debes desaparecer (caso bankia: ahora en post_login_actions -> refactor
-'''
+        try:
+            self._logger.debug("Inciando proceso de logado Beeello")
 
+            tipo = login_form.get('user')['tipo']
+            target = login_form.get('user')['target']
+            element = self.find_method[tipo](target)
+            element.clear()
+            element.send_keys(credentials.get('user'))
+            sleep(1)
+            # pin y carga del teclado
+            tipo = login_form.get('pin')['tipo']
+            target = login_form.get('pin')['target']
+            element = self.find_method[tipo](target)
+            element.clear()
+            element.send_keys('%')
+            sleep(5)
 
-def check_dnd(driver, dict_bank):
-    if driver:
-        dnd = dict_bank.get('dnd', None)
-        if dnd:
-            for k, v in dnd.items():
+            teclado = Teclado({'bankname': self.bank.get('bankname')})
+            teclado.write(credentials.get('pin'))
+
+            tipo = login_form.get('submit')['tipo']
+            target = login_form.get('submit')['target']
+            submit = self.find_method[tipo](target)
+            submit.click()
+
+            # driver.get('https://www.kutxabank.es/NASApp/BesaideNet2/Gestor?PRESTACION=login&FUNCION=login&ACCION=preseleccion')
+
+            return self.driver
+
+        except NoSuchElementException as nse:
+            print("no enconcontrado")
+
+        return False
+
+    '''
+        acciones post login o post login, la mecanica es igual
+        @:param, lista de acciones (pre o post acciones)
+    '''
+
+    def pre_post_login_actions(self, lista_acciones=None, stage=""):
+
+        if self.driver and len(lista_acciones):
+            self._logger.info("Evaluando acciones {} login".format(stage))
+            for actions in lista_acciones:
+
                 try:
-                    if driver.find_element_by_class_name(k):
-                        driver.find_element_by_xpath(v).click()
-                except Exception as e:
-                    print("buscando condicion dnd: {} -> xpath: {}".format(k, v))
-
-
-
-# def pre_login_actions(driver, dict_bank):
-#
-#     dict_search_method = {'xpath': driver.find_element_by_xpath,
-#                           'class': driver.find_element_by_class_name,
-#                           'id': driver.find_element_by_id,
-#                           'link_text': driver.find_element_by_link_text,
-#                           'partial_link_text': driver.find_element_by_partial_link_text
-#                           }
-#
-#     if driver:
-#         pre_login_actions = dict_bank.get('pre_login_actions', None)
-#         if pre_login_actions:
-#             for pla in pre_login_actions:
-#                 try:
-#                     tipo= pla.get('tipo')
-#                     element = dict_search_method.get(tipo)(pla.get('target'))
-#                     element.click()
-#
-#                 except Exception as e:
-#                     print("buscando condicion dnd: {} -> xpath: {}".format(k, v))
-
-def pre_login_actions(driver, dict_bank):
-
-
-    if driver:
-        pre_login_actions = dict_bank.get('pre_login_actions', None)
-        if pre_login_actions:
-            for pla in pre_login_actions:
-                try:
-                    element = driver.find_element_by_xpath(pla.get('target'))
-                    element.click()
+                    tipo = actions.get('tipo')
+                    target = actions.get('target')
+                    desc = actions.get('description')
+                    mode = actions.get('mode')
+                    self._logger.info(
+                        "{} -> tipo busqueda: {} , expresion: {} , mode: {}".format(desc, tipo, target, mode))
+                    if len(self.finds_method[tipo](target)):
+                        self._logger.info("matched condition {} !! ".format(desc))
+                        elem = self.find_method[tipo](target)
+                        if mode == 'click':
+                            elem.click()
 
                 except Exception as e:
-                    print("buscando condicion dnd: {} -> xpath: {}".format(k, v))
+                    pass
+                    # print("buscando condicion dnd: {} -> xpath: {}".format(k, v))
 
+    '''
+    ejecuta secuencialmente el workflow definido en el skel
+    '''
 
-'''
-ejecuta secuencialmente el workflow definido en el skel
-'''
+    def element_finded(self, tipo_find, target):
 
+        pass
 
-# @todo; considerar el callback para el reconocimiento de imgs...buen comodin
-def do_workflow(driver, list_workflow):
-    try:
-        dict_search_method = {'xpath': driver.find_element_by_xpath,
-                              'class': driver.find_element_by_class_name,
-                              'id': driver.find_element_by_id,
-                              'link_text': driver.find_element_by_link_text,
-                              'partial_link_text': driver.find_element_by_partial_link_text
-                              }
+    def do_workflow(self):
+        try:
 
-        for w in list_workflow:
-            # tipo de busqueda para localizar al elemento
-            tipo = w.get('tipo')
-            element = dict_search_method.get(tipo)(w.get('target'))
-            sleep(2)
+            for action in self.bank.get('workflow'):
+                # tipo de busqueda para localizar al elemento
+                tipo = action.get('tipo')
+                target = action.get('target')
+                desc = action.get('description', None)
+                mode = action.get('mode')
 
-            if w.get('mode') == 'click':
-                element.click()
+                self._logger.info(
+                    "{} -> tipo busqueda: {} , expresion: {} , mode: {}".format(desc, tipo, target, mode))
 
-            if w.get('mode') == 'fill':
-                # previamente a send_keys se requiere un clear
-                element.clear()
-                element.send_keys(w.get('data'))
+                if len(self.finds_method[tipo](target)):
+                    self._logger.info("matched condition {} !! ".format(desc))
+                    element = self.find_method[tipo](target)
+                    sleep(2)
+                    if mode == 'click':
+                        element.click()
 
-            if w.get('expect_cond'):
-                wait = WebDriverWait(driver, 10)
-                wait.until(ec.element_to_be_clickable((By.XPATH, w.get('expect_cond'))))
-            else:
-                sleep(1)
-    except Exception:
-        print("oooo ooooooooo")
+                    if mode == 'fill':
+                        # previamente a send_keys se requiere un clear
+                        element.clear()
+                        element.send_keys(action.get('data'))
 
-    driver_close(driver)
+                    if action.get('expect_cond'):
+                        wait = WebDriverWait(self.driver, 10)
+                        wait.until(ec.element_to_be_clickable((By.XPATH, action.get('expect_cond'))))
+                    else:
+                        sleep(1)
 
+                    self.navigated_elements.append({slugify(target): element})
 
-def driver_close(driver):
-    if driver:
-        driver.closer()
+        except Exception:
+            self._logger.error("Error duante el workflow")
+
+        self.driver_close()
+
+    def driver_close(self):
+        if self.driver:
+            self.driver.close()
+
+    # <editor-fold desc="getters /setters">
+    @property
+    def driver(self):
+        return self._driver
+
+    @driver.setter
+    def driver(self, value):
+        if value:
+            return self._driver
+
+    @property
+    def bank(self):
+        return self._bank
+
+    @bank.setter
+    def bank(self, value):
+        if isinstance(value, dict):
+            self._bank = value
+
+    @property
+    def navigated_elements(self):
+        return self._navigated_elements
+
+    @navigated_elements.setter
+    def navigated_elements(self, value):
+        if isinstance(value, list):
+            self._navigated_elements = value
+
+    # </editor-fold>

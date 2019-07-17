@@ -24,7 +24,6 @@ def encrypt_blob(blob, public_key):
     while not end_loop:
         #The chunk
         chunk = blob[offset:offset + chunk_size]
-
         #If the data chunk is less then the chunk size, then we need to add
         #padding with " ". This indicates the we reached the end of the file
         #so we end loop here
@@ -40,6 +39,16 @@ def encrypt_blob(blob, public_key):
 
     #Base 64 encode the encrypted file
     return base64.b64encode(encrypted)
+
+
+
+
+
+
+
+
+
+
 
 #Use the public key for encryption
 fd = open("public_key.pem", "rb")

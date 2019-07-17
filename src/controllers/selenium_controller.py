@@ -53,11 +53,12 @@ class SeleniumController(object):
 
             auth_meth = self.bank.get('login_method')
             self.loggin_dict_meth = {'standard_login': self.standard_login,
+                                     'iframe_login': self.iframe_login,
                                      'login_bello': self.login_bello
                                      }
 
             self.loggin_dict_meth[auth_meth]()
-
+            sleep(10)
             # comprobamos si son necesarias llevar a cabo acciones posteriores al logado
             if self.bank.get('post_login_actions'):
                 self._logger.debug("Se requieren acciones posteriores al logado")
@@ -72,6 +73,7 @@ class SeleniumController(object):
     '''
     @:param, lista de opciones con las que inicializar el driver de selenium
     '''
+
     def start(self, default_opc=["--start-maximized"]):
 
         options = webdriver.ChromeOptions()
@@ -89,10 +91,11 @@ class SeleniumController(object):
     def load_find_method_references(self):
 
         return {
+            'id': self.driver.find_element_by_id,
             'name': self.driver.find_element_by_name,
             'xpath': self.driver.find_element_by_xpath,
             'class': self.driver.find_element_by_class_name,
-            'id': self.driver.find_element_by_id,
+            'tag_name': self.driver.find_element_by_tag_name,
             'link_text': self.driver.find_element_by_link_text,
             'partial_link_text': self.driver.find_element_by_partial_link_text,
             'css_selector': self.driver.find_element_by_css_selector
@@ -101,10 +104,11 @@ class SeleniumController(object):
     def load_finds_method_references(self):
 
         return {
+            'id': self.driver.find_elements_by_id,
             'name': self.driver.find_elements_by_name,
             'xpath': self.driver.find_elements_by_xpath,
             'class': self.driver.find_elements_by_class_name,
-            'id': self.driver.find_elements_by_id,
+            'tag_name': self.driver.find_elements_by_tag_name,
             'link_text': self.driver.find_elements_by_link_text,
             'partial_link_text': self.driver.find_elements_by_partial_link_text,
             'css_selector': self.driver.find_elements_by_css_selector
@@ -134,10 +138,44 @@ class SeleniumController(object):
             self.driver.switch_to.window(new_windows)
             sleep(5)
 
-    def standard_login(self):
+    '''
+     casuistica del logado a traves de un iframe que carga el formulario de login
+     a partir de una peticion ajax
+    '''
+
+    def iframe_login(self):
+
         if self.driver:
 
-            self.current_windows = self.driver.window_handles[0]
+            try:
+                self._logger.debug("Inciando proceso de logado en iframe")
+                sleep(1)
+                target_iframe = self.bank.get('iframe_login_form')['target']
+                tipo = self.bank.get('iframe_login_form')['tipo']
+                element_iframe = self.find_method[tipo](target_iframe)
+                # self.driver.switch_to.frame(element_iframe)
+                self.switch_to_frame(element_iframe)
+
+                self.standard_login()
+
+                if 'new_tab' in self.bank.get('iframe_login_form').keys():
+                    new_tab = self.bank.get('iframe_login_form')['new_tab']
+                    if not new_tab:
+                        self.driver.switch_to.default_content()
+
+            except Exception as e:
+                pass
+
+    def switch_to_frame(self, element=None, index=None):
+        try:
+            self.driver.switch_to.frame(element)
+            pass
+        except Exception as e:
+            pass
+
+    def standard_login(self):
+        if self.driver:
+            # self.current_windows = self.driver.window_handles[0]
             credentials = self.bank.get('credentials')
             login_form = self.bank.get('login_form')
 
@@ -156,7 +194,13 @@ class SeleniumController(object):
 
             e_submit = login_form.get('submit')
             submit = self.find_method[e_submit['tipo']](e_submit['target'])
-            submit.click()
+            if 'mode' in login_form.get('submit').keys():
+                mode = login_form.get('submit')['mode']
+                if mode == 'swap_window':
+                    self.swap_window(submit)
+
+            else:
+                submit.click()
 
             return self.driver
 
@@ -172,7 +216,6 @@ class SeleniumController(object):
 
     def login_bello(self):
         if self.driver:
-
             credentials = self.bank.get('credentials')
             login_form = self.bank.get('login_form')
 
@@ -229,15 +272,27 @@ class SeleniumController(object):
                     self._logger.info(
                         "{} -> tipo busqueda: {} , expresion: {} , mode: {}".format(desc, tipo, target, mode))
 
-
-                    if len(self.finds_method[tipo](target)):
+                    element = None
+                    elements_finded = self.finds_method[tipo](target)
+                    if len(elements_finded):
                         self._logger.info("matched condition {} !! ".format(desc))
-                        elem = self.find_method[tipo](target)
-                        if mode == 'click':
-                            elem.click()
 
-                        if mode == 'swap_window':
-                            self.swap_window(elem)
+                        if mode == 'switch_to_frame':
+                            index = None
+                            if 'index' in actions.keys():
+                                index = actions.get('index')
+                                if index < len(elements_finded):
+                                    element = elements_finded[index]
+                            self.switch_to_frame(element, index)
+                        else:
+
+                            elem = self.find_method[tipo](target)
+                            if mode == 'click':
+                                elem.click()
+
+                            if mode == 'swap_window':
+                                self.swap_window(elem)
+
                         sleep(2)
                 except Exception as e:
                     pass

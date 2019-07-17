@@ -18,3 +18,7 @@ SELENIUM_DRIVER_PATH = os.path.join(ROOT_DIR, '{}{}{}'.format('chromedriver_win3
 IMG_DIRS = os.path.join(ROOT_DIR, 'img')
 TEMP_IMGS = os.path.join(IMG_DIRS, 'temps_imgs')
 DATASET_IMGS = os.path.join(IMG_DIRS, 'datasets')
+
+#Folder to store after generate public /private RSA keys
+RSA_KEYS = os.path.join(ROOT_DIR, "crypto{}{}".format(os.path.sep, "rsa_keys"))
+

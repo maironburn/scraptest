@@ -65,7 +65,6 @@ class SeleniumController(object):
                 self.pre_post_login_actions(self.bank.get('pre_login_actions'), stage="pre")
 
             auth_meth = self.bank.get('login_method')
-            sleep(5)
             self.login_dict_methods[auth_meth]()
             # @todo, eliminar los sleeps...sustituir por ec
 
@@ -367,8 +366,8 @@ class SeleniumController(object):
 
                     # self.navigated_elements.append({slugify(target): element})
 
-        except Exception as e:
-            self._logger.error("Error duante el workflow: {}".format(e))
+        except Exception:
+            self._logger.error("Error duante el workflow")
 
         self.driver_close()
 

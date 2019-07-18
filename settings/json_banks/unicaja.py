@@ -15,11 +15,13 @@ unicaja = {
         # <a target="_self" class="link-button btn-bg-red aceptarCookies" title="ACEPTAR Y SEGUIR NAVEGANDO">
         #                     ACEPTAR Y SEGUIR NAVEGANDO
         #                   </a>
-        {'tipo': 'xpath', 'target': "//div[@class='content']//div[@class='blockFaldon']//div[@class='botton-faldon']//div//a[@class='link-button btn-bg-red aceptarCookies'][contains(text(),'ACEPTAR Y SEGUIR NAVEGANDO')]", 'mode': 'click',
+        {'tipo': 'xpath',
+         'target': "//div[@class='content']//div[@class='blockFaldon']//div[@class='botton-faldon']//div//a[@class='link-button btn-bg-red aceptarCookies'][contains(text(),'ACEPTAR Y SEGUIR NAVEGANDO')]",
+         'mode': 'click',
          'description': 'ventana configuracion de cookies'}
         ,
         {'tipo': 'xpath', 'target': "//a[@id='/content/unicaja/es/es_header_composer_button1']", 'mode': 'swap_window',
-         'description': 'click en Acceso al area de clientes', 'ec' : {'tipo': 'xpath', 'target': "//input[@id='user']"}}
+         'description': 'click en Acceso al area de clientes', 'ec': {'tipo': 'xpath', 'target': "//input[@id='user']"}}
 
     ],
 
@@ -68,15 +70,26 @@ unicaja = {
 
     'workflow': [
         # click con condiciones de espera
-        {'xpath': "//td[(@scope='row')]/a", 'expect_cond': "//button[(@ng-click='showSearch = !showSearch')]",
-         'mode': 'click'},
+        {'xpath': '//*[@id="menu3nivel"]/ul[1]/li/ul/li[5]/strong/a', 'mode': 'click'},
 
         # click sobre la lupa (sin condiciones de espera)
 
-        {'xpath': "//button[(@ng-click='showSearch = !showSearch')]",
-         'mode': 'click'},
-        # el fill de un text input
-        {'xpath': "//input[(@name='daysimpleDateFrom')]", 'mode': 'fill', 'data': '06'},
+        {'xpath': '//*[@id="diaDesde"]', 'mode': 'fill', 'data': '01'},
+
+        {'xpath': '//*[@id="mesDesde"]', 'mode': 'fill', 'data': '01'},
+        {'xpath': '//*[@id="anoDesde"]',
+         'mode': 'fill', 'data': '01'},
+
+        {'xpath': '//*[@id="diaHasta"]',
+         'mode': 'fill', 'data': '01'},
+
+        {'xpath': '//*[@id="mesHasta"]',
+         'mode': 'fill', 'data': '01'},
+
+        {'xpath': '//*[@id="anoHasta"]',
+         'mode': 'fill', 'data': '01'},
+
+        {'xpath': '//*[@id="univia"]/form/table/tbody/tr[9]/td/input', 'mode': 'click'}
 
     ]
 

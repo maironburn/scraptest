@@ -1505,3 +1505,412 @@ INFO: 07/18/2019 02:19:57 PM None -> tipo busqueda: xpath , expresion: //*[@id="
 INFO: 07/18/2019 02:19:57 PM None -> tipo busqueda: xpath , expresion: //*[@id="titulo_pagina"]/div[2]/ul/li[2]/a , mode: click
 INFO: 07/18/2019 02:19:57 PM matched condition None !! 
 INFO: 07/18/2019 02:19:57 PM matched condition None !! 
+INFO: 07/18/2019 02:37:49 PM <property object at 0x00000209B3A994F8> -> Loaded skel from : caixa
+INFO: 07/18/2019 02:37:57 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:37:57 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:37:57 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 02:37:57 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 02:37:57 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 02:37:57 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 02:38:08 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 02:38:08 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 02:38:08 PM Elemento encontrado: user
+INFO: 07/18/2019 02:38:08 PM Elemento encontrado: user
+INFO: 07/18/2019 02:38:09 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 02:38:09 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 02:38:09 PM Elemento encontrado: pin
+INFO: 07/18/2019 02:38:09 PM Elemento encontrado: pin
+INFO: 07/18/2019 02:38:32 PM Evaluando acciones post login
+INFO: 07/18/2019 02:38:32 PM Evaluando acciones post login
+INFO: 07/18/2019 02:38:32 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 02:38:32 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 02:38:32 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 02:38:32 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 02:38:32 PM matched condition None !! 
+INFO: 07/18/2019 02:38:32 PM matched condition None !! 
+INFO: 07/18/2019 02:38:32 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 02:38:32 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 02:38:32 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 02:38:32 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 02:38:32 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 02:38:32 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 02:38:33 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:38:33 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:38:33 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Menu"] , mode: frame_switch
+INFO: 07/18/2019 02:38:33 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Menu"] , mode: frame_switch
+INFO: 07/18/2019 02:38:33 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: //a[contains(text(),'Saldo y movimientos')] , mode: click
+INFO: 07/18/2019 02:38:33 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: //a[contains(text(),'Saldo y movimientos')] , mode: click
+INFO: 07/18/2019 02:38:34 PM matched condition Saldo y movimientos !! 
+INFO: 07/18/2019 02:38:34 PM matched condition Saldo y movimientos !! 
+INFO: 07/18/2019 02:38:35 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:38:35 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:38:35 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Cos"] , mode: frame_switch
+INFO: 07/18/2019 02:38:35 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Cos"] , mode: frame_switch
+INFO: 07/18/2019 02:38:39 PM None -> tipo busqueda: xpath , expresion: //*[@id="titulo_pagina"]/div[2]/ul/li[2]/a , mode: click
+INFO: 07/18/2019 02:38:39 PM None -> tipo busqueda: xpath , expresion: //*[@id="titulo_pagina"]/div[2]/ul/li[2]/a , mode: click
+INFO: 07/18/2019 02:38:39 PM matched condition None !! 
+INFO: 07/18/2019 02:38:39 PM matched condition None !! 
+INFO: 07/18/2019 02:38:41 PM None -> tipo busqueda: xpath , expresion: //*[@id="<pn>INFO_DETALL_MOV_PERI</pn>"] , mode: click
+INFO: 07/18/2019 02:38:41 PM None -> tipo busqueda: xpath , expresion: //*[@id="<pn>INFO_DETALL_MOV_PERI</pn>"] , mode: click
+INFO: 07/18/2019 02:38:41 PM matched condition None !! 
+INFO: 07/18/2019 02:38:41 PM matched condition None !! 
+INFO: 07/18/2019 02:38:44 PM Buscar Movimientos -> tipo busqueda: xpath , expresion: //*[@id="infoSaldos1000"]/div/div/a , mode: click
+INFO: 07/18/2019 02:38:44 PM Buscar Movimientos -> tipo busqueda: xpath , expresion: //*[@id="infoSaldos1000"]/div/div/a , mode: click
+INFO: 07/18/2019 02:38:44 PM None -> tipo busqueda: xpath , expresion: //*[@id="dia1"] , mode: fill
+INFO: 07/18/2019 02:38:44 PM None -> tipo busqueda: xpath , expresion: //*[@id="dia1"] , mode: fill
+INFO: 07/18/2019 02:38:44 PM None -> tipo busqueda: xpath , expresion: //*[@id="mes1"] , mode: fill
+INFO: 07/18/2019 02:38:44 PM None -> tipo busqueda: xpath , expresion: //*[@id="mes1"] , mode: fill
+INFO: 07/18/2019 02:38:44 PM None -> tipo busqueda: xpath , expresion: //*[@id="any1"] , mode: fill
+INFO: 07/18/2019 02:38:44 PM None -> tipo busqueda: xpath , expresion: //*[@id="any1"] , mode: fill
+INFO: 07/18/2019 02:38:44 PM None -> tipo busqueda: xpath , expresion: //*[@id="dia2"] , mode: fill
+INFO: 07/18/2019 02:38:44 PM None -> tipo busqueda: xpath , expresion: //*[@id="dia2"] , mode: fill
+INFO: 07/18/2019 02:38:44 PM None -> tipo busqueda: xpath , expresion: //*[@id="mes2"] , mode: fill
+INFO: 07/18/2019 02:38:44 PM None -> tipo busqueda: xpath , expresion: //*[@id="mes2"] , mode: fill
+INFO: 07/18/2019 02:38:44 PM None -> tipo busqueda: xpath , expresion: //*[@id="any2"] , mode: fill
+INFO: 07/18/2019 02:38:44 PM None -> tipo busqueda: xpath , expresion: //*[@id="any2"] , mode: fill
+INFO: 07/18/2019 02:38:44 PM None -> tipo busqueda: xpath , expresion: //*[@id="divContenedorBean"]/div[1]/div[6]/div/div/a , mode: click
+INFO: 07/18/2019 02:38:44 PM None -> tipo busqueda: xpath , expresion: //*[@id="divContenedorBean"]/div[1]/div[6]/div/div/a , mode: click
+INFO: 07/18/2019 02:44:03 PM <property object at 0x000001ECE37194F8> -> Loaded skel from : ibercaja
+INFO: 07/18/2019 02:44:10 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:44:10 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:44:10 PM politica de cookies -> tipo busqueda: xpath , expresion: //button[@id='aceptarGDPR'] , mode: click
+INFO: 07/18/2019 02:44:10 PM politica de cookies -> tipo busqueda: xpath , expresion: //button[@id='aceptarGDPR'] , mode: click
+INFO: 07/18/2019 02:44:10 PM acceso al area de clientes -> tipo busqueda: xpath , expresion: //button[@id='client-netcash'] , mode: click
+INFO: 07/18/2019 02:44:10 PM acceso al area de clientes -> tipo busqueda: xpath , expresion: //button[@id='client-netcash'] , mode: click
+INFO: 07/18/2019 02:44:15 PM Buscando por xpath -> //input[@id='codeibd']
+INFO: 07/18/2019 02:44:15 PM Buscando por xpath -> //input[@id='codeibd']
+INFO: 07/18/2019 02:44:15 PM Elemento encontrado: user
+INFO: 07/18/2019 02:44:15 PM Elemento encontrado: user
+INFO: 07/18/2019 02:44:17 PM Buscando por xpath -> //input[@id='claveibd']
+INFO: 07/18/2019 02:44:17 PM Buscando por xpath -> //input[@id='claveibd']
+INFO: 07/18/2019 02:44:17 PM Elemento encontrado: pin
+INFO: 07/18/2019 02:44:17 PM Elemento encontrado: pin
+INFO: 07/18/2019 02:44:21 PM Movimientos de mis cuentas -> tipo busqueda: xpath , expresion: //a[@id='li2a'] , mode: click
+INFO: 07/18/2019 02:44:21 PM Movimientos de mis cuentas -> tipo busqueda: xpath , expresion: //a[@id='li2a'] , mode: click
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: //input[@name='FechaInicioDia'] , mode: fill
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: //input[@name='FechaInicioDia'] , mode: fill
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: //input[@name='FechaInicioMes'] , mode: fill
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: //input[@name='FechaInicioMes'] , mode: fill
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: //input[@name='FechaInicioAno'] , mode: fill
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: //input[@name='FechaInicioAno'] , mode: fill
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: //input[@name='FechaFinDia'] , mode: fill
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: //input[@name='FechaFinDia'] , mode: fill
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: //input[@name='FechaFinMes'] , mode: fill
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: //input[@name='FechaFinMes'] , mode: fill
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: //input[@name='FechaFinAno'] , mode: fill
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: //input[@name='FechaFinAno'] , mode: fill
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: //input[@value='Aceptar'] , mode: click
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: //input[@value='Aceptar'] , mode: click
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: /html[1]/body[1]/center[1]/form[2]/table[3]/tbody[1]/tr[1]/td[1]/a[1] , mode: click
+INFO: 07/18/2019 02:44:21 PM None -> tipo busqueda: xpath , expresion: /html[1]/body[1]/center[1]/form[2]/table[3]/tbody[1]/tr[1]/td[1]/a[1] , mode: click
+INFO: 07/18/2019 02:44:49 PM <property object at 0x00000199BB749408> -> Loaded skel from : unicaja
+INFO: 07/18/2019 02:44:56 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:44:56 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:44:56 PM ventana configuracion de cookies -> tipo busqueda: xpath , expresion: //div[@class='content']//div[@class='blockFaldon']//div[@class='botton-faldon']//div//a[@class='link-button btn-bg-red aceptarCookies'][contains(text(),'ACEPTAR Y SEGUIR NAVEGANDO')] , mode: click
+INFO: 07/18/2019 02:44:56 PM ventana configuracion de cookies -> tipo busqueda: xpath , expresion: //div[@class='content']//div[@class='blockFaldon']//div[@class='botton-faldon']//div//a[@class='link-button btn-bg-red aceptarCookies'][contains(text(),'ACEPTAR Y SEGUIR NAVEGANDO')] , mode: click
+INFO: 07/18/2019 02:44:56 PM matched condition ventana configuracion de cookies !! 
+INFO: 07/18/2019 02:44:56 PM matched condition ventana configuracion de cookies !! 
+INFO: 07/18/2019 02:44:56 PM click en Acceso al area de clientes -> tipo busqueda: xpath , expresion: //a[@id='/content/unicaja/es/es_header_composer_button1'] , mode: swap_window
+INFO: 07/18/2019 02:44:56 PM click en Acceso al area de clientes -> tipo busqueda: xpath , expresion: //a[@id='/content/unicaja/es/es_header_composer_button1'] , mode: swap_window
+INFO: 07/18/2019 02:44:56 PM matched condition click en Acceso al area de clientes !! 
+INFO: 07/18/2019 02:44:56 PM matched condition click en Acceso al area de clientes !! 
+ERROR: 07/18/2019 02:45:04 PM Excepcion en do_the_process -> Message: element not interactable
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+ERROR: 07/18/2019 02:45:04 PM Excepcion en do_the_process -> Message: element not interactable
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+INFO: 07/18/2019 02:45:35 PM <property object at 0x000001FDDCBFB408> -> Loaded skel from : unicaja
+INFO: 07/18/2019 02:45:42 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:45:42 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:45:42 PM ventana configuracion de cookies -> tipo busqueda: xpath , expresion: //div[@class='content']//div[@class='blockFaldon']//div[@class='botton-faldon']//div//a[@class='link-button btn-bg-red aceptarCookies'][contains(text(),'ACEPTAR Y SEGUIR NAVEGANDO')] , mode: click
+INFO: 07/18/2019 02:45:42 PM ventana configuracion de cookies -> tipo busqueda: xpath , expresion: //div[@class='content']//div[@class='blockFaldon']//div[@class='botton-faldon']//div//a[@class='link-button btn-bg-red aceptarCookies'][contains(text(),'ACEPTAR Y SEGUIR NAVEGANDO')] , mode: click
+INFO: 07/18/2019 02:45:42 PM matched condition ventana configuracion de cookies !! 
+INFO: 07/18/2019 02:45:42 PM matched condition ventana configuracion de cookies !! 
+INFO: 07/18/2019 02:45:42 PM click en Acceso al area de clientes -> tipo busqueda: xpath , expresion: //a[@id='/content/unicaja/es/es_header_composer_button1'] , mode: swap_window
+INFO: 07/18/2019 02:45:42 PM click en Acceso al area de clientes -> tipo busqueda: xpath , expresion: //a[@id='/content/unicaja/es/es_header_composer_button1'] , mode: swap_window
+INFO: 07/18/2019 02:45:42 PM matched condition click en Acceso al area de clientes !! 
+INFO: 07/18/2019 02:45:42 PM matched condition click en Acceso al area de clientes !! 
+ERROR: 07/18/2019 02:45:54 PM Excepcion en do_the_process -> Message: element not interactable
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+ERROR: 07/18/2019 02:45:54 PM Excepcion en do_the_process -> Message: element not interactable
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+INFO: 07/18/2019 02:48:04 PM <property object at 0x00000265E890D458> -> Loaded skel from : unicaja
+INFO: 07/18/2019 02:48:10 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:48:10 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:48:10 PM ventana configuracion de cookies -> tipo busqueda: xpath , expresion: //div[@class='content']//div[@class='blockFaldon']//div[@class='botton-faldon']//div//a[@class='link-button btn-bg-red aceptarCookies'][contains(text(),'ACEPTAR Y SEGUIR NAVEGANDO')] , mode: click
+INFO: 07/18/2019 02:48:10 PM ventana configuracion de cookies -> tipo busqueda: xpath , expresion: //div[@class='content']//div[@class='blockFaldon']//div[@class='botton-faldon']//div//a[@class='link-button btn-bg-red aceptarCookies'][contains(text(),'ACEPTAR Y SEGUIR NAVEGANDO')] , mode: click
+INFO: 07/18/2019 02:48:10 PM matched condition ventana configuracion de cookies !! 
+INFO: 07/18/2019 02:48:10 PM matched condition ventana configuracion de cookies !! 
+INFO: 07/18/2019 02:48:10 PM click en Acceso al area de clientes -> tipo busqueda: xpath , expresion: //a[@id='/content/unicaja/es/es_header_composer_button1'] , mode: swap_window
+INFO: 07/18/2019 02:48:10 PM click en Acceso al area de clientes -> tipo busqueda: xpath , expresion: //a[@id='/content/unicaja/es/es_header_composer_button1'] , mode: swap_window
+INFO: 07/18/2019 02:48:10 PM matched condition click en Acceso al area de clientes !! 
+INFO: 07/18/2019 02:48:10 PM matched condition click en Acceso al area de clientes !! 
+INFO: 07/18/2019 02:49:39 PM <property object at 0x000001E3855394F8> -> Loaded skel from : unicaja
+INFO: 07/18/2019 02:49:45 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:49:45 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:49:45 PM ventana configuracion de cookies -> tipo busqueda: xpath , expresion: //div[@class='content']//div[@class='blockFaldon']//div[@class='botton-faldon']//div//a[@class='link-button btn-bg-red aceptarCookies'][contains(text(),'ACEPTAR Y SEGUIR NAVEGANDO')] , mode: click
+INFO: 07/18/2019 02:49:45 PM ventana configuracion de cookies -> tipo busqueda: xpath , expresion: //div[@class='content']//div[@class='blockFaldon']//div[@class='botton-faldon']//div//a[@class='link-button btn-bg-red aceptarCookies'][contains(text(),'ACEPTAR Y SEGUIR NAVEGANDO')] , mode: click
+INFO: 07/18/2019 02:49:45 PM matched condition ventana configuracion de cookies !! 
+INFO: 07/18/2019 02:49:45 PM matched condition ventana configuracion de cookies !! 
+INFO: 07/18/2019 02:49:45 PM click en Acceso al area de clientes -> tipo busqueda: xpath , expresion: //a[@id='/content/unicaja/es/es_header_composer_button1'] , mode: swap_window
+INFO: 07/18/2019 02:49:45 PM click en Acceso al area de clientes -> tipo busqueda: xpath , expresion: //a[@id='/content/unicaja/es/es_header_composer_button1'] , mode: swap_window
+INFO: 07/18/2019 02:49:45 PM matched condition click en Acceso al area de clientes !! 
+INFO: 07/18/2019 02:49:45 PM matched condition click en Acceso al area de clientes !! 
+INFO: 07/18/2019 02:50:09 PM mapeado Boton: 0, coords x: 970 , y: 502
+INFO: 07/18/2019 02:50:09 PM mapeado Boton: 0, coords x: 970 , y: 502
+INFO: 07/18/2019 02:50:09 PM mapeado Boton: 0, coords x: 970 , y: 502
+INFO: 07/18/2019 02:50:10 PM mapeado Boton: 1, coords x: 1105 , y: 502
+INFO: 07/18/2019 02:50:10 PM mapeado Boton: 1, coords x: 1105 , y: 502
+INFO: 07/18/2019 02:50:10 PM mapeado Boton: 1, coords x: 1105 , y: 502
+INFO: 07/18/2019 02:50:10 PM mapeado Boton: 2, coords x: 916 , y: 503
+INFO: 07/18/2019 02:50:10 PM mapeado Boton: 2, coords x: 916 , y: 503
+INFO: 07/18/2019 02:50:10 PM mapeado Boton: 2, coords x: 916 , y: 503
+INFO: 07/18/2019 02:50:10 PM mapeado Boton: 3, coords x: 996 , y: 502
+INFO: 07/18/2019 02:50:10 PM mapeado Boton: 3, coords x: 996 , y: 502
+INFO: 07/18/2019 02:50:10 PM mapeado Boton: 3, coords x: 996 , y: 502
+INFO: 07/18/2019 02:50:10 PM mapeado Boton: 4, coords x: 1051 , y: 502
+INFO: 07/18/2019 02:50:10 PM mapeado Boton: 4, coords x: 1051 , y: 502
+INFO: 07/18/2019 02:50:10 PM mapeado Boton: 4, coords x: 1051 , y: 502
+INFO: 07/18/2019 02:50:11 PM mapeado Boton: 5, coords x: 943 , y: 502
+INFO: 07/18/2019 02:50:11 PM mapeado Boton: 5, coords x: 943 , y: 502
+INFO: 07/18/2019 02:50:11 PM mapeado Boton: 5, coords x: 943 , y: 502
+INFO: 07/18/2019 02:50:11 PM mapeado Boton: 6, coords x: 862 , y: 502
+INFO: 07/18/2019 02:50:11 PM mapeado Boton: 6, coords x: 862 , y: 502
+INFO: 07/18/2019 02:50:11 PM mapeado Boton: 6, coords x: 862 , y: 502
+INFO: 07/18/2019 02:50:11 PM mapeado Boton: 7, coords x: 888 , y: 502
+INFO: 07/18/2019 02:50:11 PM mapeado Boton: 7, coords x: 888 , y: 502
+INFO: 07/18/2019 02:50:11 PM mapeado Boton: 7, coords x: 888 , y: 502
+INFO: 07/18/2019 02:50:11 PM mapeado Boton: 8, coords x: 1077 , y: 502
+INFO: 07/18/2019 02:50:11 PM mapeado Boton: 8, coords x: 1077 , y: 502
+INFO: 07/18/2019 02:50:11 PM mapeado Boton: 8, coords x: 1077 , y: 502
+INFO: 07/18/2019 02:50:12 PM mapeado Boton: 9, coords x: 1024 , y: 502
+INFO: 07/18/2019 02:50:12 PM mapeado Boton: 9, coords x: 1024 , y: 502
+INFO: 07/18/2019 02:50:12 PM mapeado Boton: 9, coords x: 1024 , y: 502
+INFO: 07/18/2019 02:50:12 PM mapeado Boton: a, coords x: 861 , y: 555
+INFO: 07/18/2019 02:50:12 PM mapeado Boton: a, coords x: 861 , y: 555
+INFO: 07/18/2019 02:50:12 PM mapeado Boton: a, coords x: 861 , y: 555
+INFO: 07/18/2019 02:50:13 PM mapeado Boton: b, coords x: 970 , y: 583
+INFO: 07/18/2019 02:50:13 PM mapeado Boton: b, coords x: 970 , y: 583
+INFO: 07/18/2019 02:50:13 PM mapeado Boton: b, coords x: 970 , y: 583
+INFO: 07/18/2019 02:50:13 PM mapeado Boton: c, coords x: 916 , y: 584
+INFO: 07/18/2019 02:50:13 PM mapeado Boton: c, coords x: 916 , y: 584
+INFO: 07/18/2019 02:50:13 PM mapeado Boton: c, coords x: 916 , y: 584
+INFO: 07/18/2019 02:50:13 PM mapeado Boton: cancel, coords x: 1077 , y: 583
+INFO: 07/18/2019 02:50:13 PM mapeado Boton: cancel, coords x: 1077 , y: 583
+INFO: 07/18/2019 02:50:13 PM mapeado Boton: cancel, coords x: 1077 , y: 583
+INFO: 07/18/2019 02:50:13 PM mapeado Boton: d, coords x: 916 , y: 555
+INFO: 07/18/2019 02:50:13 PM mapeado Boton: d, coords x: 916 , y: 555
+INFO: 07/18/2019 02:50:13 PM mapeado Boton: d, coords x: 916 , y: 555
+INFO: 07/18/2019 02:50:14 PM mapeado Boton: e, coords x: 916 , y: 528
+INFO: 07/18/2019 02:50:14 PM mapeado Boton: e, coords x: 916 , y: 528
+INFO: 07/18/2019 02:50:14 PM mapeado Boton: e, coords x: 916 , y: 528
+INFO: 07/18/2019 02:50:14 PM mapeado Boton: ene, coords x: 1106 , y: 555
+INFO: 07/18/2019 02:50:14 PM mapeado Boton: ene, coords x: 1106 , y: 555
+INFO: 07/18/2019 02:50:14 PM mapeado Boton: ene, coords x: 1106 , y: 555
+INFO: 07/18/2019 02:50:14 PM mapeado Boton: f, coords x: 943 , y: 556
+INFO: 07/18/2019 02:50:14 PM mapeado Boton: f, coords x: 943 , y: 556
+INFO: 07/18/2019 02:50:14 PM mapeado Boton: f, coords x: 943 , y: 556
+INFO: 07/18/2019 02:50:14 PM mapeado Boton: g, coords x: 970 , y: 556
+INFO: 07/18/2019 02:50:14 PM mapeado Boton: g, coords x: 970 , y: 556
+INFO: 07/18/2019 02:50:14 PM mapeado Boton: g, coords x: 970 , y: 556
+INFO: 07/18/2019 02:50:15 PM mapeado Boton: h, coords x: 997 , y: 555
+INFO: 07/18/2019 02:50:15 PM mapeado Boton: h, coords x: 997 , y: 555
+INFO: 07/18/2019 02:50:15 PM mapeado Boton: h, coords x: 997 , y: 555
+INFO: 07/18/2019 02:50:15 PM mapeado Boton: i, coords x: 1051 , y: 528
+INFO: 07/18/2019 02:50:15 PM mapeado Boton: i, coords x: 1051 , y: 528
+INFO: 07/18/2019 02:50:15 PM mapeado Boton: i, coords x: 1051 , y: 528
+INFO: 07/18/2019 02:50:15 PM mapeado Boton: j, coords x: 1024 , y: 556
+INFO: 07/18/2019 02:50:15 PM mapeado Boton: j, coords x: 1024 , y: 556
+INFO: 07/18/2019 02:50:15 PM mapeado Boton: j, coords x: 1024 , y: 556
+INFO: 07/18/2019 02:50:15 PM mapeado Boton: k, coords x: 1051 , y: 556
+INFO: 07/18/2019 02:50:15 PM mapeado Boton: k, coords x: 1051 , y: 556
+INFO: 07/18/2019 02:50:15 PM mapeado Boton: k, coords x: 1051 , y: 556
+INFO: 07/18/2019 02:50:15 PM mapeado Boton: l, coords x: 1078 , y: 556
+INFO: 07/18/2019 02:50:15 PM mapeado Boton: l, coords x: 1078 , y: 556
+INFO: 07/18/2019 02:50:15 PM mapeado Boton: l, coords x: 1078 , y: 556
+INFO: 07/18/2019 02:50:16 PM mapeado Boton: m, coords x: 1025 , y: 583
+INFO: 07/18/2019 02:50:16 PM mapeado Boton: m, coords x: 1025 , y: 583
+INFO: 07/18/2019 02:50:16 PM mapeado Boton: m, coords x: 1025 , y: 583
+INFO: 07/18/2019 02:50:16 PM mapeado Boton: n, coords x: 997 , y: 582
+INFO: 07/18/2019 02:50:16 PM mapeado Boton: n, coords x: 997 , y: 582
+INFO: 07/18/2019 02:50:16 PM mapeado Boton: n, coords x: 997 , y: 582
+INFO: 07/18/2019 02:50:16 PM mapeado Boton: o, coords x: 1078 , y: 528
+INFO: 07/18/2019 02:50:16 PM mapeado Boton: o, coords x: 1078 , y: 528
+INFO: 07/18/2019 02:50:16 PM mapeado Boton: o, coords x: 1078 , y: 528
+INFO: 07/18/2019 02:50:16 PM mapeado Boton: ok, coords x: 1105 , y: 583
+INFO: 07/18/2019 02:50:16 PM mapeado Boton: ok, coords x: 1105 , y: 583
+INFO: 07/18/2019 02:50:16 PM mapeado Boton: ok, coords x: 1105 , y: 583
+INFO: 07/18/2019 02:50:17 PM mapeado Boton: p, coords x: 1105 , y: 529
+INFO: 07/18/2019 02:50:17 PM mapeado Boton: p, coords x: 1105 , y: 529
+INFO: 07/18/2019 02:50:17 PM mapeado Boton: p, coords x: 1105 , y: 529
+INFO: 07/18/2019 02:50:17 PM mapeado Boton: q, coords x: 860 , y: 529
+INFO: 07/18/2019 02:50:17 PM mapeado Boton: q, coords x: 860 , y: 529
+INFO: 07/18/2019 02:50:17 PM mapeado Boton: q, coords x: 860 , y: 529
+INFO: 07/18/2019 02:50:17 PM mapeado Boton: r, coords x: 943 , y: 528
+INFO: 07/18/2019 02:50:17 PM mapeado Boton: r, coords x: 943 , y: 528
+INFO: 07/18/2019 02:50:17 PM mapeado Boton: r, coords x: 943 , y: 528
+INFO: 07/18/2019 02:50:17 PM mapeado Boton: s, coords x: 889 , y: 556
+INFO: 07/18/2019 02:50:17 PM mapeado Boton: s, coords x: 889 , y: 556
+INFO: 07/18/2019 02:50:17 PM mapeado Boton: s, coords x: 889 , y: 556
+INFO: 07/18/2019 02:50:18 PM mapeado Boton: t, coords x: 970 , y: 529
+INFO: 07/18/2019 02:50:18 PM mapeado Boton: t, coords x: 970 , y: 529
+INFO: 07/18/2019 02:50:18 PM mapeado Boton: t, coords x: 970 , y: 529
+INFO: 07/18/2019 02:50:18 PM mapeado Boton: u, coords x: 1024 , y: 529
+INFO: 07/18/2019 02:50:18 PM mapeado Boton: u, coords x: 1024 , y: 529
+INFO: 07/18/2019 02:50:18 PM mapeado Boton: u, coords x: 1024 , y: 529
+INFO: 07/18/2019 02:50:18 PM mapeado Boton: v, coords x: 943 , y: 584
+INFO: 07/18/2019 02:50:18 PM mapeado Boton: v, coords x: 943 , y: 584
+INFO: 07/18/2019 02:50:18 PM mapeado Boton: v, coords x: 943 , y: 584
+INFO: 07/18/2019 02:50:18 PM mapeado Boton: w, coords x: 889 , y: 529
+INFO: 07/18/2019 02:50:18 PM mapeado Boton: w, coords x: 889 , y: 529
+INFO: 07/18/2019 02:50:18 PM mapeado Boton: w, coords x: 889 , y: 529
+INFO: 07/18/2019 02:50:19 PM mapeado Boton: x, coords x: 889 , y: 582
+INFO: 07/18/2019 02:50:19 PM mapeado Boton: x, coords x: 889 , y: 582
+INFO: 07/18/2019 02:50:19 PM mapeado Boton: x, coords x: 889 , y: 582
+INFO: 07/18/2019 02:50:19 PM mapeado Boton: y, coords x: 997 , y: 528
+INFO: 07/18/2019 02:50:19 PM mapeado Boton: y, coords x: 997 , y: 528
+INFO: 07/18/2019 02:50:19 PM mapeado Boton: y, coords x: 997 , y: 528
+INFO: 07/18/2019 02:50:19 PM mapeado Boton: z, coords x: 861 , y: 583
+INFO: 07/18/2019 02:50:19 PM mapeado Boton: z, coords x: 861 , y: 583
+INFO: 07/18/2019 02:50:19 PM mapeado Boton: z, coords x: 861 , y: 583
+INFO: 07/18/2019 02:58:49 PM <property object at 0x000001FBF7FB7458> -> Loaded skel from : unicaja
+ERROR: 07/18/2019 02:58:49 PM Excepcion en do_the_process -> 'NoneType' object has no attribute 'get'
+ERROR: 07/18/2019 02:58:49 PM Excepcion en do_the_process -> 'NoneType' object has no attribute 'get'
+INFO: 07/18/2019 02:59:11 PM <property object at 0x00000248882A7458> -> Loaded skel from : unicaja
+ERROR: 07/18/2019 02:59:11 PM Excepcion en do_the_process -> 'NoneType' object has no attribute 'get'
+ERROR: 07/18/2019 02:59:11 PM Excepcion en do_the_process -> 'NoneType' object has no attribute 'get'
+INFO: 07/18/2019 02:59:39 PM <property object at 0x000001E128550408> -> Loaded skel from : unicaja
+INFO: 07/18/2019 02:59:45 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:59:45 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:59:45 PM ventana configuracion de cookies -> tipo busqueda: xpath , expresion: //div[@class='content']//div[@class='blockFaldon']//div[@class='botton-faldon']//div//a[@class='link-button btn-bg-red aceptarCookies'][contains(text(),'ACEPTAR Y SEGUIR NAVEGANDO')] , mode: click
+INFO: 07/18/2019 02:59:45 PM ventana configuracion de cookies -> tipo busqueda: xpath , expresion: //div[@class='content']//div[@class='blockFaldon']//div[@class='botton-faldon']//div//a[@class='link-button btn-bg-red aceptarCookies'][contains(text(),'ACEPTAR Y SEGUIR NAVEGANDO')] , mode: click
+INFO: 07/18/2019 02:59:45 PM matched condition ventana configuracion de cookies !! 
+INFO: 07/18/2019 02:59:45 PM matched condition ventana configuracion de cookies !! 
+INFO: 07/18/2019 02:59:45 PM click en Acceso al area de clientes -> tipo busqueda: xpath , expresion: //a[@id='/content/unicaja/es/es_header_composer_button1'] , mode: swap_window
+INFO: 07/18/2019 02:59:45 PM click en Acceso al area de clientes -> tipo busqueda: xpath , expresion: //a[@id='/content/unicaja/es/es_header_composer_button1'] , mode: swap_window
+INFO: 07/18/2019 02:59:45 PM matched condition click en Acceso al area de clientes !! 
+INFO: 07/18/2019 02:59:45 PM matched condition click en Acceso al area de clientes !! 
+INFO: 07/18/2019 03:00:10 PM mapeado Boton: 0, coords x: 997 , y: 502
+INFO: 07/18/2019 03:00:10 PM mapeado Boton: 0, coords x: 997 , y: 502
+INFO: 07/18/2019 03:00:10 PM mapeado Boton: 0, coords x: 997 , y: 502
+INFO: 07/18/2019 03:00:10 PM mapeado Boton: 1, coords x: 889 , y: 502
+INFO: 07/18/2019 03:00:10 PM mapeado Boton: 1, coords x: 889 , y: 502
+INFO: 07/18/2019 03:00:10 PM mapeado Boton: 1, coords x: 889 , y: 502
+INFO: 07/18/2019 03:00:10 PM mapeado Boton: 2, coords x: 1078 , y: 503
+INFO: 07/18/2019 03:00:10 PM mapeado Boton: 2, coords x: 1078 , y: 503
+INFO: 07/18/2019 03:00:10 PM mapeado Boton: 2, coords x: 1078 , y: 503
+INFO: 07/18/2019 03:00:11 PM mapeado Boton: 3, coords x: 942 , y: 502
+INFO: 07/18/2019 03:00:11 PM mapeado Boton: 3, coords x: 942 , y: 502
+INFO: 07/18/2019 03:00:11 PM mapeado Boton: 3, coords x: 942 , y: 502
+INFO: 07/18/2019 03:00:11 PM mapeado Boton: 4, coords x: 970 , y: 502
+INFO: 07/18/2019 03:00:11 PM mapeado Boton: 4, coords x: 970 , y: 502
+INFO: 07/18/2019 03:00:11 PM mapeado Boton: 4, coords x: 970 , y: 502
+INFO: 07/18/2019 03:00:11 PM mapeado Boton: 5, coords x: 1051 , y: 502
+INFO: 07/18/2019 03:00:11 PM mapeado Boton: 5, coords x: 1051 , y: 502
+INFO: 07/18/2019 03:00:11 PM mapeado Boton: 5, coords x: 1051 , y: 502
+INFO: 07/18/2019 03:00:11 PM mapeado Boton: 6, coords x: 1024 , y: 502
+INFO: 07/18/2019 03:00:11 PM mapeado Boton: 6, coords x: 1024 , y: 502
+INFO: 07/18/2019 03:00:11 PM mapeado Boton: 6, coords x: 1024 , y: 502
+INFO: 07/18/2019 03:00:12 PM mapeado Boton: 7, coords x: 861 , y: 502
+INFO: 07/18/2019 03:00:12 PM mapeado Boton: 7, coords x: 861 , y: 502
+INFO: 07/18/2019 03:00:12 PM mapeado Boton: 7, coords x: 861 , y: 502
+INFO: 07/18/2019 03:00:12 PM mapeado Boton: 8, coords x: 915 , y: 502
+INFO: 07/18/2019 03:00:12 PM mapeado Boton: 8, coords x: 915 , y: 502
+INFO: 07/18/2019 03:00:12 PM mapeado Boton: 8, coords x: 915 , y: 502
+INFO: 07/18/2019 03:00:12 PM mapeado Boton: 9, coords x: 1105 , y: 502
+INFO: 07/18/2019 03:00:12 PM mapeado Boton: 9, coords x: 1105 , y: 502
+INFO: 07/18/2019 03:00:12 PM mapeado Boton: 9, coords x: 1105 , y: 502
+INFO: 07/18/2019 03:00:12 PM mapeado Boton: a, coords x: 861 , y: 555
+INFO: 07/18/2019 03:00:12 PM mapeado Boton: a, coords x: 861 , y: 555
+INFO: 07/18/2019 03:00:12 PM mapeado Boton: a, coords x: 861 , y: 555
+INFO: 07/18/2019 03:00:12 PM mapeado Boton: b, coords x: 970 , y: 583
+INFO: 07/18/2019 03:00:12 PM mapeado Boton: b, coords x: 970 , y: 583
+INFO: 07/18/2019 03:00:12 PM mapeado Boton: b, coords x: 970 , y: 583
+INFO: 07/18/2019 03:00:13 PM mapeado Boton: c, coords x: 916 , y: 584
+INFO: 07/18/2019 03:00:13 PM mapeado Boton: c, coords x: 916 , y: 584
+INFO: 07/18/2019 03:00:13 PM mapeado Boton: c, coords x: 916 , y: 584
+INFO: 07/18/2019 03:00:13 PM mapeado Boton: cancel, coords x: 1077 , y: 583
+INFO: 07/18/2019 03:00:13 PM mapeado Boton: cancel, coords x: 1077 , y: 583
+INFO: 07/18/2019 03:00:13 PM mapeado Boton: cancel, coords x: 1077 , y: 583
+INFO: 07/18/2019 03:00:13 PM mapeado Boton: d, coords x: 916 , y: 555
+INFO: 07/18/2019 03:00:13 PM mapeado Boton: d, coords x: 916 , y: 555
+INFO: 07/18/2019 03:00:13 PM mapeado Boton: d, coords x: 916 , y: 555
+INFO: 07/18/2019 03:00:13 PM mapeado Boton: e, coords x: 916 , y: 528
+INFO: 07/18/2019 03:00:13 PM mapeado Boton: e, coords x: 916 , y: 528
+INFO: 07/18/2019 03:00:13 PM mapeado Boton: e, coords x: 916 , y: 528
+INFO: 07/18/2019 03:00:14 PM mapeado Boton: ene, coords x: 1106 , y: 555
+INFO: 07/18/2019 03:00:14 PM mapeado Boton: ene, coords x: 1106 , y: 555
+INFO: 07/18/2019 03:00:14 PM mapeado Boton: ene, coords x: 1106 , y: 555
+INFO: 07/18/2019 03:00:14 PM mapeado Boton: f, coords x: 943 , y: 556
+INFO: 07/18/2019 03:00:14 PM mapeado Boton: f, coords x: 943 , y: 556
+INFO: 07/18/2019 03:00:14 PM mapeado Boton: f, coords x: 943 , y: 556
+INFO: 07/18/2019 03:00:14 PM mapeado Boton: g, coords x: 970 , y: 556
+INFO: 07/18/2019 03:00:14 PM mapeado Boton: g, coords x: 970 , y: 556
+INFO: 07/18/2019 03:00:14 PM mapeado Boton: g, coords x: 970 , y: 556
+INFO: 07/18/2019 03:00:14 PM mapeado Boton: h, coords x: 997 , y: 555
+INFO: 07/18/2019 03:00:14 PM mapeado Boton: h, coords x: 997 , y: 555
+INFO: 07/18/2019 03:00:14 PM mapeado Boton: h, coords x: 997 , y: 555
+INFO: 07/18/2019 03:00:14 PM mapeado Boton: i, coords x: 1051 , y: 528
+INFO: 07/18/2019 03:00:14 PM mapeado Boton: i, coords x: 1051 , y: 528
+INFO: 07/18/2019 03:00:14 PM mapeado Boton: i, coords x: 1051 , y: 528
+INFO: 07/18/2019 03:00:15 PM mapeado Boton: j, coords x: 1024 , y: 556
+INFO: 07/18/2019 03:00:15 PM mapeado Boton: j, coords x: 1024 , y: 556
+INFO: 07/18/2019 03:00:15 PM mapeado Boton: j, coords x: 1024 , y: 556
+INFO: 07/18/2019 03:00:15 PM mapeado Boton: k, coords x: 1051 , y: 556
+INFO: 07/18/2019 03:00:15 PM mapeado Boton: k, coords x: 1051 , y: 556
+INFO: 07/18/2019 03:00:15 PM mapeado Boton: k, coords x: 1051 , y: 556
+INFO: 07/18/2019 03:00:15 PM mapeado Boton: l, coords x: 1078 , y: 556
+INFO: 07/18/2019 03:00:15 PM mapeado Boton: l, coords x: 1078 , y: 556
+INFO: 07/18/2019 03:00:15 PM mapeado Boton: l, coords x: 1078 , y: 556
+INFO: 07/18/2019 03:00:15 PM mapeado Boton: m, coords x: 1025 , y: 583
+INFO: 07/18/2019 03:00:15 PM mapeado Boton: m, coords x: 1025 , y: 583
+INFO: 07/18/2019 03:00:15 PM mapeado Boton: m, coords x: 1025 , y: 583
+INFO: 07/18/2019 03:00:16 PM mapeado Boton: n, coords x: 997 , y: 582
+INFO: 07/18/2019 03:00:16 PM mapeado Boton: n, coords x: 997 , y: 582
+INFO: 07/18/2019 03:00:16 PM mapeado Boton: n, coords x: 997 , y: 582
+INFO: 07/18/2019 03:00:16 PM mapeado Boton: o, coords x: 1078 , y: 528
+INFO: 07/18/2019 03:00:16 PM mapeado Boton: o, coords x: 1078 , y: 528
+INFO: 07/18/2019 03:00:16 PM mapeado Boton: o, coords x: 1078 , y: 528
+INFO: 07/18/2019 03:00:16 PM mapeado Boton: ok, coords x: 1105 , y: 583
+INFO: 07/18/2019 03:00:16 PM mapeado Boton: ok, coords x: 1105 , y: 583
+INFO: 07/18/2019 03:00:16 PM mapeado Boton: ok, coords x: 1105 , y: 583
+INFO: 07/18/2019 03:00:16 PM mapeado Boton: p, coords x: 1105 , y: 529
+INFO: 07/18/2019 03:00:16 PM mapeado Boton: p, coords x: 1105 , y: 529
+INFO: 07/18/2019 03:00:16 PM mapeado Boton: p, coords x: 1105 , y: 529
+INFO: 07/18/2019 03:00:16 PM mapeado Boton: q, coords x: 860 , y: 529
+INFO: 07/18/2019 03:00:16 PM mapeado Boton: q, coords x: 860 , y: 529
+INFO: 07/18/2019 03:00:16 PM mapeado Boton: q, coords x: 860 , y: 529
+INFO: 07/18/2019 03:00:17 PM mapeado Boton: r, coords x: 943 , y: 528
+INFO: 07/18/2019 03:00:17 PM mapeado Boton: r, coords x: 943 , y: 528
+INFO: 07/18/2019 03:00:17 PM mapeado Boton: r, coords x: 943 , y: 528
+INFO: 07/18/2019 03:00:17 PM mapeado Boton: s, coords x: 889 , y: 556
+INFO: 07/18/2019 03:00:17 PM mapeado Boton: s, coords x: 889 , y: 556
+INFO: 07/18/2019 03:00:17 PM mapeado Boton: s, coords x: 889 , y: 556
+INFO: 07/18/2019 03:00:17 PM mapeado Boton: t, coords x: 970 , y: 529
+INFO: 07/18/2019 03:00:17 PM mapeado Boton: t, coords x: 970 , y: 529
+INFO: 07/18/2019 03:00:17 PM mapeado Boton: t, coords x: 970 , y: 529
+INFO: 07/18/2019 03:00:17 PM mapeado Boton: u, coords x: 1024 , y: 529
+INFO: 07/18/2019 03:00:17 PM mapeado Boton: u, coords x: 1024 , y: 529
+INFO: 07/18/2019 03:00:17 PM mapeado Boton: u, coords x: 1024 , y: 529
+INFO: 07/18/2019 03:00:18 PM mapeado Boton: v, coords x: 943 , y: 584
+INFO: 07/18/2019 03:00:18 PM mapeado Boton: v, coords x: 943 , y: 584
+INFO: 07/18/2019 03:00:18 PM mapeado Boton: v, coords x: 943 , y: 584
+INFO: 07/18/2019 03:00:18 PM mapeado Boton: w, coords x: 889 , y: 529
+INFO: 07/18/2019 03:00:18 PM mapeado Boton: w, coords x: 889 , y: 529
+INFO: 07/18/2019 03:00:18 PM mapeado Boton: w, coords x: 889 , y: 529
+INFO: 07/18/2019 03:00:18 PM mapeado Boton: x, coords x: 889 , y: 582
+INFO: 07/18/2019 03:00:18 PM mapeado Boton: x, coords x: 889 , y: 582
+INFO: 07/18/2019 03:00:18 PM mapeado Boton: x, coords x: 889 , y: 582
+INFO: 07/18/2019 03:00:18 PM mapeado Boton: y, coords x: 997 , y: 528
+INFO: 07/18/2019 03:00:18 PM mapeado Boton: y, coords x: 997 , y: 528
+INFO: 07/18/2019 03:00:18 PM mapeado Boton: y, coords x: 997 , y: 528
+INFO: 07/18/2019 03:00:19 PM mapeado Boton: z, coords x: 861 , y: 583
+INFO: 07/18/2019 03:00:19 PM mapeado Boton: z, coords x: 861 , y: 583
+INFO: 07/18/2019 03:00:19 PM mapeado Boton: z, coords x: 861 , y: 583

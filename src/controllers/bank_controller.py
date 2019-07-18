@@ -68,8 +68,9 @@ class BankController(object):
 
 if __name__ == '__main__':
     #bancos = ['unicaja', 'bankia', 'popular', 'bankinter', 'ibercaja']
-    # bancos = ['unicaja', 'bankia','ibercaja' ]
-    bancos = ['ibercaja']
+    bancos = ['bankia' , 'caixa'] #
+
+    #bancos = ['ibercaja']
     bc = BankController({'banknames': bancos})
     for b in bancos:
         bc.extract_movements(b)

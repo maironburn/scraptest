@@ -6,8 +6,7 @@ from time import sleep
 from selenium import webdriver
 from src.models.teclado import Teclado
 from common_config import SELENIUM_DRIVER_PATH
-from logger.app_logger import AppLogger
-from slugify import slugify
+
 
 '''
 incializa el driver 
@@ -285,7 +284,7 @@ class SeleniumController(object):
             target = e['target']
             switch = e['switch']
             if switch:
-
+                pass
             else:
                 self.driver.find_element_by_xpath(target)
 

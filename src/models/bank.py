@@ -3,6 +3,7 @@ from src.helpers.common_helper import load_json_bank_from_skel
 from logger.app_logger import AppLogger
 from src.models.cuenta import Cuenta
 
+
 class Bank(object):
     _name = None
     _json_data = None
@@ -12,7 +13,7 @@ class Bank(object):
     def __init__(self, kw):
 
         self._name = kw.get('name', None)
-        self._logger = AppLogger.create_rotating_log()
+        self._logger = kw.get('logger', None)
         if self.name:
             self._json_data = self.load_skel()
 
@@ -52,5 +53,5 @@ class Bank(object):
 
     @cuentas_asociadas.setter
     def cuentas_asociadas(self, value):
-        if isinstance(value,Cuenta):
+        if isinstance(value, Cuenta):
             self._cuentas_asociadas = value

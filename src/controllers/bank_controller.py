@@ -12,10 +12,11 @@ class BankController(object):
     def __init__(self, kw):
 
         self._banknames = kw.get('banknames', None)
+        self._logger = AppLogger.create_rotating_log()
         if self._banknames:
             self.load_banks()
 
-        self._logger = AppLogger.create_rotating_log() if kw.get('logger', None) is None else kw.get('logger')
+
 
     def extract_movements(self, bankname=None):
 
@@ -67,8 +68,10 @@ class BankController(object):
 
 if __name__ == '__main__':
     #bancos = ['unicaja', 'bankia', 'popular', 'bankinter', 'ibercaja']
-    bancos = ['unicaja']
+    # bancos = ['unicaja', 'bankia','ibercaja' ]
+    bancos = ['ibercaja']
     bc = BankController({'banknames': bancos})
-    bc.extract_movements("unicaja")
+    for b in bancos:
+        bc.extract_movements(b)
 
     pass

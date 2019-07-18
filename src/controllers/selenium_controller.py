@@ -37,7 +37,7 @@ class SeleniumController(object):
 
     def __init__(self, kw):
 
-        self._logger = AppLogger.create_rotating_log() if kw.get('logger', None) is None else kw.get('logger')
+        self._logger = kw.get('logger')
         if kw.get('bank', None):
             self.bank = kw.get('bank')
             self.start() if kw.get('selenium_opts', None) is None else self.start(kw.get('selenium_opts'))
@@ -63,17 +63,18 @@ class SeleniumController(object):
             if self.bank.get('pre_login_actions'):
                 self._logger.debug("Se requieren acciones previas al logado")
                 self.pre_post_login_actions(self.bank.get('pre_login_actions'), stage="pre")
+                sleep(2)
 
             auth_meth = self.bank.get('login_method')
-            sleep(5)
+
             self.login_dict_methods[auth_meth]()
             # @todo, eliminar los sleeps...sustituir por ec
-
+            sleep(2)
             # comprobamos si son necesarias llevar a cabo acciones posteriores al logado
             if self.bank.get('post_login_actions'):
                 self._logger.debug("Se requieren acciones posteriores al logado")
                 self.pre_post_login_actions(self.bank.get('post_login_actions'), stage="post")
-
+                sleep(3)
             self.do_workflow()
 
         except Exception as ex:
@@ -236,7 +237,7 @@ class SeleniumController(object):
     # </editor-fold>
 
     def wait_for_expected_conditions(self, actions):
-        tipo = actions.get('tipo')
+        tipo = actions.get('tipo')  # tipo de ec
         target = actions.get('target')
         time_wait = actions.get('time_wait')
         e_description = actions.get('e_description')
@@ -284,7 +285,7 @@ class SeleniumController(object):
             target = e['target']
             switch = e['switch']
             if switch:
-                self.switch_to_frame(target)
+
             else:
                 self.driver.find_element_by_xpath(target)
 
@@ -302,6 +303,8 @@ class SeleniumController(object):
                 desc = actions.get('description')
                 mode = actions.get('mode')
                 ec = actions.get('expected_conditions', None)
+                time_wait = actions.get('time_wait', 2)
+                sleep(time_wait)
                 try:
 
                     self._logger.info(
@@ -314,31 +317,32 @@ class SeleniumController(object):
                         self.driver.switch_to.parent_frame()
 
                     else:
+                        if tipo:
+                            elements_finded = self.finds_method[tipo](target)
+                            if len(elements_finded):
+                                self._logger.info("matched condition {} !! ".format(desc))
+                                elem = self.find_method[tipo](target)
 
-                        elements_finded = self.finds_method[tipo](target)
-                        if len(elements_finded):
-                            self._logger.info("matched condition {} !! ".format(desc))
-                            elem = self.find_method[tipo](target)
+                                if mode == 'click':
+                                    elem.click()
 
-                            if mode == 'click':
-                                elem.click()
-
-                            if mode == 'swap_window':
-                                self.swap_window(elem)
+                                if mode == 'swap_window':
+                                    self.swap_window(elem)
 
                         if ec:
                             self.wait_for_expected_conditions(ec)
 
+                    time_wait = actions.get('time_wait', 2)
+                    sleep(time_wait)
                 except Exception as e:
                     pass
-
-
 
     def do_workflow(self):
         try:
 
             for action in self.bank.get('workflow'):
                 # tipo de busqueda para localizar al elemento
+
                 tipo = action.get('tipo')
                 target = action.get('target')
                 desc = action.get('description', None)
@@ -359,18 +363,18 @@ class SeleniumController(object):
                         if action.get('clear', None):
                             element.clear()
                         element.send_keys(action.get('data'))
-
+                        self._logger.info("seteado  {} ->  {}!! ".format(target,action.get('data') ))
                     if action.get('expected_conditions'):
                         wait(self.driver, 10).until(ec.element_to_be_clickable((By.XPATH, action.get('expect_cond'))))
-                    else:
-                        sleep(1)
+
+                    time_wait = action.get('time_wait', 2)
+                    sleep(time_wait)
 
                     # self.navigated_elements.append({slugify(target): element})
 
         except Exception as e:
             self._logger.error("Error duante el workflow: {}".format(e))
-
-        self.driver_close()
+            self.driver_close()
 
     def start(self, default_opc=["--start-maximized"]):
         '''

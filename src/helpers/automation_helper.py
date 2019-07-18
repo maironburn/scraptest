@@ -8,7 +8,7 @@ from os import path
 
 def capture_screen(name="screenshot"):
     pyautogui.screenshot("{}{}{}.png".format(TEMP_IMGS, path.sep, name))
-    sleep(3)
+    sleep(1)
     print("captured windows: {}".format(name))
 
 
@@ -16,7 +16,7 @@ def move_and_click(boton):
     if isinstance(boton, Boton):
         pyautogui.moveTo(boton.x, boton.y)
         pyautogui.click()
-        sleep(1)
+        sleep(0.2)
 
 
 def getElementCoords(haystack, needle):

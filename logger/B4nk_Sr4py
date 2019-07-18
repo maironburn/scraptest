@@ -498,3 +498,1010 @@ INFO: 07/17/2019 02:56:45 PM Elemento encontrado: pin
 INFO: 07/17/2019 02:56:45 PM Elemento encontrado: pin
 INFO: 07/17/2019 02:56:59 PM Movimientos de mis cuentas -> tipo busqueda: xpath , expresion: //a[@id='li2a'] , mode: click
 INFO: 07/17/2019 02:56:59 PM Movimientos de mis cuentas -> tipo busqueda: xpath , expresion: //a[@id='li2a'] , mode: click
+INFO: 07/18/2019 09:00:42 AM <property object at 0x000001AFD73693B8> -> Loaded skel from : caixa
+INFO: 07/18/2019 09:01:53 AM Evaluando acciones pre login
+INFO: 07/18/2019 09:01:53 AM Evaluando acciones pre login
+INFO: 07/18/2019 09:02:05 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 09:02:05 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 09:02:18 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 09:02:18 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 09:57:06 AM <property object at 0x0000021E9A7F4408> -> Loaded skel from : caixa
+INFO: 07/18/2019 09:57:18 AM Evaluando acciones pre login
+INFO: 07/18/2019 09:57:18 AM Evaluando acciones pre login
+INFO: 07/18/2019 09:57:18 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 09:57:18 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 09:57:18 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 09:57:18 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:01:21 AM <property object at 0x000001A5DC3A13B8> -> Loaded skel from : caixa
+INFO: 07/18/2019 10:01:27 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:01:27 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:01:27 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:01:27 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:01:27 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:01:27 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:04:04 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:04:04 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:04:04 AM Elemento encontrado: user
+INFO: 07/18/2019 10:04:04 AM Elemento encontrado: user
+INFO: 07/18/2019 10:04:04 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:04:04 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:04:04 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:04:04 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:04:14 AM Evaluando acciones post login
+INFO: 07/18/2019 10:04:14 AM Evaluando acciones post login
+INFO: 07/18/2019 10:04:14 AM None -> tipo busqueda: frame_switch , expresion: //frame[@name='Niveles'] , mode: None
+INFO: 07/18/2019 10:04:14 AM None -> tipo busqueda: frame_switch , expresion: //frame[@name='Niveles'] , mode: None
+INFO: 07/18/2019 10:04:14 AM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: /html[1]/body[1]/div[1]/ul[1]/li[1]/a[1] , mode: click
+INFO: 07/18/2019 10:04:14 AM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: /html[1]/body[1]/div[1]/ul[1]/li[1]/a[1] , mode: click
+INFO: 07/18/2019 10:04:28 AM Saldo y movimientos -> tipo busqueda: xpath , expresion: /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[4]/a[1] , mode: click
+INFO: 07/18/2019 10:04:28 AM Saldo y movimientos -> tipo busqueda: xpath , expresion: /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[4]/a[1] , mode: click
+INFO: 07/18/2019 10:13:23 AM <property object at 0x000001FBB08EF4A8> -> Loaded skel from : caixa
+INFO: 07/18/2019 10:13:29 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:13:29 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:13:29 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:13:29 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:13:29 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:13:29 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:13:38 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:13:38 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:13:38 AM Elemento encontrado: user
+INFO: 07/18/2019 10:13:38 AM Elemento encontrado: user
+INFO: 07/18/2019 10:13:38 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:13:38 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:13:38 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:13:38 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:14:03 AM Evaluando acciones post login
+INFO: 07/18/2019 10:14:03 AM Evaluando acciones post login
+INFO: 07/18/2019 10:14:32 AM None -> tipo busqueda: frame_switch , expresion: //frame[@name='Inferior'] , mode: None
+INFO: 07/18/2019 10:14:32 AM None -> tipo busqueda: frame_switch , expresion: //frame[@name='Inferior'] , mode: None
+INFO: 07/18/2019 10:16:20 AM <property object at 0x00000147225A4368> -> Loaded skel from : caixa
+INFO: 07/18/2019 10:16:25 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:16:25 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:16:25 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:16:25 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:16:25 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:16:25 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:16:25 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:16:25 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:16:25 AM Elemento encontrado: user
+INFO: 07/18/2019 10:16:25 AM Elemento encontrado: user
+INFO: 07/18/2019 10:16:26 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:16:26 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:16:26 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:16:26 AM Elemento encontrado: pin
+ERROR: 07/18/2019 10:16:26 AM Excepcion en do_the_process -> Message: unknown error: Element <input class="btn btn-blue bt-submit" name="login" value="Entrar" type="button"> is not clickable at point (1490, 121). Other element would receive the click: <div id="cookie-form">...</div>
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+ERROR: 07/18/2019 10:16:26 AM Excepcion en do_the_process -> Message: unknown error: Element <input class="btn btn-blue bt-submit" name="login" value="Entrar" type="button"> is not clickable at point (1490, 121). Other element would receive the click: <div id="cookie-form">...</div>
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+INFO: 07/18/2019 10:16:48 AM <property object at 0x000001307F9D1408> -> Loaded skel from : caixa
+INFO: 07/18/2019 10:16:54 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:16:54 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:16:54 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:16:54 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:16:54 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:16:54 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:16:55 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:16:55 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:16:55 AM Elemento encontrado: user
+INFO: 07/18/2019 10:16:55 AM Elemento encontrado: user
+INFO: 07/18/2019 10:16:55 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:16:55 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:16:55 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:16:55 AM Elemento encontrado: pin
+ERROR: 07/18/2019 10:16:56 AM Excepcion en do_the_process -> Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+ERROR: 07/18/2019 10:16:56 AM Excepcion en do_the_process -> Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+INFO: 07/18/2019 10:17:44 AM <property object at 0x000001B9572C2408> -> Loaded skel from : caixa
+INFO: 07/18/2019 10:17:56 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:17:56 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:17:56 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:17:56 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:17:56 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:17:56 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:17:56 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:17:56 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:17:56 AM Elemento encontrado: user
+INFO: 07/18/2019 10:17:56 AM Elemento encontrado: user
+INFO: 07/18/2019 10:17:56 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:17:56 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:17:56 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:17:56 AM Elemento encontrado: pin
+ERROR: 07/18/2019 10:17:57 AM Excepcion en do_the_process -> Message: unknown error: Element <input class="btn btn-blue bt-submit" name="login" value="Entrar" type="button"> is not clickable at point (1490, 121). Other element would receive the click: <div id="cookie-form">...</div>
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+ERROR: 07/18/2019 10:17:57 AM Excepcion en do_the_process -> Message: unknown error: Element <input class="btn btn-blue bt-submit" name="login" value="Entrar" type="button"> is not clickable at point (1490, 121). Other element would receive the click: <div id="cookie-form">...</div>
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+INFO: 07/18/2019 10:18:27 AM <property object at 0x0000021AB0C0F4A8> -> Loaded skel from : caixa
+INFO: 07/18/2019 10:18:41 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:18:41 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:18:47 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:18:47 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:18:58 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:18:58 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:19:45 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:19:45 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:19:47 AM Elemento encontrado: user
+INFO: 07/18/2019 10:19:47 AM Elemento encontrado: user
+INFO: 07/18/2019 10:19:50 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:19:50 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:19:51 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:19:51 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:20:09 AM Evaluando acciones post login
+INFO: 07/18/2019 10:20:09 AM Evaluando acciones post login
+INFO: 07/18/2019 10:20:30 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 10:20:30 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 10:20:38 AM matched condition None !! 
+INFO: 07/18/2019 10:20:38 AM matched condition None !! 
+INFO: 07/18/2019 10:21:15 AM None -> tipo busqueda: xpath , expresion: //frameset[@id='FramesetInferior'] , mode: frame_switch
+INFO: 07/18/2019 10:21:15 AM None -> tipo busqueda: xpath , expresion: //frameset[@id='FramesetInferior'] , mode: frame_switch
+INFO: 07/18/2019 10:21:27 AM matched condition None !! 
+INFO: 07/18/2019 10:21:27 AM matched condition None !! 
+INFO: 07/18/2019 10:30:53 AM <property object at 0x0000020CD9F87548> -> Loaded skel from : caixa
+INFO: 07/18/2019 10:31:01 AM <property object at 0x00000216636DF548> -> Loaded skel from : caixa
+INFO: 07/18/2019 10:33:24 AM <property object at 0x0000022CF00DB3B8> -> Loaded skel from : caixa
+INFO: 07/18/2019 10:33:47 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:33:47 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:33:47 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:33:47 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:33:52 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:33:52 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:34:11 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:34:11 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:34:11 AM Elemento encontrado: user
+INFO: 07/18/2019 10:34:11 AM Elemento encontrado: user
+INFO: 07/18/2019 10:34:14 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:34:14 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:34:15 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:34:15 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:34:28 AM Evaluando acciones post login
+INFO: 07/18/2019 10:34:28 AM Evaluando acciones post login
+INFO: 07/18/2019 10:34:31 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 10:34:31 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 10:34:56 AM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: frame_switch
+INFO: 07/18/2019 10:34:56 AM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: frame_switch
+INFO: 07/18/2019 10:37:42 AM <property object at 0x000001443A8BA3B8> -> Loaded skel from : caixa
+INFO: 07/18/2019 10:37:54 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:37:54 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:37:54 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:37:54 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:37:55 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:37:55 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:37:55 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:37:55 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:37:55 AM Elemento encontrado: user
+INFO: 07/18/2019 10:37:55 AM Elemento encontrado: user
+INFO: 07/18/2019 10:37:56 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:37:56 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:37:56 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:37:56 AM Elemento encontrado: pin
+ERROR: 07/18/2019 10:37:57 AM Excepcion en do_the_process -> Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+ERROR: 07/18/2019 10:37:57 AM Excepcion en do_the_process -> Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+INFO: 07/18/2019 10:39:34 AM <property object at 0x0000023FFB63E4F8> -> Loaded skel from : caixa
+INFO: 07/18/2019 10:39:46 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:39:46 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:39:46 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:39:46 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:39:50 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:39:50 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:40:17 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:40:17 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:40:18 AM Elemento encontrado: user
+INFO: 07/18/2019 10:40:18 AM Elemento encontrado: user
+INFO: 07/18/2019 10:40:21 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:40:21 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:40:22 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:40:22 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:40:36 AM Evaluando acciones post login
+INFO: 07/18/2019 10:40:36 AM Evaluando acciones post login
+INFO: 07/18/2019 10:40:38 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 10:40:38 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 10:41:00 AM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: 
+INFO: 07/18/2019 10:41:00 AM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: 
+INFO: 07/18/2019 10:41:10 AM matched condition None !! 
+INFO: 07/18/2019 10:41:10 AM matched condition None !! 
+INFO: 07/18/2019 10:41:17 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: 
+INFO: 07/18/2019 10:41:17 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: 
+INFO: 07/18/2019 10:41:30 AM matched condition None !! 
+INFO: 07/18/2019 10:41:30 AM matched condition None !! 
+INFO: 07/18/2019 10:45:53 AM <property object at 0x0000020FD313E548> -> Loaded skel from : caixa
+INFO: 07/18/2019 10:46:04 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:46:04 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:46:04 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:46:04 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:46:12 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:46:12 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:46:22 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:46:22 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:46:22 AM Elemento encontrado: user
+INFO: 07/18/2019 10:46:22 AM Elemento encontrado: user
+INFO: 07/18/2019 10:46:22 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:46:22 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:46:22 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:46:22 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:46:29 AM Evaluando acciones post login
+INFO: 07/18/2019 10:46:29 AM Evaluando acciones post login
+INFO: 07/18/2019 10:46:31 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 10:46:31 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 10:46:38 AM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: frame_switch
+INFO: 07/18/2019 10:46:38 AM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: frame_switch
+INFO: 07/18/2019 10:52:48 AM <property object at 0x00000156709E64A8> -> Loaded skel from : caixa
+INFO: 07/18/2019 10:52:59 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:52:59 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:52:59 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:52:59 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:53:05 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:53:05 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:53:12 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:53:12 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:53:13 AM Elemento encontrado: user
+INFO: 07/18/2019 10:53:13 AM Elemento encontrado: user
+INFO: 07/18/2019 10:53:13 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:53:13 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:53:13 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:53:13 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:53:27 AM Evaluando acciones post login
+INFO: 07/18/2019 10:53:27 AM Evaluando acciones post login
+INFO: 07/18/2019 10:53:31 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 10:53:31 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 10:53:51 AM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: frame_switch
+INFO: 07/18/2019 10:53:51 AM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: frame_switch
+INFO: 07/18/2019 10:55:24 AM <property object at 0x00000180EF89C458> -> Loaded skel from : caixa
+INFO: 07/18/2019 10:55:34 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:55:34 AM Evaluando acciones pre login
+INFO: 07/18/2019 10:55:34 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:55:34 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 10:55:36 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:55:36 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 10:55:40 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:55:40 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 10:55:40 AM Elemento encontrado: user
+INFO: 07/18/2019 10:55:40 AM Elemento encontrado: user
+INFO: 07/18/2019 10:55:41 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:55:41 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 10:55:41 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:55:41 AM Elemento encontrado: pin
+INFO: 07/18/2019 10:55:47 AM Evaluando acciones post login
+INFO: 07/18/2019 10:55:47 AM Evaluando acciones post login
+INFO: 07/18/2019 10:55:50 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 10:55:50 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 10:55:58 AM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: frame_switch
+INFO: 07/18/2019 10:55:58 AM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: frame_switch
+INFO: 07/18/2019 11:09:35 AM <property object at 0x000001B0E9124408> -> Loaded skel from : caixa
+INFO: 07/18/2019 11:09:44 AM Evaluando acciones pre login
+INFO: 07/18/2019 11:09:44 AM Evaluando acciones pre login
+INFO: 07/18/2019 11:09:44 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 11:09:44 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 11:09:46 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 11:09:46 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 11:09:51 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 11:09:51 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 11:09:51 AM Elemento encontrado: user
+INFO: 07/18/2019 11:09:51 AM Elemento encontrado: user
+INFO: 07/18/2019 11:09:52 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 11:09:52 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 11:09:52 AM Elemento encontrado: pin
+INFO: 07/18/2019 11:09:52 AM Elemento encontrado: pin
+INFO: 07/18/2019 11:09:58 AM Evaluando acciones post login
+INFO: 07/18/2019 11:09:58 AM Evaluando acciones post login
+INFO: 07/18/2019 11:10:01 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 11:10:01 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 11:10:29 AM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: frame_switch
+INFO: 07/18/2019 11:10:29 AM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: frame_switch
+INFO: 07/18/2019 11:25:03 AM <property object at 0x000001C3ACEDE4F8> -> Loaded skel from : caixa
+INFO: 07/18/2019 11:25:11 AM Evaluando acciones pre login
+INFO: 07/18/2019 11:25:11 AM Evaluando acciones pre login
+INFO: 07/18/2019 11:25:15 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 11:25:15 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 11:25:17 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 11:25:17 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 11:25:21 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 11:25:21 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 11:25:21 AM Elemento encontrado: user
+INFO: 07/18/2019 11:25:21 AM Elemento encontrado: user
+INFO: 07/18/2019 11:25:21 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 11:25:21 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 11:25:21 AM Elemento encontrado: pin
+INFO: 07/18/2019 11:25:21 AM Elemento encontrado: pin
+INFO: 07/18/2019 11:25:25 AM Evaluando acciones post login
+INFO: 07/18/2019 11:25:25 AM Evaluando acciones post login
+INFO: 07/18/2019 11:25:27 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 11:25:27 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 11:36:32 AM <property object at 0x0000011DCE0A1408> -> Loaded skel from : caixa
+INFO: 07/18/2019 11:36:43 AM Evaluando acciones pre login
+INFO: 07/18/2019 11:36:43 AM Evaluando acciones pre login
+INFO: 07/18/2019 11:36:43 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 11:36:43 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 11:36:46 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 11:36:46 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 11:36:50 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 11:36:50 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 11:36:50 AM Elemento encontrado: user
+INFO: 07/18/2019 11:36:50 AM Elemento encontrado: user
+INFO: 07/18/2019 11:36:51 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 11:36:51 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 11:36:51 AM Elemento encontrado: pin
+INFO: 07/18/2019 11:36:51 AM Elemento encontrado: pin
+ERROR: 07/18/2019 11:36:51 AM Excepcion en do_the_process -> Message: unknown error: Element <input class="btn btn-blue bt-submit" name="login" value="Entrar" type="button"> is not clickable at point (1490, 121). Other element would receive the click: <div id="cookie-form">...</div>
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+ERROR: 07/18/2019 11:36:51 AM Excepcion en do_the_process -> Message: unknown error: Element <input class="btn btn-blue bt-submit" name="login" value="Entrar" type="button"> is not clickable at point (1490, 121). Other element would receive the click: <div id="cookie-form">...</div>
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+INFO: 07/18/2019 11:37:38 AM <property object at 0x00000252CCB81408> -> Loaded skel from : caixa
+INFO: 07/18/2019 11:37:50 AM Evaluando acciones pre login
+INFO: 07/18/2019 11:37:50 AM Evaluando acciones pre login
+INFO: 07/18/2019 11:37:50 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 11:37:50 AM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 11:37:56 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 11:37:56 AM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 11:38:05 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 11:38:05 AM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 11:38:05 AM Elemento encontrado: user
+INFO: 07/18/2019 11:38:05 AM Elemento encontrado: user
+INFO: 07/18/2019 11:38:05 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 11:38:05 AM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 11:38:05 AM Elemento encontrado: pin
+INFO: 07/18/2019 11:38:05 AM Elemento encontrado: pin
+INFO: 07/18/2019 11:38:15 AM Evaluando acciones post login
+INFO: 07/18/2019 11:38:15 AM Evaluando acciones post login
+INFO: 07/18/2019 11:38:19 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 11:38:19 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 11:38:39 AM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 11:38:39 AM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 11:38:44 AM matched condition None !! 
+INFO: 07/18/2019 11:38:44 AM matched condition None !! 
+INFO: 07/18/2019 11:38:51 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 11:38:51 AM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 11:39:04 AM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: /html[1]/body[1]/div[1]/ul[1]/li[1]/a[1] , mode: click
+INFO: 07/18/2019 11:39:04 AM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: /html[1]/body[1]/div[1]/ul[1]/li[1]/a[1] , mode: click
+INFO: 07/18/2019 11:39:05 AM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 11:39:05 AM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 12:02:53 PM <property object at 0x000001ECDEC613B8> -> Loaded skel from : caixa
+INFO: 07/18/2019 12:03:04 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:03:04 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:03:04 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:03:04 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:03:08 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:03:08 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:03:08 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:03:08 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:03:08 PM Elemento encontrado: user
+INFO: 07/18/2019 12:03:08 PM Elemento encontrado: user
+INFO: 07/18/2019 12:03:09 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:03:09 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:03:09 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:03:09 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:03:50 PM <property object at 0x000002615116B3B8> -> Loaded skel from : caixa
+INFO: 07/18/2019 12:03:56 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:03:56 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:03:56 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:03:56 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:04:01 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:04:01 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:04:07 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:04:07 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:04:08 PM Elemento encontrado: user
+INFO: 07/18/2019 12:04:08 PM Elemento encontrado: user
+INFO: 07/18/2019 12:04:12 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:04:12 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:04:13 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:04:13 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:04:27 PM Evaluando acciones post login
+INFO: 07/18/2019 12:04:27 PM Evaluando acciones post login
+INFO: 07/18/2019 12:04:29 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:04:29 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:04:39 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 12:04:39 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 12:04:42 PM matched condition None !! 
+INFO: 07/18/2019 12:04:42 PM matched condition None !! 
+INFO: 07/18/2019 12:04:46 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 12:04:46 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 12:04:55 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: /html[1]/body[1]/div[1]/ul[1]/li[1]/a[1] , mode: click
+INFO: 07/18/2019 12:04:55 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: /html[1]/body[1]/div[1]/ul[1]/li[1]/a[1] , mode: click
+INFO: 07/18/2019 12:04:57 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 12:04:57 PM matched condition Menu superior Tesoreria !! 
+ERROR: 07/18/2019 12:05:29 PM Error duante el workflow
+ERROR: 07/18/2019 12:05:29 PM Error duante el workflow
+INFO: 07/18/2019 12:06:26 PM <property object at 0x00000285D0AC43B8> -> Loaded skel from : caixa
+INFO: 07/18/2019 12:06:32 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:06:32 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:06:32 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:06:32 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:06:32 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:06:32 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:06:46 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:06:46 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:06:46 PM Elemento encontrado: user
+INFO: 07/18/2019 12:06:46 PM Elemento encontrado: user
+INFO: 07/18/2019 12:06:47 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:06:47 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:06:47 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:06:47 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:06:57 PM Evaluando acciones post login
+INFO: 07/18/2019 12:06:57 PM Evaluando acciones post login
+INFO: 07/18/2019 12:06:59 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:06:59 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:07:02 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 12:07:02 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 12:07:05 PM matched condition None !! 
+INFO: 07/18/2019 12:07:05 PM matched condition None !! 
+INFO: 07/18/2019 12:07:09 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 12:07:09 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 12:07:11 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: /html[1]/body[1]/div[1]/ul[1]/li[1]/a[1] , mode: click
+INFO: 07/18/2019 12:07:11 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: /html[1]/body[1]/div[1]/ul[1]/li[1]/a[1] , mode: click
+INFO: 07/18/2019 12:07:14 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 12:07:14 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 12:07:26 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[4]/a[1] , mode: click
+INFO: 07/18/2019 12:07:26 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: /html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[4]/a[1] , mode: click
+INFO: 07/18/2019 12:07:38 PM Buscar Movimientos -> tipo busqueda: xpath , expresion: /html[1]/body[1]/div[2]/form[1]/div[11]/div[1]/div[1]/a[1]/span[1] , mode: click
+INFO: 07/18/2019 12:07:38 PM Buscar Movimientos -> tipo busqueda: xpath , expresion: /html[1]/body[1]/div[2]/form[1]/div[11]/div[1]/div[1]/a[1]/span[1] , mode: click
+INFO: 07/18/2019 12:12:54 PM <property object at 0x000001D74BACB408> -> Loaded skel from : caixa
+INFO: 07/18/2019 12:13:01 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:13:01 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:13:01 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:13:01 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:13:01 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:13:01 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:13:09 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:13:09 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:13:10 PM Elemento encontrado: user
+INFO: 07/18/2019 12:13:10 PM Elemento encontrado: user
+INFO: 07/18/2019 12:13:11 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:13:11 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:13:11 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:13:11 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:13:20 PM Evaluando acciones post login
+INFO: 07/18/2019 12:13:20 PM Evaluando acciones post login
+INFO: 07/18/2019 12:13:20 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:13:20 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:13:20 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 12:13:20 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 12:13:20 PM matched condition None !! 
+INFO: 07/18/2019 12:13:20 PM matched condition None !! 
+INFO: 07/18/2019 12:13:21 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 12:13:21 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 12:13:26 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 12:13:26 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 12:13:27 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 12:13:27 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 12:14:00 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: //a[contains(text(),'Saldo y movimientos')] , mode: click
+INFO: 07/18/2019 12:14:00 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: //a[contains(text(),'Saldo y movimientos')] , mode: click
+INFO: 07/18/2019 12:19:29 PM <property object at 0x0000026FC09B2408> -> Loaded skel from : caixa
+INFO: 07/18/2019 12:19:35 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:19:35 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:19:35 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:19:35 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:19:35 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:19:35 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:19:41 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:19:41 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:19:42 PM Elemento encontrado: user
+INFO: 07/18/2019 12:19:42 PM Elemento encontrado: user
+INFO: 07/18/2019 12:19:43 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:19:43 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:19:43 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:19:43 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:19:53 PM Evaluando acciones post login
+INFO: 07/18/2019 12:19:53 PM Evaluando acciones post login
+INFO: 07/18/2019 12:19:55 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:19:55 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:20:00 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 12:20:00 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 12:20:02 PM matched condition None !! 
+INFO: 07/18/2019 12:20:02 PM matched condition None !! 
+INFO: 07/18/2019 12:20:08 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 12:20:08 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 12:20:14 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 12:20:14 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 12:20:17 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 12:20:17 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 12:20:24 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferiorInterno"] , mode: browse
+INFO: 07/18/2019 12:20:24 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferiorInterno"] , mode: browse
+INFO: 07/18/2019 12:21:42 PM <property object at 0x000002182AC102C8> -> Loaded skel from : caixa
+INFO: 07/18/2019 12:21:49 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:21:49 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:21:49 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:21:49 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:21:49 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:21:49 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:21:50 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:21:50 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:21:50 PM Elemento encontrado: user
+INFO: 07/18/2019 12:21:50 PM Elemento encontrado: user
+INFO: 07/18/2019 12:21:51 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:21:51 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+ERROR: 07/18/2019 12:21:51 PM Elemento no encontrado: submit
+ERROR: 07/18/2019 12:21:51 PM Elemento no encontrado: submit
+INFO: 07/18/2019 12:21:51 PM Evaluando acciones post login
+INFO: 07/18/2019 12:21:51 PM Evaluando acciones post login
+INFO: 07/18/2019 12:21:51 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:21:51 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:22:16 PM <property object at 0x000002033C715318> -> Loaded skel from : caixa
+INFO: 07/18/2019 12:22:21 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:22:21 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:22:21 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:22:21 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:22:21 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:22:21 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:22:25 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:22:25 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:22:25 PM Elemento encontrado: user
+INFO: 07/18/2019 12:22:25 PM Elemento encontrado: user
+INFO: 07/18/2019 12:22:26 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:22:26 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:22:26 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:22:26 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:22:37 PM Evaluando acciones post login
+INFO: 07/18/2019 12:22:37 PM Evaluando acciones post login
+INFO: 07/18/2019 12:22:41 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:22:41 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:22:52 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 12:22:52 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 12:22:54 PM matched condition None !! 
+INFO: 07/18/2019 12:22:54 PM matched condition None !! 
+INFO: 07/18/2019 12:23:02 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 12:23:02 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 12:23:06 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 12:23:06 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 12:23:12 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 12:23:12 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 12:23:21 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferiorInterno"] , mode: frame_switch
+INFO: 07/18/2019 12:23:21 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferiorInterno"] , mode: frame_switch
+INFO: 07/18/2019 12:26:38 PM <property object at 0x000001BF06981368> -> Loaded skel from : caixa
+INFO: 07/18/2019 12:26:44 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:26:44 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:26:44 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:26:44 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:26:44 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:26:44 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:26:53 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:26:53 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:26:53 PM Elemento encontrado: user
+INFO: 07/18/2019 12:26:53 PM Elemento encontrado: user
+INFO: 07/18/2019 12:26:55 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:26:55 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:26:55 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:26:55 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:27:04 PM Evaluando acciones post login
+INFO: 07/18/2019 12:27:04 PM Evaluando acciones post login
+INFO: 07/18/2019 12:27:09 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:27:09 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:27:12 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 12:27:12 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 12:27:15 PM matched condition None !! 
+INFO: 07/18/2019 12:27:15 PM matched condition None !! 
+INFO: 07/18/2019 12:27:28 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 12:27:28 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 12:27:46 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 12:27:46 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 12:27:48 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 12:27:48 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 12:28:09 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles']' , mode: frame_switch
+INFO: 07/18/2019 12:28:09 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles']' , mode: frame_switch
+INFO: 07/18/2019 12:30:58 PM <property object at 0x000001FA65AD4408> -> Loaded skel from : caixa
+INFO: 07/18/2019 12:31:04 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:31:04 PM Evaluando acciones pre login
+INFO: 07/18/2019 12:31:04 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:31:04 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 12:31:04 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:31:04 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 12:31:07 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:31:07 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 12:31:07 PM Elemento encontrado: user
+INFO: 07/18/2019 12:31:07 PM Elemento encontrado: user
+INFO: 07/18/2019 12:31:08 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:31:08 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 12:31:08 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:31:08 PM Elemento encontrado: pin
+INFO: 07/18/2019 12:31:16 PM Evaluando acciones post login
+INFO: 07/18/2019 12:31:16 PM Evaluando acciones post login
+INFO: 07/18/2019 12:31:19 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:31:19 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 12:31:22 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 12:31:22 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 12:31:23 PM matched condition None !! 
+INFO: 07/18/2019 12:31:23 PM matched condition None !! 
+INFO: 07/18/2019 12:31:31 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 12:31:31 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 12:31:39 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 12:31:39 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 12:31:42 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 12:31:42 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 12:31:56 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Menu']' , mode: frame_switch
+INFO: 07/18/2019 12:31:56 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Menu']' , mode: frame_switch
+INFO: 07/18/2019 01:00:57 PM <property object at 0x00000238B332C408> -> Loaded skel from : caixa
+ERROR: 07/18/2019 01:00:57 PM Excepcion en do_the_process -> 'NoneType' object has no attribute 'get'
+ERROR: 07/18/2019 01:00:57 PM Excepcion en do_the_process -> 'NoneType' object has no attribute 'get'
+INFO: 07/18/2019 01:01:11 PM <property object at 0x000001B7F6CD0368> -> Loaded skel from : caixa
+ERROR: 07/18/2019 01:01:11 PM Excepcion en do_the_process -> 'NoneType' object has no attribute 'get'
+ERROR: 07/18/2019 01:01:11 PM Excepcion en do_the_process -> 'NoneType' object has no attribute 'get'
+INFO: 07/18/2019 01:02:14 PM <property object at 0x00000251BA1343B8> -> Loaded skel from : caixa
+INFO: 07/18/2019 01:02:23 PM Evaluando acciones pre login
+INFO: 07/18/2019 01:02:23 PM Evaluando acciones pre login
+INFO: 07/18/2019 01:02:23 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 01:02:23 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 01:02:23 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 01:02:23 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 01:02:26 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 01:02:26 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 01:02:26 PM Elemento encontrado: user
+INFO: 07/18/2019 01:02:26 PM Elemento encontrado: user
+INFO: 07/18/2019 01:02:27 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 01:02:27 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 01:02:28 PM Elemento encontrado: pin
+INFO: 07/18/2019 01:02:28 PM Elemento encontrado: pin
+INFO: 07/18/2019 01:02:36 PM Evaluando acciones post login
+INFO: 07/18/2019 01:02:36 PM Evaluando acciones post login
+INFO: 07/18/2019 01:02:38 PM None -> tipo busqueda: xpath , expresion: [{'target': "//frame[@name='Inferior']", 'switch': True}, {'target': '//frameset[@id="FramesetInferior"]', 'switch': False}, {'target': "//frame[@name='Niveles']", 'switch': True}, {'target': "//frame[@name='Inferior']", 'switch': True}] , mode: go_to
+INFO: 07/18/2019 01:02:38 PM None -> tipo busqueda: xpath , expresion: [{'target': "//frame[@name='Inferior']", 'switch': True}, {'target': '//frameset[@id="FramesetInferior"]', 'switch': False}, {'target': "//frame[@name='Niveles']", 'switch': True}, {'target': "//frame[@name='Inferior']", 'switch': True}] , mode: go_to
+INFO: 07/18/2019 01:03:41 PM <property object at 0x000001F3E7CBF458> -> Loaded skel from : caixa
+INFO: 07/18/2019 01:03:47 PM Evaluando acciones pre login
+INFO: 07/18/2019 01:03:47 PM Evaluando acciones pre login
+INFO: 07/18/2019 01:03:47 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 01:03:47 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 01:03:47 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 01:03:47 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 01:03:52 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 01:03:52 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 01:03:52 PM Elemento encontrado: user
+INFO: 07/18/2019 01:03:52 PM Elemento encontrado: user
+INFO: 07/18/2019 01:03:53 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 01:03:53 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 01:03:53 PM Elemento encontrado: pin
+INFO: 07/18/2019 01:03:53 PM Elemento encontrado: pin
+INFO: 07/18/2019 01:04:01 PM Evaluando acciones post login
+INFO: 07/18/2019 01:04:01 PM Evaluando acciones post login
+INFO: 07/18/2019 01:04:04 PM None -> tipo busqueda: xpath , expresion: [{'target': "//frame[@name='Inferior']", 'switch': True}, {'target': '//frameset[@id="FramesetInferior"]', 'switch': False}, {'target': "//frame[@name='Niveles']", 'switch': True}, {'target': "//frame[@name='Inferior']", 'switch': True}] , mode: go_to
+INFO: 07/18/2019 01:04:04 PM None -> tipo busqueda: xpath , expresion: [{'target': "//frame[@name='Inferior']", 'switch': True}, {'target': '//frameset[@id="FramesetInferior"]', 'switch': False}, {'target': "//frame[@name='Niveles']", 'switch': True}, {'target': "//frame[@name='Inferior']", 'switch': True}] , mode: go_to
+INFO: 07/18/2019 01:36:29 PM <property object at 0x000001A9EFFD23B8> -> Loaded skel from : caixa
+INFO: 07/18/2019 01:36:38 PM Evaluando acciones pre login
+INFO: 07/18/2019 01:36:38 PM Evaluando acciones pre login
+INFO: 07/18/2019 01:36:38 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 01:36:38 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 01:36:44 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 01:36:44 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 01:36:51 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 01:36:51 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 01:36:51 PM Elemento encontrado: user
+INFO: 07/18/2019 01:36:51 PM Elemento encontrado: user
+INFO: 07/18/2019 01:36:52 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 01:36:52 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 01:36:52 PM Elemento encontrado: pin
+INFO: 07/18/2019 01:36:52 PM Elemento encontrado: pin
+INFO: 07/18/2019 01:37:02 PM Evaluando acciones post login
+INFO: 07/18/2019 01:37:02 PM Evaluando acciones post login
+INFO: 07/18/2019 01:37:08 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 01:37:08 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 01:37:26 PM matched condition None !! 
+INFO: 07/18/2019 01:37:26 PM matched condition None !! 
+INFO: 07/18/2019 01:37:44 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 01:37:44 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 01:37:57 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 01:37:57 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 01:38:04 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 01:38:04 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 01:39:33 PM <property object at 0x000001B0994D1368> -> Loaded skel from : caixa
+INFO: 07/18/2019 01:39:39 PM Evaluando acciones pre login
+INFO: 07/18/2019 01:39:39 PM Evaluando acciones pre login
+INFO: 07/18/2019 01:39:39 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 01:39:39 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 01:39:43 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 01:39:43 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 01:39:48 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 01:39:48 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 01:39:48 PM Elemento encontrado: user
+INFO: 07/18/2019 01:39:48 PM Elemento encontrado: user
+INFO: 07/18/2019 01:39:49 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 01:39:49 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 01:39:49 PM Elemento encontrado: pin
+INFO: 07/18/2019 01:39:49 PM Elemento encontrado: pin
+INFO: 07/18/2019 01:40:05 PM Evaluando acciones post login
+INFO: 07/18/2019 01:40:05 PM Evaluando acciones post login
+INFO: 07/18/2019 01:40:14 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 01:40:14 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 01:41:05 PM <property object at 0x000001EF42CD4408> -> Loaded skel from : caixa
+INFO: 07/18/2019 01:41:10 PM Evaluando acciones pre login
+INFO: 07/18/2019 01:41:10 PM Evaluando acciones pre login
+INFO: 07/18/2019 01:41:10 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 01:41:10 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 01:41:12 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 01:41:12 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 01:41:14 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 01:41:14 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 01:41:15 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 01:41:15 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 01:41:15 PM Elemento encontrado: pin
+INFO: 07/18/2019 01:41:15 PM Elemento encontrado: pin
+INFO: 07/18/2019 01:41:28 PM <property object at 0x000002493E000368> -> Loaded skel from : caixa
+INFO: 07/18/2019 01:41:33 PM Evaluando acciones pre login
+INFO: 07/18/2019 01:41:33 PM Evaluando acciones pre login
+INFO: 07/18/2019 01:41:33 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 01:41:33 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 01:41:40 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 01:41:40 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 01:41:44 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 01:41:44 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 01:41:44 PM Elemento encontrado: user
+INFO: 07/18/2019 01:41:44 PM Elemento encontrado: user
+INFO: 07/18/2019 01:41:45 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 01:41:45 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 01:41:45 PM Elemento encontrado: pin
+INFO: 07/18/2019 01:41:45 PM Elemento encontrado: pin
+INFO: 07/18/2019 01:41:54 PM Evaluando acciones post login
+INFO: 07/18/2019 01:41:54 PM Evaluando acciones post login
+INFO: 07/18/2019 01:41:58 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 01:41:58 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 01:42:09 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 01:42:09 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 01:42:12 PM matched condition None !! 
+INFO: 07/18/2019 01:42:12 PM matched condition None !! 
+INFO: 07/18/2019 01:42:23 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 01:42:23 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 01:42:30 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 01:42:30 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 01:42:32 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 01:42:32 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 01:42:40 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 01:42:40 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 01:42:54 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: //a[contains(text(),'Saldo y movimientos')] , mode: click
+INFO: 07/18/2019 01:42:54 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: //a[contains(text(),'Saldo y movimientos')] , mode: click
+INFO: 07/18/2019 01:48:09 PM <property object at 0x00000215880C1318> -> Loaded skel from : caixa
+INFO: 07/18/2019 01:48:15 PM Evaluando acciones pre login
+INFO: 07/18/2019 01:48:15 PM Evaluando acciones pre login
+INFO: 07/18/2019 01:48:15 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 01:48:15 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 01:48:15 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 01:48:15 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 01:48:20 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 01:48:20 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 01:48:20 PM Elemento encontrado: user
+INFO: 07/18/2019 01:48:20 PM Elemento encontrado: user
+INFO: 07/18/2019 01:48:21 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 01:48:21 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 01:48:21 PM Elemento encontrado: pin
+INFO: 07/18/2019 01:48:21 PM Elemento encontrado: pin
+INFO: 07/18/2019 01:48:32 PM Evaluando acciones post login
+INFO: 07/18/2019 01:48:32 PM Evaluando acciones post login
+INFO: 07/18/2019 01:48:38 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 01:48:38 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 01:48:45 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 01:48:45 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 01:48:47 PM matched condition None !! 
+INFO: 07/18/2019 01:48:47 PM matched condition None !! 
+INFO: 07/18/2019 01:48:53 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 01:48:53 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 01:48:59 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 01:48:59 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 01:49:02 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 01:49:02 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 01:49:19 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 01:49:19 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 01:49:30 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Menu"] , mode: frame_switch
+INFO: 07/18/2019 01:49:30 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Menu"] , mode: frame_switch
+INFO: 07/18/2019 01:49:45 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: //a[contains(text(),'Saldo y movimientos')] , mode: click
+INFO: 07/18/2019 01:49:45 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: //a[contains(text(),'Saldo y movimientos')] , mode: click
+INFO: 07/18/2019 01:49:48 PM matched condition Saldo y movimientos !! 
+INFO: 07/18/2019 01:49:48 PM matched condition Saldo y movimientos !! 
+INFO: 07/18/2019 01:50:00 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 01:50:00 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 02:09:10 PM <property object at 0x0000029281D64368> -> Loaded skel from : caixa
+INFO: 07/18/2019 02:09:17 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:09:17 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:09:17 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 02:09:17 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 02:09:17 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 02:09:17 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 02:09:21 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 02:09:21 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 02:09:21 PM Elemento encontrado: user
+INFO: 07/18/2019 02:09:21 PM Elemento encontrado: user
+INFO: 07/18/2019 02:09:22 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 02:09:22 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 02:09:22 PM Elemento encontrado: pin
+INFO: 07/18/2019 02:09:22 PM Elemento encontrado: pin
+INFO: 07/18/2019 02:09:30 PM Evaluando acciones post login
+INFO: 07/18/2019 02:09:30 PM Evaluando acciones post login
+INFO: 07/18/2019 02:09:33 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 02:09:33 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 02:09:42 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 02:09:42 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 02:09:44 PM matched condition None !! 
+INFO: 07/18/2019 02:09:44 PM matched condition None !! 
+INFO: 07/18/2019 02:09:47 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 02:09:47 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 02:09:52 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 02:09:52 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 02:09:54 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 02:09:54 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 02:10:03 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:10:03 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:10:14 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Menu"] , mode: frame_switch
+INFO: 07/18/2019 02:10:14 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Menu"] , mode: frame_switch
+INFO: 07/18/2019 02:10:19 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: //a[contains(text(),'Saldo y movimientos')] , mode: click
+INFO: 07/18/2019 02:10:19 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: //a[contains(text(),'Saldo y movimientos')] , mode: click
+INFO: 07/18/2019 02:10:21 PM matched condition Saldo y movimientos !! 
+INFO: 07/18/2019 02:10:21 PM matched condition Saldo y movimientos !! 
+INFO: 07/18/2019 02:10:32 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:10:32 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:10:42 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Cos"] , mode: frame_switch
+INFO: 07/18/2019 02:10:42 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Cos"] , mode: frame_switch
+INFO: 07/18/2019 02:10:51 PM Buscar Movimientos -> tipo busqueda: xpath , expresion: //*[@id="infoSaldos1000"]/div/div/a , mode: click
+INFO: 07/18/2019 02:10:51 PM Buscar Movimientos -> tipo busqueda: xpath , expresion: //*[@id="infoSaldos1000"]/div/div/a , mode: click
+INFO: 07/18/2019 02:10:51 PM matched condition Buscar Movimientos !! 
+INFO: 07/18/2019 02:10:51 PM matched condition Buscar Movimientos !! 
+INFO: 07/18/2019 02:11:02 PM None -> tipo busqueda: xpath , expresion: //*[@id="dia1"] , mode: fill
+INFO: 07/18/2019 02:11:02 PM None -> tipo busqueda: xpath , expresion: //*[@id="dia1"] , mode: fill
+INFO: 07/18/2019 02:11:03 PM matched condition None !! 
+INFO: 07/18/2019 02:11:03 PM matched condition None !! 
+ERROR: 07/18/2019 02:11:24 PM Error duante el workflow
+ERROR: 07/18/2019 02:11:24 PM Error duante el workflow
+INFO: 07/18/2019 02:15:10 PM <property object at 0x000002577513A318> -> Loaded skel from : caixa
+INFO: 07/18/2019 02:15:16 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:15:16 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:15:16 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 02:15:16 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 02:15:16 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 02:15:16 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 02:15:22 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 02:15:22 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 02:15:22 PM Elemento encontrado: user
+INFO: 07/18/2019 02:15:22 PM Elemento encontrado: user
+INFO: 07/18/2019 02:15:23 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 02:15:23 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 02:15:23 PM Elemento encontrado: pin
+INFO: 07/18/2019 02:15:23 PM Elemento encontrado: pin
+INFO: 07/18/2019 02:15:36 PM Evaluando acciones post login
+INFO: 07/18/2019 02:15:36 PM Evaluando acciones post login
+INFO: 07/18/2019 02:15:36 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 02:15:36 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 02:15:36 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 02:15:36 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 02:15:36 PM matched condition None !! 
+INFO: 07/18/2019 02:15:36 PM matched condition None !! 
+INFO: 07/18/2019 02:15:36 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 02:15:36 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 02:15:36 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 02:15:36 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 02:15:36 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 02:15:36 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 02:15:38 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:15:38 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:15:38 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Menu"] , mode: frame_switch
+INFO: 07/18/2019 02:15:38 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Menu"] , mode: frame_switch
+INFO: 07/18/2019 02:15:38 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: //a[contains(text(),'Saldo y movimientos')] , mode: click
+INFO: 07/18/2019 02:15:38 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: //a[contains(text(),'Saldo y movimientos')] , mode: click
+INFO: 07/18/2019 02:15:38 PM matched condition Saldo y movimientos !! 
+INFO: 07/18/2019 02:15:38 PM matched condition Saldo y movimientos !! 
+INFO: 07/18/2019 02:15:39 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:15:39 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:15:39 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Cos"] , mode: frame_switch
+INFO: 07/18/2019 02:15:39 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Cos"] , mode: frame_switch
+INFO: 07/18/2019 02:15:48 PM Buscar Movimientos -> tipo busqueda: xpath , expresion: //*[@id="infoSaldos1000"]/div/div/a , mode: click
+INFO: 07/18/2019 02:15:48 PM Buscar Movimientos -> tipo busqueda: xpath , expresion: //*[@id="infoSaldos1000"]/div/div/a , mode: click
+INFO: 07/18/2019 02:15:48 PM matched condition Buscar Movimientos !! 
+INFO: 07/18/2019 02:15:48 PM matched condition Buscar Movimientos !! 
+INFO: 07/18/2019 02:15:57 PM None -> tipo busqueda: xpath , expresion: //*[@id="dia1"] , mode: fill
+INFO: 07/18/2019 02:15:57 PM None -> tipo busqueda: xpath , expresion: //*[@id="dia1"] , mode: fill
+INFO: 07/18/2019 02:15:58 PM matched condition None !! 
+INFO: 07/18/2019 02:15:58 PM matched condition None !! 
+INFO: 07/18/2019 02:16:08 PM None -> tipo busqueda: xpath , expresion: //*[@id="mes1"] , mode: fill
+INFO: 07/18/2019 02:16:08 PM None -> tipo busqueda: xpath , expresion: //*[@id="mes1"] , mode: fill
+INFO: 07/18/2019 02:16:09 PM matched condition None !! 
+INFO: 07/18/2019 02:16:09 PM matched condition None !! 
+INFO: 07/18/2019 02:16:17 PM None -> tipo busqueda: xpath , expresion: //*[@id="any1"] , mode: fill
+INFO: 07/18/2019 02:16:17 PM None -> tipo busqueda: xpath , expresion: //*[@id="any1"] , mode: fill
+INFO: 07/18/2019 02:16:18 PM matched condition None !! 
+INFO: 07/18/2019 02:16:18 PM matched condition None !! 
+INFO: 07/18/2019 02:16:24 PM None -> tipo busqueda: xpath , expresion: //*[@id="dia2"] , mode: fill
+INFO: 07/18/2019 02:16:24 PM None -> tipo busqueda: xpath , expresion: //*[@id="dia2"] , mode: fill
+INFO: 07/18/2019 02:16:25 PM matched condition None !! 
+INFO: 07/18/2019 02:16:25 PM matched condition None !! 
+INFO: 07/18/2019 02:16:33 PM None -> tipo busqueda: xpath , expresion: //*[@id="mes2"] , mode: fill
+INFO: 07/18/2019 02:16:33 PM None -> tipo busqueda: xpath , expresion: //*[@id="mes2"] , mode: fill
+INFO: 07/18/2019 02:16:33 PM matched condition None !! 
+INFO: 07/18/2019 02:16:33 PM matched condition None !! 
+INFO: 07/18/2019 02:16:40 PM None -> tipo busqueda: xpath , expresion: //*[@id="any2"] , mode: fill
+INFO: 07/18/2019 02:16:40 PM None -> tipo busqueda: xpath , expresion: //*[@id="any2"] , mode: fill
+INFO: 07/18/2019 02:16:41 PM matched condition None !! 
+INFO: 07/18/2019 02:16:41 PM matched condition None !! 
+INFO: 07/18/2019 02:16:57 PM None -> tipo busqueda: xpath , expresion: //*[@id="divContenedorBean"]/div[1]/div[6]/div/div/a , mode: click
+INFO: 07/18/2019 02:16:57 PM None -> tipo busqueda: xpath , expresion: //*[@id="divContenedorBean"]/div[1]/div[6]/div/div/a , mode: click
+INFO: 07/18/2019 02:16:58 PM matched condition None !! 
+INFO: 07/18/2019 02:16:58 PM matched condition None !! 
+INFO: 07/18/2019 02:19:07 PM <property object at 0x000002087F751318> -> Loaded skel from : caixa
+INFO: 07/18/2019 02:19:13 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:19:13 PM Evaluando acciones pre login
+INFO: 07/18/2019 02:19:13 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 02:19:13 PM click boton informativo politica de cookies -> tipo busqueda: xpath , expresion: //a[@data-ref-origin="POLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON"] , mode: click
+INFO: 07/18/2019 02:19:13 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 02:19:13 PM matched condition click boton informativo politica de cookies !! 
+INFO: 07/18/2019 02:19:18 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 02:19:18 PM Buscando por xpath -> //div[@class='lolopo-f-id']//input[@id='lineaabierta-login']
+INFO: 07/18/2019 02:19:18 PM Elemento encontrado: user
+INFO: 07/18/2019 02:19:18 PM Elemento encontrado: user
+INFO: 07/18/2019 02:19:19 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 02:19:19 PM Buscando por xpath -> //div[@class='lolopo-f-pin']//input[@id='lineaabierta-pin']
+INFO: 07/18/2019 02:19:19 PM Elemento encontrado: pin
+INFO: 07/18/2019 02:19:19 PM Elemento encontrado: pin
+INFO: 07/18/2019 02:19:28 PM Evaluando acciones post login
+INFO: 07/18/2019 02:19:28 PM Evaluando acciones post login
+INFO: 07/18/2019 02:19:28 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 02:19:28 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Inferior'] , mode: frame_switch
+INFO: 07/18/2019 02:19:29 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 02:19:29 PM None -> tipo busqueda: xpath , expresion: //frameset[@id="FramesetInferior"] , mode: browse
+INFO: 07/18/2019 02:19:29 PM matched condition None !! 
+INFO: 07/18/2019 02:19:29 PM matched condition None !! 
+INFO: 07/18/2019 02:19:29 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 02:19:29 PM None -> tipo busqueda: xpath , expresion: //frame[@name='Niveles'] , mode: frame_switch
+INFO: 07/18/2019 02:19:29 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 02:19:29 PM Menu superior Tesoreria -> tipo busqueda: xpath , expresion: //a[contains(text(),'Tesorería')] , mode: click
+INFO: 07/18/2019 02:19:29 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 02:19:29 PM matched condition Menu superior Tesoreria !! 
+INFO: 07/18/2019 02:19:29 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:19:29 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:19:30 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Menu"] , mode: frame_switch
+INFO: 07/18/2019 02:19:30 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Menu"] , mode: frame_switch
+INFO: 07/18/2019 02:19:30 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: //a[contains(text(),'Saldo y movimientos')] , mode: click
+INFO: 07/18/2019 02:19:30 PM Saldo y movimientos -> tipo busqueda: xpath , expresion: //a[contains(text(),'Saldo y movimientos')] , mode: click
+INFO: 07/18/2019 02:19:30 PM matched condition Saldo y movimientos !! 
+INFO: 07/18/2019 02:19:30 PM matched condition Saldo y movimientos !! 
+INFO: 07/18/2019 02:19:31 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:19:31 PM None -> tipo busqueda: xpath , expresion: None , mode: go_parent
+INFO: 07/18/2019 02:19:31 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Cos"] , mode: frame_switch
+INFO: 07/18/2019 02:19:31 PM None -> tipo busqueda: xpath , expresion: //frame[@name="Cos"] , mode: frame_switch
+INFO: 07/18/2019 02:19:39 PM Buscar Movimientos -> tipo busqueda: xpath , expresion: //*[@id="infoSaldos1000"]/div/div/a , mode: click
+INFO: 07/18/2019 02:19:39 PM Buscar Movimientos -> tipo busqueda: xpath , expresion: //*[@id="infoSaldos1000"]/div/div/a , mode: click
+INFO: 07/18/2019 02:19:39 PM matched condition Buscar Movimientos !! 
+INFO: 07/18/2019 02:19:39 PM matched condition Buscar Movimientos !! 
+INFO: 07/18/2019 02:19:41 PM None -> tipo busqueda: xpath , expresion: //*[@id="dia1"] , mode: fill
+INFO: 07/18/2019 02:19:41 PM None -> tipo busqueda: xpath , expresion: //*[@id="dia1"] , mode: fill
+INFO: 07/18/2019 02:19:41 PM matched condition None !! 
+INFO: 07/18/2019 02:19:41 PM matched condition None !! 
+INFO: 07/18/2019 02:19:43 PM None -> tipo busqueda: xpath , expresion: //*[@id="mes1"] , mode: fill
+INFO: 07/18/2019 02:19:43 PM None -> tipo busqueda: xpath , expresion: //*[@id="mes1"] , mode: fill
+INFO: 07/18/2019 02:19:43 PM matched condition None !! 
+INFO: 07/18/2019 02:19:43 PM matched condition None !! 
+INFO: 07/18/2019 02:19:45 PM None -> tipo busqueda: xpath , expresion: //*[@id="any1"] , mode: fill
+INFO: 07/18/2019 02:19:45 PM None -> tipo busqueda: xpath , expresion: //*[@id="any1"] , mode: fill
+INFO: 07/18/2019 02:19:45 PM matched condition None !! 
+INFO: 07/18/2019 02:19:45 PM matched condition None !! 
+INFO: 07/18/2019 02:19:47 PM None -> tipo busqueda: xpath , expresion: //*[@id="dia2"] , mode: fill
+INFO: 07/18/2019 02:19:47 PM None -> tipo busqueda: xpath , expresion: //*[@id="dia2"] , mode: fill
+INFO: 07/18/2019 02:19:47 PM matched condition None !! 
+INFO: 07/18/2019 02:19:47 PM matched condition None !! 
+INFO: 07/18/2019 02:19:50 PM None -> tipo busqueda: xpath , expresion: //*[@id="mes2"] , mode: fill
+INFO: 07/18/2019 02:19:50 PM None -> tipo busqueda: xpath , expresion: //*[@id="mes2"] , mode: fill
+INFO: 07/18/2019 02:19:50 PM matched condition None !! 
+INFO: 07/18/2019 02:19:50 PM matched condition None !! 
+INFO: 07/18/2019 02:19:52 PM None -> tipo busqueda: xpath , expresion: //*[@id="any2"] , mode: fill
+INFO: 07/18/2019 02:19:52 PM None -> tipo busqueda: xpath , expresion: //*[@id="any2"] , mode: fill
+INFO: 07/18/2019 02:19:52 PM matched condition None !! 
+INFO: 07/18/2019 02:19:52 PM matched condition None !! 
+INFO: 07/18/2019 02:19:54 PM None -> tipo busqueda: xpath , expresion: //*[@id="divContenedorBean"]/div[1]/div[6]/div/div/a , mode: click
+INFO: 07/18/2019 02:19:54 PM None -> tipo busqueda: xpath , expresion: //*[@id="divContenedorBean"]/div[1]/div[6]/div/div/a , mode: click
+INFO: 07/18/2019 02:19:54 PM matched condition None !! 
+INFO: 07/18/2019 02:19:54 PM matched condition None !! 
+INFO: 07/18/2019 02:19:57 PM None -> tipo busqueda: xpath , expresion: //*[@id="titulo_pagina"]/div[2]/ul/li[2]/a , mode: click
+INFO: 07/18/2019 02:19:57 PM None -> tipo busqueda: xpath , expresion: //*[@id="titulo_pagina"]/div[2]/ul/li[2]/a , mode: click
+INFO: 07/18/2019 02:19:57 PM matched condition None !! 
+INFO: 07/18/2019 02:19:57 PM matched condition None !! 

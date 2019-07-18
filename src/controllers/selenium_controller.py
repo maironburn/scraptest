@@ -1,5 +1,5 @@
 from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.common.by import By
 from time import sleep
@@ -28,9 +28,12 @@ class SeleniumController(object):
     _driver = None
     _bank = None
     _logger = None
-    _dict_navigated_elements = []
+    _navigated_elements = []
     _current_window = None
     find_method = None
+    finds_method = None
+    ec_ref = None
+    login_dict_methods = None
 
     def __init__(self, kw):
 
@@ -38,27 +41,33 @@ class SeleniumController(object):
         if kw.get('bank', None):
             self.bank = kw.get('bank')
             self.start() if kw.get('selenium_opts', None) is None else self.start(kw.get('selenium_opts'))
-            self.find_method = self.load_find_method_references()
-            self.finds_method = self.load_finds_method_references()
+            self.load_references()
+
+    def load_references(self):
+
+        self.find_method = self.load_find_method_references()
+        self.finds_method = self.load_finds_method_references()
+        self.ec_ref = self.ec_references()
+        self.login_dict_methods = {'standard_login': self.standard_login,
+                                   'iframe_login': self.iframe_login,
+                                   'login_bello': self.login_bello
+                                   }
 
     def do_the_process(self):
 
         try:
-            # independientemente de que halla acciones prelogin ...lo primero es abrir la url de la web
+            # Apertura de la web de la entidad
             self.driver.get(self.bank.get('login_url'))
-            # comprobamos si son necesarias llevar a cabo acciones antes de iniciar el proceso de logado
+
+            # Comprobamos si son necesarias llevar a cabo acciones antes de iniciar el proceso de logado
             if self.bank.get('pre_login_actions'):
                 self._logger.debug("Se requieren acciones previas al logado")
                 self.pre_post_login_actions(self.bank.get('pre_login_actions'), stage="pre")
 
             auth_meth = self.bank.get('login_method')
-            self.loggin_dict_meth = {'standard_login': self.standard_login,
-                                     'iframe_login': self.iframe_login,
-                                     'login_bello': self.login_bello
-                                     }
+            self.login_dict_methods[auth_meth]()
+            # @todo, eliminar los sleeps...sustituir por ec
 
-            self.loggin_dict_meth[auth_meth]()
-            sleep(10)
             # comprobamos si son necesarias llevar a cabo acciones posteriores al logado
             if self.bank.get('post_login_actions'):
                 self._logger.debug("Se requieren acciones posteriores al logado")
@@ -67,27 +76,9 @@ class SeleniumController(object):
             self.do_workflow()
 
         except Exception as ex:
+            self._logger.error("Excepcion en do_the_process -> {}".format(ex))
 
-            print("peto")
-
-    '''
-    @:param, lista de opciones con las que inicializar el driver de selenium
-    '''
-
-    def start(self, default_opc=["--start-maximized"]):
-
-        options = webdriver.ChromeOptions()
-        for opc in default_opc:
-            options.add_argument(opc)
-
-        self._driver = webdriver.Chrome(SELENIUM_DRIVER_PATH, chrome_options=options)
-
-        if self._driver:
-            self.load_find_method_references()
-            return self._driver
-
-        return None
-
+    # <editor-fold desc="Selenium methods references">
     def load_find_method_references(self):
 
         return {
@@ -114,29 +105,61 @@ class SeleniumController(object):
             'css_selector': self.driver.find_elements_by_css_selector
         }
 
+    def ec_references(self):
+        return {
+            'element_located': ec.presence_of_element_located,
+            'frame_switch': ec.frame_to_be_available_and_switch_to_it,
+            'clickable': ec.element_to_be_clickable
+        }
+
+    # </editor-fold>
+
+    # <editor-fold desc="Login Methods">
+
     '''
     login estandar
         Se entiende un formulario de login simple
         usuario, pwd y [algun otro dato adicional]
     '''
 
-    '''
-    
-        apertura de nuevo tab
-        @:param, element_that_cause_the_swapping (elemento que causa el swap)
-        
-    '''
+    def standard_login(self):
 
-    def swap_window(self, element_that_cause_the_swapping=None):
+        if self.driver:
+            # self.current_windows = self.driver.window_handles[0]
+            credentials = self.bank.get('credentials')
+            login_form = self.bank.get('login_form')
 
-        current = self.driver.window_handles[0]
-        if element_that_cause_the_swapping:
-            element_that_cause_the_swapping.click()
+        try:
+            self._logger.debug("Inciando proceso standard de logado")
+            for k, v in login_form.items():
+                if k in credentials.keys():
+                    # verificamos existencia del elemento target
+                    tipo = login_form.get(k)['tipo']
+                    target = login_form.get(k)['target']
+                    self._logger.info("Buscando por {} -> {}".format(tipo, target))
+                    if len(self.finds_method[tipo](target)):
+                        self._logger.info("Elemento encontrado: {}".format(k))
+                        elem = self.find_method[tipo](target)
+                        elem.send_keys(credentials[k])
+                        sleep(1)
 
-            WebDriverWait(self.driver, 20).until(ec.number_of_windows_to_be(2))
-            new_windows = [window for window in self.driver.window_handles if window != current][0]
-            self.driver.switch_to.window(new_windows)
-            sleep(5)
+            e_submit = login_form.get('submit')
+            submit = self.find_method[e_submit['tipo']](e_submit['target'])
+            if 'mode' in login_form.get('submit').keys():
+                mode = login_form.get('submit')['mode']
+                if mode == 'swap_window':
+                    self.swap_window(submit)
+
+            else:
+                submit.click()
+
+            return self.driver
+
+        except NoSuchElementException as nse:
+            self._logger.error("Elemento no encontrado: {}".format(k))
+            pass
+
+        return False
 
     '''
      casuistica del logado a traves de un iframe que carga el formulario de login
@@ -165,50 +188,6 @@ class SeleniumController(object):
 
             except Exception as e:
                 pass
-
-    def switch_to_frame(self, element=None, index=None):
-        try:
-            self.driver.switch_to.frame(element)
-            pass
-        except Exception as e:
-            pass
-
-    def standard_login(self):
-        if self.driver:
-            # self.current_windows = self.driver.window_handles[0]
-            credentials = self.bank.get('credentials')
-            login_form = self.bank.get('login_form')
-
-        try:
-            self._logger.debug("Inciando proceso standard de logado")
-            for k, v in login_form.items():
-                if k in credentials.keys():
-                    # verificamos existencia del elemento target
-                    tipo = login_form.get(k)['tipo']
-                    target = login_form.get(k)['target']
-                    self._logger.info("Buscando por {} -> {}".format(tipo, target))
-                    if len(self.finds_method[tipo](target)):
-                        self._logger.info("Elemento encontrado: {}".format(k))
-                        elem = self.find_method[tipo](target)
-                        elem.send_keys(credentials[k])
-
-            e_submit = login_form.get('submit')
-            submit = self.find_method[e_submit['tipo']](e_submit['target'])
-            if 'mode' in login_form.get('submit').keys():
-                mode = login_form.get('submit')['mode']
-                if mode == 'swap_window':
-                    self.swap_window(submit)
-
-            else:
-                submit.click()
-
-            return self.driver
-
-        except NoSuchElementException as nse:
-            self._logger.error("Elemento no encontrado: {}".format(k))
-            pass
-
-        return False
 
     '''
     login precioso de reconocimiento de imagenes
@@ -253,50 +232,106 @@ class SeleniumController(object):
 
         return False
 
-    '''
-        acciones post login o post login, la mecanica es igual
-        @:param, lista de acciones (pre o post acciones)
-    '''
+    # </editor-fold>
+
+    def wait_for_expected_conditions(self, actions):
+        tipo = actions.get('tipo')
+        target = actions.get('target')
+        time_wait = actions.get('time_wait')
+        e_description = actions.get('e_description')
+        success = False
+        try:
+            exp_type = self.ec_ref[tipo]
+            success = wait(self.driver, time_wait).until(exp_type((By.XPATH, target)))
+        except Exception as e:
+            self._logger.error(
+                "Exception waiting for expected conditions -> target {}, desc: {}".format(target, e_description))
+        print("done")
+
+        return success
+
+    def swap_window(self, element_that_cause_the_swapping=None):
+        '''
+            apertura de nuevo tab
+            @:param, element_that_cause_the_swapping (elemento que causa el swap)
+        '''
+        current = self.driver.window_handles[0]
+        if element_that_cause_the_swapping:
+            element_that_cause_the_swapping.click()
+
+            wait(self.driver, 20).until(ec.number_of_windows_to_be(2))
+            new_windows = [window for window in self.driver.window_handles if window != current][0]
+            self.driver.switch_to.window(new_windows)
+            sleep(5)
+
+    def switch_to_frame(self, actions=None):
+        try:
+            # self.driver.switch_to.default_content()
+
+            wait(self.driver, 10).until(
+                ec.frame_to_be_available_and_switch_to_it((By.XPATH, actions.get('target'))))
+
+        except Exception as e:
+            pass
+
+        return None
+
+    def navigate_to_element(self, actions):
+
+        self.driver.switch_to_default_content()
+        for e in actions:
+            target = e['target']
+            switch = e['switch']
+            if switch:
+                self.switch_to_frame(target)
+            else:
+                self.driver.find_element_by_xpath(target)
 
     def pre_post_login_actions(self, lista_acciones=None, stage=""):
-
+        '''
+            acciones post login o post login, la mecanica es igual
+            @:param, lista de acciones (pre o post acciones)
+        '''
         if self.driver and len(lista_acciones):
             self._logger.info("Evaluando acciones {} login".format(stage))
             for actions in lista_acciones:
 
+                tipo = actions.get('tipo')
+                target = actions.get('target')
+                desc = actions.get('description')
+                mode = actions.get('mode')
+                ec = actions.get('expected_conditions', None)
                 try:
-                    tipo = actions.get('tipo')
-                    target = actions.get('target')
-                    desc = actions.get('description')
-                    mode = actions.get('mode')
+
                     self._logger.info(
                         "{} -> tipo busqueda: {} , expresion: {} , mode: {}".format(desc, tipo, target, mode))
 
-                    element = None
-                    elements_finded = self.finds_method[tipo](target)
-                    if len(elements_finded):
-                        self._logger.info("matched condition {} !! ".format(desc))
+                    if mode == 'frame_switch':
+                        self.switch_to_frame(actions)
 
-                        if mode == 'switch_to_frame':
-                            index = None
-                            if 'index' in actions.keys():
-                                index = actions.get('index')
-                                if index < len(elements_finded):
-                                    element = elements_finded[index]
-                            self.switch_to_frame(element, index)
-                        else:
+                    if mode == 'go_parent':
+                        self.driver.switch_to.parent_frame()
 
+                    else:
+
+                        elements_finded = self.finds_method[tipo](target)
+                        if len(elements_finded):
+                            self._logger.info("matched condition {} !! ".format(desc))
                             elem = self.find_method[tipo](target)
+
                             if mode == 'click':
                                 elem.click()
 
                             if mode == 'swap_window':
                                 self.swap_window(elem)
 
-                        sleep(2)
+                        if ec:
+                            self.wait_for_expected_conditions(ec)
+
                 except Exception as e:
                     pass
-                    # print("buscando condicion dnd: {} -> xpath: {}".format(k, v))
+
+
 
     def do_workflow(self):
         try:
@@ -314,27 +349,43 @@ class SeleniumController(object):
                 if len(self.finds_method[tipo](target)):
                     self._logger.info("matched condition {} !! ".format(desc))
                     element = self.find_method[tipo](target)
-                    sleep(2)
+                    sleep(1)
                     if mode == 'click':
                         element.click()
 
                     if mode == 'fill':
                         # previamente a send_keys se requiere un clear
-                        element.clear()
+                        if action.get('clear', None):
+                            element.clear()
                         element.send_keys(action.get('data'))
 
-                    if action.get('expect_cond'):
-                        wait = WebDriverWait(self.driver, 10)
-                        wait.until(ec.element_to_be_clickable((By.XPATH, action.get('expect_cond'))))
+                    if action.get('expected_conditions'):
+                        wait(self.driver, 10).until(ec.element_to_be_clickable((By.XPATH, action.get('expect_cond'))))
                     else:
                         sleep(1)
 
-                    self.navigated_elements.append({slugify(target): element})
+                    # self.navigated_elements.append({slugify(target): element})
 
         except Exception:
             self._logger.error("Error duante el workflow")
 
         self.driver_close()
+
+    def start(self, default_opc=["--start-maximized"]):
+        '''
+        @:param, lista de opciones con las que inicializar el driver de selenium
+        '''
+        options = webdriver.ChromeOptions()
+        for opc in default_opc:
+            options.add_argument(opc)
+
+        self._driver = webdriver.Chrome(SELENIUM_DRIVER_PATH, chrome_options=options)
+
+        if self._driver:
+            self.load_find_method_references()
+            return self._driver
+
+        return None
 
     def driver_close(self):
         if self.driver:

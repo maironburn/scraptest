@@ -16,8 +16,6 @@ class BankController(object):
         if self._banknames:
             self.load_banks()
 
-
-
     def extract_movements(self, bankname=None):
 
         if bankname and bankname in self._dict_bank.keys():
@@ -67,12 +65,10 @@ class BankController(object):
 
 
 if __name__ == '__main__':
-    #bancos = ['unicaja', 'bankia', 'popular', 'bankinter', 'ibercaja']
-    #J.A_bancos = [ 'unicaja','bankia', 'caixa', 'babucha']
-    bancos = ['']
-    #bancos = ['ibercaja']
+
+    # J.A_bancos = [ 'unicaja','bankia', 'caixa', 'babucha']
+    bancos = ['bankinter','unicaja', 'bankia', 'caixa', 'babucha']
+
     bc = BankController({'banknames': bancos})
     for b in bancos:
         bc.extract_movements(b)
-
-

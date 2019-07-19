@@ -7,6 +7,7 @@ from selenium import webdriver
 from src.models.teclado import Teclado
 from common_config import SELENIUM_DRIVER_PATH
 from selenium.webdriver.common.keys import Keys
+
 '''
 incializa el driver 
 
@@ -116,14 +117,12 @@ class SeleniumController(object):
 
     # <editor-fold desc="Login Methods">
 
-    '''
-    login estandar
-        Se entiende un formulario de login simple
-        usuario, pwd y [algun otro dato adicional]
-    '''
-
     def standard_login(self):
-
+        '''
+        login estandar
+            Se entiende un formulario de login simple
+            usuario, pwd y [algun otro dato adicional]
+        '''
         if self.driver:
             # self.current_windows = self.driver.window_handles[0]
             credentials = self.bank.get('credentials')
@@ -270,8 +269,6 @@ class SeleniumController(object):
 
     def switch_to_frame(self, actions=None):
         try:
-            # self.driver.switch_to.default_content()
-
             wait(self.driver, 10).until(
                 ec.frame_to_be_available_and_switch_to_it((By.XPATH, actions.get('target'))))
 
@@ -280,18 +277,7 @@ class SeleniumController(object):
 
         return None
 
-    def switch_to_frame_by_element(self, actions=None):
-        try:
-            # self.driver.switch_to.default_content()
-
-            wait(self.driver, 10).until(
-                ec.frame_to_be_available_and_switch_to_it((By.XPATH, actions.get('target'))))
-
-        except Exception as e:
-            pass
-
-        return None
-
+    # @todo: improve navigation through frames
     def navigate_to_element(self, actions):
 
         self.driver.switch_to_default_content()
@@ -401,7 +387,9 @@ class SeleniumController(object):
         options = webdriver.ChromeOptions()
         for opc in default_opc:
             options.add_argument(opc)
-
+        # preferencias para la carpeta de  descarga
+        # options.add_experimental_option()
+        # https://stackoverflow.com/questions/18026391/setting-chrome-preferences-w-selenium-webdriver-in-python
         self._driver = webdriver.Chrome(SELENIUM_DRIVER_PATH, chrome_options=options)
 
         if self._driver:

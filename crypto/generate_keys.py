@@ -4,19 +4,56 @@ from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_OAEP
 import zlib
 import base64
+from common_config import RSA_KEYS, JSONES, FICHERO_CREDENCIALES
 
-'''
-funcion de encripcion 
 
-              clave publica  
--> fichero ------- | ------- fichero encriptado
+def decrypt_blob(encrypted_blob, private_key):
+    '''
+    funcion de desencriptacion
 
-@:param blob -> fichero a encriptar ( tipo file)
-@:public_key -> clave publica como file 
-'''
+                                        clave privata
+    -> fichero encript (clave publica)------- | ------- fichero desencriptado
+
+    @:param blob -> fichero a encriptar ( tipo file)
+    @:public_key -> clave publica como file
+    '''
+    # Import the Private Key and use for decryption using PKCS1_OAEP
+    rsakey = RSA.importKey(private_key)
+    rsakey = PKCS1_OAEP.new(rsakey)
+
+    # Base 64 decode the data
+    encrypted_blob = base64.b64decode(encrypted_blob)
+
+    chunk_size = 512
+    offset = 0
+    decrypted = ""
+
+    # keep loop going as long as we have chunks to decrypt
+    while offset < len(encrypted_blob):
+        # The chunk
+        chunk = encrypted_blob[offset: offset + chunk_size]
+
+        # Append the decrypted chunk to the overall decrypted file
+        decrypted += rsakey.decrypt(chunk)
+
+        # Increase the offset by chunk size
+        offset += chunk_size
+
+    # return the decompressed decrypted data
+    return zlib.decompress(decrypted)
 
 
 def encrypt_blob(blob, public_key):
+    '''
+    funcion de encriptacion
+
+                  clave publica
+    -> fichero ------- | ------- fichero encriptado
+
+    @:param blob -> fichero a encriptar ( tipo file)
+    @:public_key -> clave publica como file
+    '''
+
     # Import the Public Key and use for encryption using PKCS1_OAEP
     rsa_key = RSA.importKey(public_key)
     rsa_key = PKCS1_OAEP.new(rsa_key)
@@ -52,16 +89,15 @@ def encrypt_blob(blob, public_key):
     return base64.b64encode(encrypted)
 
 
-'''
- @:param, key(str), ruta y nombre del fichero a leer
- Se usara para leer tanto las claves como los ficheros fuentes para la encriptacion
- @:return, tipo (file)
-'''
+def read_file(fichero):
+    '''
+     @:param, key(str), ruta y nombre del fichero a leer
+     Se usara para leer tanto las claves como los ficheros fuentes para la encriptacion
+     @:return, tipo (file)
+    '''
 
-
-def read_file(key):
-    if os.path.exists(key):
-        with open(key, "rb") as fichero:
+    if os.path.exists(fichero):
+        with open(fichero, "rb") as fichero:
             readed_file = fichero.read()
 
         return readed_file
@@ -82,12 +118,30 @@ def generate_keys():
 
 def generate_file_key(key, key_name):
     print("Generating {}".format(key_name))
-    fd = open("{}{}{}.pem".format(RSA_KEYS, os.path.sep, key_name), "wb")
-    fd.write(key)
-    fd.close()
+
+    key_file = "{}{}{}.pem".format(RSA_KEYS, os.path.sep, key_name)
+
+    if not os.path.exists(key_file):
+        fd = open("{}{}{}.pem".format(RSA_KEYS, os.path.sep, key_name), "wb")
+        fd.write(key)
+        fd.close()
+
+
+# def encrypt_them_all(public_file_key):
+#     for f_json in os.listdir(JSONES):
+#         if f_json.endswith(".py"):
+#             file_to_encrypt = read_file(f_json)
+#             public_file_key = read_file(public_file_key)
+#             enc_data = encrypt_blob(file_to_encrypt, public_file_key)
+
+
+def decrypt_them_all():
+    pass
 
 
 if __name__ == '__main__':
     private, public = generate_keys()
     generate_file_key(private, "private_key")
     generate_file_key(public, "public_key")
+
+    credential_file=

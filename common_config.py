@@ -21,4 +21,4 @@ DATASET_IMGS = os.path.join(IMG_DIRS, 'datasets')
 
 #Folder to store after generate public /private RSA keys
 RSA_KEYS = os.path.join(ROOT_DIR, "crypto{}{}".format(os.path.sep, "rsa_keys"))
-
+FICHERO_CREDENCIALES=os.path.join(SETTINGS, "credentials{}{}".format(os.path.sep, "credentials.py"))

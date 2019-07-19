@@ -6,8 +6,7 @@ from time import sleep
 from selenium import webdriver
 from src.models.teclado import Teclado
 from common_config import SELENIUM_DRIVER_PATH
-
-
+from selenium.webdriver.common.keys import Keys
 '''
 incializa el driver 
 
@@ -177,8 +176,8 @@ class SeleniumController(object):
                 target_iframe = self.bank.get('iframe_login_form')['target']
                 tipo = self.bank.get('iframe_login_form')['tipo']
                 element_iframe = self.find_method[tipo](target_iframe)
-                # self.driver.switch_to.frame(element_iframe)
-                self.switch_to_frame(element_iframe)
+                self.driver.switch_to.frame(element_iframe)
+                # self.switch_to_frame(element_iframe)
 
                 self.standard_login()
 
@@ -216,15 +215,19 @@ class SeleniumController(object):
             element.send_keys('%')
             sleep(2)
 
-            teclado = Teclado({'bankname': self.bank.get('bankname')})
+            teclado = Teclado({'bankname': self.bank.get('bankname'), 'logger': self._logger})
             teclado.write(credentials.get('pin'))
 
             tipo = login_form.get('submit')['tipo']
             target = login_form.get('submit')['target']
             submit = self.find_method[tipo](target)
-            submit.click()
 
-            # driver.get('https://www.kutxabank.es/NASApp/BesaideNet2/Gestor?PRESTACION=login&FUNCION=login&ACCION=preseleccion')
+            if 'mode' in login_form.get('submit').keys():
+                mode = login_form.get('submit')['mode']
+                if mode == 'swap_window':
+                    self.swap_window(submit)
+            else:
+                submit.click()
 
             return self.driver
 
@@ -266,6 +269,18 @@ class SeleniumController(object):
             sleep(5)
 
     def switch_to_frame(self, actions=None):
+        try:
+            # self.driver.switch_to.default_content()
+
+            wait(self.driver, 10).until(
+                ec.frame_to_be_available_and_switch_to_it((By.XPATH, actions.get('target'))))
+
+        except Exception as e:
+            pass
+
+        return None
+
+    def switch_to_frame_by_element(self, actions=None):
         try:
             # self.driver.switch_to.default_content()
 
@@ -361,8 +376,11 @@ class SeleniumController(object):
                         # previamente a send_keys se requiere un clear
                         if action.get('clear', None):
                             element.clear()
+                        if action.get('focus', None):
+                            element.click()
+
                         element.send_keys(action.get('data'))
-                        self._logger.info("seteado  {} ->  {}!! ".format(target,action.get('data') ))
+                        self._logger.info("seteado  {} ->  {}!! ".format(target, action.get('data')))
                     if action.get('expected_conditions'):
                         wait(self.driver, 10).until(ec.element_to_be_clickable((By.XPATH, action.get('expect_cond'))))
 
@@ -373,7 +391,8 @@ class SeleniumController(object):
 
         except Exception as e:
             self._logger.error("Error duante el workflow: {}".format(e))
-            self.driver_close()
+
+        self.driver_close()
 
     def start(self, default_opc=["--start-maximized"]):
         '''

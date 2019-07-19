@@ -3,10 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 .idea
-/logger/B4nk_Sr4py
+logger/B4nk_Sr4py
 # C extensions
 *.so
-/img/temps_imgs
+img/temps_imgs
 settings/json_banks/
 # Distribution / packaging
 .Python

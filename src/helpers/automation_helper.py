@@ -16,7 +16,7 @@ def move_and_click(boton):
     if isinstance(boton, Boton):
         pyautogui.moveTo(boton.x, boton.y)
         pyautogui.click()
-        sleep(0.2)
+        sleep(0.5)
 
 
 def getElementCoords(haystack, needle):

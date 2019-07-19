@@ -26,7 +26,7 @@ class Teclado(object):
     def __init__(self, kw):
 
         bank_name = kw.get('bankname', None)
-        self._logger = AppLogger.create_rotating_log() if not kw.get('logger', None) else kw.get('logger')
+        self._logger = kw.get('logger')
         if bank_name and self.dataset_exist(bank_name):
             capture_screen(name=bank_name)
             self.map_them_all(bank_name)

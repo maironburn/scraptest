@@ -38,9 +38,12 @@ class SeleniumController(object):
         self._logger = kw.get('logger')
         if kw.get('bank', None):
             self.bank = kw.get('bank')
-            self.start() if kw.get('selenium_opts', None) is None else self.start(kw.get('selenium_opts'))
-            self.load_references()
-
+            try:
+                # self.start() if kw.get('selenium_opts', None) is None else self.start(kw.get('selenium_opts'))
+                self.start()
+                self.load_references()
+            except Exception as e:
+                self._logger.debug("Error al iniciar Selenium -> {}".format(e))
     def load_references(self):
 
         self.find_method = self.load_find_method_references()
@@ -48,7 +51,8 @@ class SeleniumController(object):
         self.ec_ref = self.ec_references()
         self.login_dict_methods = {'standard_login': self.standard_login,
                                    'iframe_login': self.iframe_login,
-                                   'login_bello': self.login_bello
+                                   'login_bello': self.login_bello,
+                                   'multifactor_login': self.multifactor_login
                                    }
 
     def do_the_process(self):
@@ -121,6 +125,18 @@ class SeleniumController(object):
         Se entiende un formulario de login simple
         usuario, pwd y [algun otro dato adicional]
     '''
+
+    def multifactor_login(self):
+
+        login_form = self.bank.get('login_form')
+        id_auth_meth= self.bank.get('id_authentication_methods').get('default')
+        '''
+        1-seleccionar del combo el method de autencicacion
+        # suponiendo q sea multifactor...
+        
+        '''
+
+
 
     def standard_login(self):
 
@@ -343,6 +359,15 @@ class SeleniumController(object):
                                 if mode == 'swap_window':
                                     self.swap_window(elem)
 
+                                if mode == 'fill':
+                                    # previamente a send_keys se requiere un clear
+                                    if actions.get('clear', None):
+                                        elem.clear()
+                                    if actions.get('focus', None):
+                                        elem.click()
+
+                                    elem.send_keys(actions.get('data'))
+                                    self._logger.info("seteado  {} ->  {}!! ".format(target, actions.get('data')))
                         if ec:
                             self.wait_for_expected_conditions(ec)
 
@@ -399,7 +424,9 @@ class SeleniumController(object):
         @:param, lista de opciones con las que inicializar el driver de selenium
         '''
         options = webdriver.ChromeOptions()
+        #options.add_experimental_option("excludeSwitches", ["ignore-certificate-errors"])
         for opc in default_opc:
+            #
             options.add_argument(opc)
 
         self._driver = webdriver.Chrome(SELENIUM_DRIVER_PATH, chrome_options=options)

@@ -893,7 +893,7 @@ user = environ.get('USERNAME')
 options = webdriver.ChromeOptions()
 prefs = {}
 options.add_argument("--start-maximized")
-driverPath = 'C:\\Users\\'+user+'\\Documents\\Bancos\\chromedriver_win32\\chromedriver.exe'
+driverPath = 'C:\\Users\\'+user+'\\Documents\\Bancos\\chromedriver_win32\\chromedriver.exe_old_one'
 options.add_argument('user-data-dir=C:\\Users\\'+ user +'\\AppData\Local\\Google\\Chrome\\User Data')
 browser = webdriver.Chrome(driverPath, chrome_options = options)
 browser.execute_script("document.body.style.zoom='100 %'")

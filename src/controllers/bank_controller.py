@@ -67,7 +67,7 @@ class BankController(object):
 if __name__ == '__main__':
 
     # J.A_bancos = [ 'unicaja','bankia', 'caixa', 'babucha']
-    bancos = ['bankinter','unicaja', 'bankia', 'caixa', 'babucha']
+    bancos = ['citibank']
 
     bc = BankController({'banknames': bancos})
     for b in bancos:

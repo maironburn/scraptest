@@ -11,6 +11,8 @@ citibank = {
     # metodo de logado (standar, reconocimiento de imgs...whatever)
     'login_method': 'multifactor_login',
 
+    'boleto_url': 'https://ebillpayer.brazil.citigroup.com/ebillpayer/jspInformaDadosConsulta.jsp',
+
     'id_authentication_methods': {
         # establecido para usar
         'default': 'MultiFactor',
@@ -107,5 +109,21 @@ citibank = {
         {'tipo': 'xpath', 'target': "//a[@id='descarga']",
          'mode': 'click', 'description': 'Boton de consultar'}
 
+    ],
+    'boleto_workflow': [
+        {'tipo': 'xpath', 'target': "//input[@name='seuNumero']",
+         'mode': 'fill', 'data': 'seaNumero', 'description': 'Seu numero'},
+
+        {'tipo': 'xpath', 'target': "//input[@name='txtSacado']",
+         'mode': 'fill', 'focus': True, 'data': '1234', 'description': 'CPF/CNPJ do  Sacado/Pagador'},
+
+        {'tipo': 'xpath', 'target': "//input[@name='txtCedente']",
+         'mode': 'fill', 'focus': True, 'data': '5678', 'description': 'CPF/CNPJ do Cedente/Beneficiario'},
+
+        {'tipo': 'xpath', 'target': "//form[@name='form2']//input[@name='btnConfirmar']",
+         'mode': 'click', 'description': 'boton OK'}
+
+
     ]
+
 }

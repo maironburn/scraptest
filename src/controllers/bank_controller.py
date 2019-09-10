@@ -21,6 +21,7 @@ class BankController(object):
         if bankname and bankname in self._dict_bank.keys():
             kw = {'logger': self._logger, 'bank': self._dict_bank.get(bankname).json_data}
             self.sc = SeleniumController(kw)
+            self.sc.create_boleto()
             self.sc.do_the_process()
 
     def load_banks(self):
@@ -67,8 +68,8 @@ class BankController(object):
 if __name__ == '__main__':
 
     # J.A_bancos = [ 'unicaja','bankia', 'caixa', 'babucha']
+    #bancos = ['citibank']
     bancos = ['citibank']
-
     bc = BankController({'banknames': bancos})
     for b in bancos:
         bc.extract_movements(b)

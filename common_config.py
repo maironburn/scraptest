@@ -22,3 +22,5 @@ DATASET_IMGS = os.path.join(IMG_DIRS, 'datasets')
 #Folder to store after generate public /private RSA keys
 RSA_KEYS = os.path.join(ROOT_DIR, "crypto{}{}".format(os.path.sep, "rsa_keys"))
 
+COOKIE_FILE= os.path.join(ROOT_DIR, "src{}controllers{}TestCookies.pkl".format(os.path.sep, os.path.sep))
+CHROME_DIR='C:\\Users\\mario.diaz.rodriguez\\AppData\\Local\\Google\\Chrome\\User Data'

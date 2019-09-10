@@ -4,6 +4,14 @@ __pycache__/
 *$py.class
 .idea
 logger/B4nk_Sr4py
+
+#local bank
+src/localBanks.py
+#selenium user_data
+src/controllers/selenium/
+# cookie
+src/controllers/TestCookies.pkl
+
 # C extensions
 *.so
 img/temps_imgs

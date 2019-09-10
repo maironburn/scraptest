@@ -1,62 +1,79 @@
-INFO: 07/19/2019 01:23:48 PM <property object at 0x00000257FBD8E408> -> Loaded skel from : bankinter
-INFO: 07/19/2019 01:24:27 PM Buscando por xpath -> //input[@id='lg_username']
-INFO: 07/19/2019 01:24:27 PM Elemento encontrado: user
-INFO: 07/19/2019 01:24:28 PM Buscando por xpath -> //input[@id='lg_password']
-INFO: 07/19/2019 01:24:28 PM Elemento encontrado: pin
-INFO: 07/19/2019 01:25:07 PM Click sobre la Cuenta de Accenture -> tipo busqueda: xpath , expresion: //button[@id='empresaCVI'] , mode: click
-INFO: 07/19/2019 01:25:09 PM matched condition Click sobre la Cuenta de Accenture !! 
-INFO: 07/19/2019 01:25:21 PM Click(Cuentas a la vista) -> tipo busqueda: xpath , expresion: //a[@class='ctTxGrBoldUnd'] , mode: click
-INFO: 07/19/2019 01:25:22 PM matched condition Click(Cuentas a la vista) !! 
-INFO: 07/19/2019 01:25:35 PM Filtrado de fechas -> Desde (dia) -> tipo busqueda: xpath , expresion: //input[@id='dia'] , mode: fill
-INFO: 07/19/2019 01:25:36 PM matched condition Filtrado de fechas -> Desde (dia) !! 
-INFO: 07/19/2019 01:25:42 PM seteado  //input[@id='dia'] ->  01!! 
-INFO: 07/19/2019 01:25:48 PM Filtrado de fechas -> Desde (mes) -> tipo busqueda: xpath , expresion: //input[@id='mes'] , mode: fill
-INFO: 07/19/2019 01:25:49 PM matched condition Filtrado de fechas -> Desde (mes) !! 
-INFO: 07/19/2019 01:25:53 PM seteado  //input[@id='mes'] ->  07!! 
-INFO: 07/19/2019 01:25:58 PM Filtrado de fechas -> Desde (year) -> tipo busqueda: xpath , expresion: //input[@id='year'] , mode: fill
-INFO: 07/19/2019 01:25:59 PM matched condition Filtrado de fechas -> Desde (year) !! 
-INFO: 07/19/2019 01:26:02 PM seteado  //input[@id='year'] ->  2019!! 
-INFO: 07/19/2019 01:26:07 PM Filtrado de fechas -> Hasta (dia) -> tipo busqueda: xpath , expresion: //input[@id='diaH'] , mode: fill
-INFO: 07/19/2019 01:26:07 PM matched condition Filtrado de fechas -> Hasta (dia) !! 
-INFO: 07/19/2019 01:26:11 PM seteado  //input[@id='diaH'] ->  19!! 
-INFO: 07/19/2019 01:26:15 PM Filtrado de fechas -> Hasta (mes) -> tipo busqueda: xpath , expresion: //input[@id='mesH'] , mode: fill
-INFO: 07/19/2019 01:26:15 PM matched condition Filtrado de fechas -> Hasta (mes) !! 
-INFO: 07/19/2019 01:26:19 PM seteado  //input[@id='mesH'] ->  07!! 
-INFO: 07/19/2019 01:26:23 PM Filtrado de fechas -> Hasta (year) -> tipo busqueda: xpath , expresion: //input[@id='yearH'] , mode: fill
-INFO: 07/19/2019 01:26:24 PM matched condition Filtrado de fechas -> Hasta (year) !! 
-INFO: 07/19/2019 01:26:27 PM seteado  //input[@id='yearH'] ->  2019!! 
-INFO: 07/19/2019 01:26:32 PM Boton de consultar -> tipo busqueda: xpath , expresion: //button[@class='for_botonestandar_01'] , mode: click
-INFO: 07/19/2019 01:26:32 PM matched condition Boton de consultar !! 
-INFO: 07/19/2019 01:26:40 PM Boton de consultar -> tipo busqueda: xpath , expresion: //a[@id='descarga'] , mode: click
-INFO: 07/19/2019 01:26:41 PM matched condition Boton de consultar !! 
-INFO: 07/19/2019 01:27:34 PM <property object at 0x0000020BAFE39458> -> Loaded skel from : bankinter
-INFO: 07/19/2019 01:27:39 PM Buscando por xpath -> //input[@id='lg_username']
-INFO: 07/19/2019 01:27:39 PM Elemento encontrado: user
-INFO: 07/19/2019 01:27:40 PM Buscando por xpath -> //input[@id='lg_password']
-INFO: 07/19/2019 01:27:40 PM Elemento encontrado: pin
-INFO: 07/19/2019 01:27:45 PM Click sobre la Cuenta de Accenture -> tipo busqueda: xpath , expresion: //button[@id='empresaCVI'] , mode: click
-INFO: 07/19/2019 01:27:45 PM matched condition Click sobre la Cuenta de Accenture !! 
-INFO: 07/19/2019 01:27:49 PM Click(Cuentas a la vista) -> tipo busqueda: xpath , expresion: //a[@class='ctTxGrBoldUnd'] , mode: click
-INFO: 07/19/2019 01:27:49 PM matched condition Click(Cuentas a la vista) !! 
-INFO: 07/19/2019 01:27:53 PM Filtrado de fechas -> Desde (dia) -> tipo busqueda: xpath , expresion: //input[@id='dia'] , mode: fill
-INFO: 07/19/2019 01:27:53 PM matched condition Filtrado de fechas -> Desde (dia) !! 
-INFO: 07/19/2019 01:27:54 PM seteado  //input[@id='dia'] ->  01!! 
-INFO: 07/19/2019 01:27:56 PM Filtrado de fechas -> Desde (mes) -> tipo busqueda: xpath , expresion: //input[@id='mes'] , mode: fill
-INFO: 07/19/2019 01:27:56 PM matched condition Filtrado de fechas -> Desde (mes) !! 
-INFO: 07/19/2019 01:27:57 PM seteado  //input[@id='mes'] ->  07!! 
-INFO: 07/19/2019 01:27:59 PM Filtrado de fechas -> Desde (year) -> tipo busqueda: xpath , expresion: //input[@id='year'] , mode: fill
-INFO: 07/19/2019 01:27:59 PM matched condition Filtrado de fechas -> Desde (year) !! 
-INFO: 07/19/2019 01:28:00 PM seteado  //input[@id='year'] ->  2019!! 
-INFO: 07/19/2019 01:28:02 PM Filtrado de fechas -> Hasta (dia) -> tipo busqueda: xpath , expresion: //input[@id='diaH'] , mode: fill
-INFO: 07/19/2019 01:28:02 PM matched condition Filtrado de fechas -> Hasta (dia) !! 
-INFO: 07/19/2019 01:28:03 PM seteado  //input[@id='diaH'] ->  19!! 
-INFO: 07/19/2019 01:28:05 PM Filtrado de fechas -> Hasta (mes) -> tipo busqueda: xpath , expresion: //input[@id='mesH'] , mode: fill
-INFO: 07/19/2019 01:28:05 PM matched condition Filtrado de fechas -> Hasta (mes) !! 
-INFO: 07/19/2019 01:28:07 PM seteado  //input[@id='mesH'] ->  07!! 
-INFO: 07/19/2019 01:28:09 PM Filtrado de fechas -> Hasta (year) -> tipo busqueda: xpath , expresion: //input[@id='yearH'] , mode: fill
-INFO: 07/19/2019 01:28:09 PM matched condition Filtrado de fechas -> Hasta (year) !! 
-INFO: 07/19/2019 01:28:10 PM seteado  //input[@id='yearH'] ->  2019!! 
-INFO: 07/19/2019 01:28:12 PM Boton de consultar -> tipo busqueda: xpath , expresion: //button[@class='for_botonestandar_01'] , mode: click
-INFO: 07/19/2019 01:28:12 PM matched condition Boton de consultar !! 
-INFO: 07/19/2019 01:28:16 PM Boton de consultar -> tipo busqueda: xpath , expresion: //a[@id='descarga'] , mode: click
-INFO: 07/19/2019 01:28:16 PM matched condition Boton de consultar !! 
+INFO: 09/09/2019 01:01:42 PM <property object at 0x00000198FE72C2C8> -> Loaded skel from : bankia
+INFO: 09/09/2019 01:02:52 PM <property object at 0x000001F0F1CAF278> -> Loaded skel from : bankia
+INFO: 09/09/2019 01:04:00 PM <property object at 0x0000021B80EAC278> -> Loaded skel from : bankia
+INFO: 09/09/2019 01:05:57 PM <property object at 0x000001D5B992F228> -> Loaded skel from : bankia
+INFO: 09/09/2019 01:08:34 PM <property object at 0x00000244F6DBC278> -> Loaded skel from : bankia
+INFO: 09/09/2019 01:10:10 PM <property object at 0x000001363E0FC278> -> Loaded skel from : bankia
+ERROR: 09/09/2019 01:10:29 PM Error en meth-> load_cookie: Message: invalid argument: invalid 'expiry'
+  (Session info: chrome=76.0.3809.132)
+
+INFO: 09/09/2019 01:10:29 PM Evaluando acciones pre login
+INFO: 09/09/2019 01:10:31 PM cierre de mensaje informativo -> tipo busqueda: xpath , expresion: //input[@class='oie2-btn btn-green'] , mode: None
+INFO: 09/09/2019 01:10:31 PM matched condition cierre de mensaje informativo !! 
+INFO: 09/09/2019 01:10:35 PM Buscando por xpath -> //input[(@ng-model='login.userId')]
+INFO: 09/09/2019 01:10:35 PM Elemento encontrado: user
+INFO: 09/09/2019 01:10:36 PM Buscando por xpath -> //input[@id='nContrato']
+INFO: 09/09/2019 01:10:36 PM Elemento encontrado: enterprise_id
+INFO: 09/09/2019 01:10:38 PM Buscando por xpath -> //input[@id='pass2']
+INFO: 09/09/2019 01:10:38 PM Elemento encontrado: pin
+INFO: 09/09/2019 01:10:41 PM Evaluando acciones post login
+INFO: 09/09/2019 01:10:43 PM cierre de mensaje informativo -> tipo busqueda: xpath , expresion: //button[@class='modal-cerrar'] , mode: click
+INFO: 09/09/2019 01:10:47 PM cierre de mensaje informativo -> tipo busqueda: xpath , expresion: //*[@id="deviceBody"]/div[2]/div/div/div[1]/button , mode: click
+INFO: 09/09/2019 01:11:14 PM <property object at 0x000001FE2E4BE278> -> Loaded skel from : bankia
+INFO: 09/09/2019 01:16:33 PM <property object at 0x000001DD5418C278> -> Loaded skel from : bankia
+INFO: 09/09/2019 01:17:14 PM <property object at 0x0000027950E0F278> -> Loaded skel from : bankia
+INFO: 09/09/2019 01:24:09 PM <property object at 0x0000022F00BDE278> -> Loaded skel from : bankia
+INFO: 09/09/2019 01:30:29 PM <property object at 0x0000026113E191D8> -> Loaded skel from : bankia
+INFO: 09/09/2019 01:32:11 PM <property object at 0x000002531232C278> -> Loaded skel from : bankia
+INFO: 09/10/2019 10:07:42 AM <property object at 0x000002737B09E278> -> Loaded skel from : bankia
+INFO: 09/10/2019 10:09:21 AM <property object at 0x0000022C0FE2F228> -> Loaded skel from : citibank
+INFO: 09/10/2019 10:09:57 AM Seu numero -> tipo busqueda: xpath , expresion: //input[@name='seuNumero'] , mode: fill
+INFO: 09/10/2019 10:10:00 AM matched condition Seu numero !! 
+INFO: 09/10/2019 10:10:22 AM seteado  //input[@name='seuNumero'] ->  seaNumero!! 
+INFO: 09/10/2019 10:10:31 AM CPF/CNPJ do  Sacado/Pagador -> tipo busqueda: xpath , expresion: //input[@name='txtSacado'] , mode: fill
+INFO: 09/10/2019 10:10:32 AM matched condition CPF/CNPJ do  Sacado/Pagador !! 
+INFO: 09/10/2019 10:10:39 AM seteado  //input[@name='txtSacado'] ->  txtSacado!! 
+INFO: 09/10/2019 10:10:52 AM CPF/CNPJ do Cedente/Beneficiario -> tipo busqueda: xpath , expresion: //input[@name='txtCedente'] , mode: fill
+INFO: 09/10/2019 10:10:53 AM matched condition CPF/CNPJ do Cedente/Beneficiario !! 
+INFO: 09/10/2019 10:11:01 AM seteado  //input[@name='txtCedente'] ->  txtCedente!! 
+INFO: 09/10/2019 10:11:20 AM <property object at 0x0000027BABADC228> -> Loaded skel from : citibank
+INFO: 09/10/2019 10:11:53 AM Seu numero -> tipo busqueda: xpath , expresion: //input[@name='seuNumero'] , mode: fill
+INFO: 09/10/2019 10:11:55 AM matched condition Seu numero !! 
+INFO: 09/10/2019 10:12:05 AM seteado  //input[@name='seuNumero'] ->  seaNumero!! 
+INFO: 09/10/2019 10:12:22 AM CPF/CNPJ do  Sacado/Pagador -> tipo busqueda: xpath , expresion: //input[@name='txtSacado'] , mode: fill
+INFO: 09/10/2019 10:12:23 AM matched condition CPF/CNPJ do  Sacado/Pagador !! 
+INFO: 09/10/2019 10:14:09 AM <property object at 0x000002B595C0A2C8> -> Loaded skel from : citibank
+INFO: 09/10/2019 10:14:21 AM Seu numero -> tipo busqueda: xpath , expresion: //input[@name='seuNumero'] , mode: fill
+INFO: 09/10/2019 10:14:22 AM matched condition Seu numero !! 
+INFO: 09/10/2019 10:14:28 AM seteado  //input[@name='seuNumero'] ->  seaNumero!! 
+INFO: 09/10/2019 10:14:36 AM CPF/CNPJ do  Sacado/Pagador -> tipo busqueda: xpath , expresion: //input[@name='txtSacado'] , mode: fill
+INFO: 09/10/2019 10:14:38 AM matched condition CPF/CNPJ do  Sacado/Pagador !! 
+INFO: 09/10/2019 10:14:46 AM seteado  //input[@name='txtSacado'] ->  txtSacado!! 
+INFO: 09/10/2019 10:15:45 AM <property object at 0x00000238A9DBF228> -> Loaded skel from : citibank
+INFO: 09/10/2019 10:15:57 AM Seu numero -> tipo busqueda: xpath , expresion: //input[@name='seuNumero'] , mode: fill
+INFO: 09/10/2019 10:15:59 AM matched condition Seu numero !! 
+INFO: 09/10/2019 10:16:08 AM seteado  //input[@name='seuNumero'] ->  seaNumero!! 
+INFO: 09/10/2019 10:16:18 AM CPF/CNPJ do  Sacado/Pagador -> tipo busqueda: xpath , expresion: //input[@name='txtSacado'] , mode: fill
+INFO: 09/10/2019 10:16:18 AM matched condition CPF/CNPJ do  Sacado/Pagador !! 
+INFO: 09/10/2019 10:19:59 AM seteado  //input[@name='txtSacado'] ->  txtSacado!! 
+INFO: 09/10/2019 10:20:06 AM CPF/CNPJ do Cedente/Beneficiario -> tipo busqueda: xpath , expresion: //input[@name='txtCedente'] , mode: fill
+INFO: 09/10/2019 10:20:07 AM matched condition CPF/CNPJ do Cedente/Beneficiario !! 
+INFO: 09/10/2019 10:20:20 AM seteado  //input[@name='txtCedente'] ->  txtCedente!! 
+INFO: 09/10/2019 10:20:43 AM boton OK -> tipo busqueda: xpath , expresion: //form[@name='form2']//input[@name='btnConfirmar'] , mode: click
+INFO: 09/10/2019 10:20:44 AM matched condition boton OK !! 
+INFO: 09/10/2019 10:22:20 AM <property object at 0x000001E908D8C228> -> Loaded skel from : citibank
+INFO: 09/10/2019 10:22:40 AM Seu numero -> tipo busqueda: xpath , expresion: //input[@name='seuNumero'] , mode: fill
+INFO: 09/10/2019 10:22:44 AM matched condition Seu numero !! 
+INFO: 09/10/2019 10:22:45 AM seteado  //input[@name='seuNumero'] ->  seaNumero!! 
+INFO: 09/10/2019 10:22:47 AM CPF/CNPJ do  Sacado/Pagador -> tipo busqueda: xpath , expresion: //input[@name='txtSacado'] , mode: fill
+INFO: 09/10/2019 10:22:50 AM matched condition CPF/CNPJ do  Sacado/Pagador !! 
+INFO: 09/10/2019 10:22:51 AM seteado  //input[@name='txtSacado'] ->  1234!! 
+INFO: 09/10/2019 10:22:53 AM CPF/CNPJ do Cedente/Beneficiario -> tipo busqueda: xpath , expresion: //input[@name='txtCedente'] , mode: fill
+INFO: 09/10/2019 10:22:54 AM matched condition CPF/CNPJ do Cedente/Beneficiario !! 
+INFO: 09/10/2019 10:22:55 AM seteado  //input[@name='txtCedente'] ->  5678!! 
+INFO: 09/10/2019 10:22:57 AM boton OK -> tipo busqueda: xpath , expresion: //form[@name='form2']//input[@name='btnConfirmar'] , mode: click
+INFO: 09/10/2019 10:23:00 AM matched condition boton OK !! 
+ERROR: 09/10/2019 10:23:03 AM Excepcion en do_the_process -> Alert Text: *O campo CPF/CNPJ do Sacado/Pagador é inválido.
+Message: unexpected alert open: {Alert text : *O campo CPF/CNPJ do Sacado/Pagador é inválido.}
+  (Session info: chrome=76.0.3809.132)
+

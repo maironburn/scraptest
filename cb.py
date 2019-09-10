@@ -50,8 +50,8 @@ citibank = {
     # credenciales para la autenticacion
     # @todo hay que determinar la fuente de credenciales
     'credentials': {
-        'user': 'IT481019',
-        'pin': 'Amapola10'
+        'user': '',
+        'pin': ''
     }
     ,
 

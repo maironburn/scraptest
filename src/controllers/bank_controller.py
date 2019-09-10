@@ -1,3 +1,4 @@
+
 from src.models.bank import Bank
 from src.controllers.selenium_controller import SeleniumController
 from logger.app_logger import AppLogger
@@ -22,7 +23,7 @@ class BankController(object):
             kw = {'logger': self._logger, 'bank': self._dict_bank.get(bankname).json_data}
             self.sc = SeleniumController(kw)
             self.sc.create_boleto()
-            self.sc.do_the_process()
+            #self.sc.do_the_process()
 
     def load_banks(self):
         for bank in self.banknames:

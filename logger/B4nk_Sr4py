@@ -77,3 +77,65 @@ ERROR: 09/10/2019 10:23:03 AM Excepcion en do_the_process -> Alert Text: *O camp
 Message: unexpected alert open: {Alert text : *O campo CPF/CNPJ do Sacado/Pagador é inválido.}
   (Session info: chrome=76.0.3809.132)
 
+INFO: 09/10/2019 11:33:55 AM <property object at 0x0000026B882E7F98> -> Loaded skel from : citibank
+INFO: 09/10/2019 11:47:57 AM Seu numero -> tipo busqueda: xpath , expresion: //input[@name='seuNumero'] , mode: fill
+INFO: 09/10/2019 11:48:20 AM matched condition Seu numero !! 
+INFO: 09/10/2019 11:48:21 AM seteado  //input[@name='seuNumero'] ->  seaNumero!! 
+INFO: 09/10/2019 11:48:23 AM CPF/CNPJ do  Sacado/Pagador -> tipo busqueda: xpath , expresion: //input[@name='txtSacado'] , mode: fill
+INFO: 09/10/2019 11:48:25 AM matched condition CPF/CNPJ do  Sacado/Pagador !! 
+INFO: 09/10/2019 11:48:28 AM seteado  //input[@name='txtSacado'] ->  1234!! 
+INFO: 09/10/2019 11:48:30 AM CPF/CNPJ do Cedente/Beneficiario -> tipo busqueda: xpath , expresion: //input[@name='txtCedente'] , mode: fill
+INFO: 09/10/2019 11:48:30 AM matched condition CPF/CNPJ do Cedente/Beneficiario !! 
+INFO: 09/10/2019 11:48:32 AM seteado  //input[@name='txtCedente'] ->  5678!! 
+INFO: 09/10/2019 11:48:34 AM boton OK -> tipo busqueda: xpath , expresion: //form[@name='form2']//input[@name='btnConfirmar'] , mode: click
+INFO: 09/10/2019 11:48:34 AM matched condition boton OK !! 
+ERROR: 09/10/2019 11:48:37 AM Excepcion en do_the_process -> Message: invalid session id
+
+INFO: 09/10/2019 11:49:31 AM <property object at 0x00000165488A5EA8> -> Loaded skel from : citibank
+INFO: 09/10/2019 11:49:38 AM Seu numero -> tipo busqueda: xpath , expresion: //input[@name='seuNumero'] , mode: fill
+INFO: 09/10/2019 11:49:38 AM matched condition Seu numero !! 
+INFO: 09/10/2019 11:49:39 AM seteado  //input[@name='seuNumero'] ->  seaNumero!! 
+INFO: 09/10/2019 11:49:41 AM CPF/CNPJ do  Sacado/Pagador -> tipo busqueda: xpath , expresion: //input[@name='txtSacado'] , mode: fill
+INFO: 09/10/2019 11:49:41 AM matched condition CPF/CNPJ do  Sacado/Pagador !! 
+INFO: 09/10/2019 11:49:42 AM seteado  //input[@name='txtSacado'] ->  1234!! 
+INFO: 09/10/2019 11:49:44 AM CPF/CNPJ do Cedente/Beneficiario -> tipo busqueda: xpath , expresion: //input[@name='txtCedente'] , mode: fill
+INFO: 09/10/2019 11:49:44 AM matched condition CPF/CNPJ do Cedente/Beneficiario !! 
+INFO: 09/10/2019 11:49:46 AM seteado  //input[@name='txtCedente'] ->  5678!! 
+INFO: 09/10/2019 11:49:48 AM boton OK -> tipo busqueda: xpath , expresion: //form[@name='form2']//input[@name='btnConfirmar'] , mode: click
+INFO: 09/10/2019 11:49:48 AM matched condition boton OK !! 
+ERROR: 09/10/2019 11:49:51 AM Excepcion en do_the_process -> Alert Text: *O campo CPF/CNPJ do Sacado/Pagador é inválido.
+Message: unexpected alert open: {Alert text : *O campo CPF/CNPJ do Sacado/Pagador é inválido.}
+  (Session info: chrome=76.0.3809.132)
+
+INFO: 09/10/2019 11:55:29 AM <property object at 0x0000019546FD5B38> -> Loaded skel from : citibank
+INFO: 09/10/2019 11:55:35 AM Seu numero -> tipo busqueda: xpath , expresion: //input[@name='seuNumero'] , mode: fill
+INFO: 09/10/2019 11:55:36 AM matched condition Seu numero !! 
+INFO: 09/10/2019 11:55:37 AM seteado  //input[@name='seuNumero'] ->  seaNumero!! 
+INFO: 09/10/2019 11:55:39 AM CPF/CNPJ do  Sacado/Pagador -> tipo busqueda: xpath , expresion: //input[@name='txtSacado'] , mode: fill
+INFO: 09/10/2019 11:55:39 AM matched condition CPF/CNPJ do  Sacado/Pagador !! 
+INFO: 09/10/2019 11:55:40 AM seteado  //input[@name='txtSacado'] ->  1234!! 
+INFO: 09/10/2019 11:55:42 AM CPF/CNPJ do Cedente/Beneficiario -> tipo busqueda: xpath , expresion: //input[@name='txtCedente'] , mode: fill
+INFO: 09/10/2019 11:55:42 AM matched condition CPF/CNPJ do Cedente/Beneficiario !! 
+INFO: 09/10/2019 11:55:43 AM seteado  //input[@name='txtCedente'] ->  5678!! 
+INFO: 09/10/2019 11:55:45 AM boton OK -> tipo busqueda: xpath , expresion: //form[@name='form2']//input[@name='btnConfirmar'] , mode: click
+INFO: 09/10/2019 11:55:45 AM matched condition boton OK !! 
+ERROR: 09/10/2019 11:55:48 AM Excepcion en do_the_process -> Alert Text: *O campo CPF/CNPJ do Sacado/Pagador é inválido.
+Message: unexpected alert open: {Alert text : *O campo CPF/CNPJ do Sacado/Pagador é inválido.}
+  (Session info: chrome=76.0.3809.132)
+
+INFO: 09/10/2019 11:56:13 AM <property object at 0x0000023DF19C6E58> -> Loaded skel from : citibank
+INFO: 09/10/2019 11:56:20 AM Seu numero -> tipo busqueda: xpath , expresion: //input[@name='seuNumero'] , mode: fill
+INFO: 09/10/2019 11:56:20 AM matched condition Seu numero !! 
+INFO: 09/10/2019 11:56:21 AM seteado  //input[@name='seuNumero'] ->  seaNumero!! 
+INFO: 09/10/2019 11:56:23 AM CPF/CNPJ do  Sacado/Pagador -> tipo busqueda: xpath , expresion: //input[@name='txtSacado'] , mode: fill
+INFO: 09/10/2019 11:56:23 AM matched condition CPF/CNPJ do  Sacado/Pagador !! 
+INFO: 09/10/2019 11:56:24 AM seteado  //input[@name='txtSacado'] ->  1234!! 
+INFO: 09/10/2019 11:56:26 AM CPF/CNPJ do Cedente/Beneficiario -> tipo busqueda: xpath , expresion: //input[@name='txtCedente'] , mode: fill
+INFO: 09/10/2019 11:56:26 AM matched condition CPF/CNPJ do Cedente/Beneficiario !! 
+INFO: 09/10/2019 11:56:27 AM seteado  //input[@name='txtCedente'] ->  5678!! 
+INFO: 09/10/2019 11:56:29 AM boton OK -> tipo busqueda: xpath , expresion: //form[@name='form2']//input[@name='btnConfirmar'] , mode: click
+INFO: 09/10/2019 11:56:29 AM matched condition boton OK !! 
+ERROR: 09/10/2019 11:56:33 AM Excepcion en do_the_process -> Alert Text: *O campo CPF/CNPJ do Sacado/Pagador é inválido.
+Message: unexpected alert open: {Alert text : *O campo CPF/CNPJ do Sacado/Pagador é inválido.}
+  (Session info: chrome=76.0.3809.132)
+

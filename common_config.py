@@ -13,6 +13,7 @@ TIME_SLEEP = 10
 
 # selenium stuff
 SELENIUM_DRIVER_PATH = os.path.join(ROOT_DIR, '{}{}{}'.format('chromedriver_win32', os.path.sep, 'chromedriver.exe'))
+IE_DRIVER_PATH = os.path.join(ROOT_DIR, '{}{}{}'.format('IEDriver', os.path.sep, 'IEDriverServer.exe'))
 
 # imagenes
 IMG_DIRS = os.path.join(ROOT_DIR, 'img')

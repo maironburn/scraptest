@@ -12,6 +12,11 @@ selenium/
 src/controllers/selenium/
 # cookie
 src/controllers/TestCookies.pkl
+# paquetes de 3os
+
+python3.6.6/
+IEDriver/
+IEDriver/*
 
 # C extensions
 *.so

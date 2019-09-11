@@ -22,9 +22,9 @@ class BankController(object):
         if bankname and bankname in self._dict_bank.keys():
             kw = {'logger': self._logger, 'bank': self._dict_bank.get(bankname).json_data}
             self.sc = SeleniumController(kw)
-
-            if self.sc.do_the_process() and kw.get('boleto_url'):
-                self.sc.create_boleto()
+            if self.sc.do_the_process():
+                if kw.get('bank').get('boleto_workflow'):
+                    self.sc.create_boleto()
 
 
     def load_banks(self):
@@ -71,7 +71,7 @@ class BankController(object):
 if __name__ == '__main__':
 
     # J.A_bancos = [ 'unicaja','bankia', 'caixa', 'babucha']
-    #bancos = ['citibank']
+    #bancos = ['bankia']
     bancos = ['citibank']
     bc = BankController({'banknames': bancos})
     for b in bancos:

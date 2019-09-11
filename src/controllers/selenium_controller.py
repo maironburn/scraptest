@@ -7,10 +7,10 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait as wait
-
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from common_config import SELENIUM_DRIVER_PATH, COOKIE_FILE
 from src.models.teclado import Teclado
-from common_config import SELENIUM_DRIVER_PATH
+from common_config import SELENIUM_DRIVER_PATH, IE_DRIVER_PATH
 from selenium.webdriver.common.keys import Keys
 
 
@@ -27,6 +27,9 @@ probablemente -> user-data-dir;
 
 interesante:  Enable popup blocking with chromedriver
 https://bugs.chromium.org/p/chromedriver/issues/detail?id=1291
+
+chrome options / capabilities:
+https://chromedriver.chromium.org/capabilities
 '''
 
 
@@ -81,79 +84,26 @@ class SeleniumController(object):
     def create_boleto(self):
 
         try:
-            # Apertura de la web de la entidad
-            # self.driver.get(self.bank.get('login_url'))
 
             self.driver.get(self.bank.get('boleto_url'))
-            # self.save_cookie()
-            # Comprobamos si son necesarias llevar a cabo acciones antes de iniciar el proceso de logado
             self._logger.debug("create_boleto, creacion del boleto")
             # @todo, eliminar los sleeps...sustituir por ec
             sleep(2)
-            # self.bank.get('boleto_workflow')
-            # comprobamos si son necesarias llevar a cabo acciones posteriores al logado
             self.pre_post_login_actions(lista_acciones=self.bank.get('boleto_workflow'), stage="generacion del boleto")
             self.driver_close()
 
         except Exception as ex:
             self._logger.error("Excepcion en do_the_process -> {}".format(ex))
-    #
-    # def do_boleto_workflow(self):
-    #     try:
-    #
-    #         for action in self.bank.get('boleto_workflow'):
-    #             # tipo de busqueda para localizar al elemento
-    #
-    #             tipo = action.get('tipo')
-    #             target = action.get('target')
-    #             desc = action.get('description', None)
-    #             mode = action.get('mode')
-    #
-    #             self._logger.info(
-    #                 "{} -> tipo busqueda: {} , expresion: {} , mode: {}".format(desc, tipo, target, mode))
-    #
-    #             if len(self.finds_method[tipo](target)):
-    #                 self._logger.info("matched condition {} !! ".format(desc))
-    #                 element = self.find_method[tipo](target)
-    #                 sleep(1)
-    #                 if mode == 'click':
-    #                     element.click()
-    #
-    #                 if mode == 'fill':
-    #                     # previamente a send_keys se requiere un clear
-    #                     if action.get('clear', None):
-    #                         element.clear()
-    #                     if action.get('focus', None):
-    #                         element.click()
-    #
-    #                     element.send_keys(action.get('data'))
-    #                     self._logger.info("seteado  {} ->  {}!! ".format(target, action.get('data')))
-    #                 if action.get('expected_conditions'):
-    #                     wait(self.driver, 10).until(ec.element_to_be_clickable((By.XPATH, action.get('expect_cond'))))
-    #
-    #                 time_wait = action.get('time_wait', 2)
-    #                 sleep(time_wait)
-    #
-    #                 # self.navigated_elements.append({slugify(target): element})
-    #
-    #     except Exception as e:
-    #         self._logger.error("Error durante la ejecucion del workflow: {}".format(e))
-    #
-    #     self.driver_close()
-
-
-
 
 
     def do_the_process(self):
 
         try:
             # Apertura de la web de la entidad
-            # self.driver.get(self.bank.get('login_url'))
-
-            self.driver.get('https://oficinaempresas.bankia.es/bole/es/#/posicion-global')
-            if os.path.exists(COOKIE_FILE):
-                self.load_cookie()
+            self.driver.get(self.bank.get('login_url'))
+            #self.driver.get('https://oficinaempresas.bankia.es/bole/es/#/posicion-global')
+            # if os.path.exists(COOKIE_FILE):
+            #     self.load_cookie()
 
             # self.save_cookie()
             # Comprobamos si son necesarias llevar a cabo acciones antes de iniciar el proceso de logado
@@ -172,7 +122,9 @@ class SeleniumController(object):
                 self._logger.debug("Se requieren acciones posteriores al logado")
                 self.pre_post_login_actions(self.bank.get('post_login_actions'), stage="post")
                 sleep(3)
-            self.do_workflow()
+
+            self.pre_post_login_actions(self.bank.get('workflow'), stage="main_workflow")
+            #self.do_workflow()
 
         except Exception as ex:
             self._logger.error("Excepcion en do_the_process -> {}".format(ex))
@@ -460,72 +412,49 @@ class SeleniumController(object):
                 except Exception as e:
                     pass
 
-    def do_workflow(self):
 
-        try:
-            for action in self.bank.get('workflow'):
-                # tipo de busqueda para localizar al elemento
+    def start(self):
 
-                tipo = action.get('tipo')
-                target = action.get('target')
-                desc = action.get('description', None)
-                mode = action.get('mode')
+        browser_driver= self.bank.get('broser_driver')
+        browser_driver_dict= {'iexplorer': self.ie_browser_initial_ops,
+                              'chrome': self.chrome_browser_initial_ops
+                              }
 
-                self._logger.info(
-                    "{} -> tipo busqueda: {} , expresion: {} , mode: {}".format(desc, tipo, target, mode))
-
-                if len(self.finds_method[tipo](target)):
-                    self._logger.info("matched condition {} !! ".format(desc))
-                    element = self.find_method[tipo](target)
-                    sleep(1)
-                    if mode == 'click':
-                        element.click()
-
-                    if mode == 'fill':
-                        # previamente a send_keys se requiere un clear
-                        if action.get('clear', None):
-                            element.clear()
-                        if action.get('focus', None):
-                            element.click()
-
-                        element.send_keys(action.get('data'))
-                        self._logger.info("seteado  {} ->  {}!! ".format(target, action.get('data')))
-                    if action.get('expected_conditions'):
-                        wait(self.driver, 10).until(ec.element_to_be_clickable((By.XPATH, action.get('expect_cond'))))
-
-                    time_wait = action.get('time_wait', 2)
-                    sleep(time_wait)
-
-                    # self.navigated_elements.append({slugify(target): element})
-
-        except Exception as e:
-            self._logger.error("Error durante la ejecucion del workflow: {}".format(e))
-
-        self.driver_close()
-
-    def start(self, default_opc=["--start-maximized"]):
-        '''
-        @:param, lista de opciones con las que inicializar el driver de selenium
-        '''
-        options = webdriver.ChromeOptions()
-        # options.add_experimental_option("excludeSwitches", ["ignore-certificate-errors"])
-        for opc in default_opc:
-            #
-            options.add_argument(opc)
-        # preferencias para la carpeta de  descarga
-        # options.add_experimental_option()
-        # https://stackoverflow.com/questions/18026391/setting-chrome-preferences-w-selenium-webdriver-in-python
-
-        # options.add_argument('user-data-dir={}'.format(CHROME_DIR))
-        # options.add_argument('user-data-dir=selenium')
-        
-        self._driver = webdriver.Chrome(SELENIUM_DRIVER_PATH, chrome_options=options)
-
-        if self._driver:
+        if browser_driver in browser_driver_dict.keys():
+            browser_driver_dict[browser_driver]()
             self.load_find_method_references()
+
             return self._driver
 
         return None
+
+
+    def chrome_browser_initial_ops(self,default_opc=["--start-maximized"]):
+        # preferencias para la carpeta de  descarga
+        # options.add_experimental_option()
+        # https://stackoverflow.com/questions/18026391/setting-chrome-preferences-w-selenium-webdriver-in-python
+        options = webdriver.ChromeOptions()
+        options.add_experimental_option("excludeSwitches", ["ignore-certificate-errors"])
+        for opc in default_opc:
+            options.add_argument(opc)
+
+        options.add_argument('user-data-dir=selenium')
+        self._driver = webdriver.Chrome(SELENIUM_DRIVER_PATH, chrome_options=options)
+
+
+    def ie_browser_initial_ops(self):
+
+        cap = DesiredCapabilities().INTERNETEXPLORER
+
+        cap['browserName'] = "internet explorer"
+        cap['ignoreProtectedModeSettings'] = True
+        cap['IntroduceInstabilityByIgnoringProtectedModeSettings'] = True
+        cap['nativeEvents'] = True
+        cap['ignoreZoomSetting'] = True
+        cap['requireWindowFocus'] = True
+        cap['INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS'] = True
+        self._driver = webdriver.Ie(capabilities=cap,
+                               executable_path=IE_DRIVER_PATH)
 
     def save_cookie(self):
         pickle.dump(self.driver.get_cookies(), open(COOKIE_FILE, "wb"))

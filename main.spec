@@ -5,7 +5,9 @@ block_cipher = None
 
 a = Analysis(['main.py'],
              pathex=['C:\\Users\\mario.diaz.rodriguez\\PycharmProjects\\Bank_RPA'],
-             binaries=[ ( 'C:\\Users\\mario.diaz.rodriguez\\PycharmProjects\\Bank_RPA\\chromedriver_win32\\chromedriver.exe', '.\\chromedriver_win32' ) ],
+             binaries=[ ( 'C:\\Users\\mario.diaz.rodriguez\\PycharmProjects\\Bank_RPA\\chromedriver_win32\\chromedriver.exe', '.\\chromedriver_win32' ),
+					('C:\\Users\\mario.diaz.rodriguez\\PycharmProjects\\Bank_RPA\\python3.6.6', '.\\python3.6.6')
+			 ],
              datas=[ ( 'src', 'src' ),
 			 ( 'logger', 'logger' ),
 			 ( 'settings', 'settings' )

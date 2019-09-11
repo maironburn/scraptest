@@ -139,3 +139,6 @@ ERROR: 09/10/2019 11:56:33 AM Excepcion en do_the_process -> Alert Text: *O camp
 Message: unexpected alert open: {Alert text : *O campo CPF/CNPJ do Sacado/Pagador é inválido.}
   (Session info: chrome=76.0.3809.132)
 
+INFO: 09/11/2019 02:20:44 PM <property object at 0x000001F63A2EBE08> -> Loaded skel from : citibank
+INFO: 09/11/2019 02:21:08 PM Evaluando acciones pre login
+INFO: 09/11/2019 02:21:10 PM Seleccionar localizacion -> tipo busqueda: xpath , expresion: //*[@id="loginmethodselect"] , mode: click

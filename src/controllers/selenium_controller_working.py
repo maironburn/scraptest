@@ -1,14 +1,17 @@
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.support.ui import WebDriverWait as wait
-from selenium.webdriver.support import expected_conditions as ec
-from selenium.webdriver.common.by import By
+import os
+import pickle
 from time import sleep
-from selenium import webdriver
-from src.models.teclado import Teclado
-from common_config import SELENIUM_DRIVER_PATH
-from logger.app_logger import AppLogger
-from slugify import slugify
 
+from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as ec
+from selenium.webdriver.support.ui import WebDriverWait as wait
+
+from common_config import SELENIUM_DRIVER_PATH, COOKIE_FILE
+from src.models.teclado import Teclado
+
+# pickle.dump(driver.get_cookies() , open("QuoraCookies.pkl","wb"))
 '''
 incializa el driver 
 
@@ -37,11 +40,29 @@ class SeleniumController(object):
 
     def __init__(self, kw):
 
-        self._logger = AppLogger.create_rotating_log() if kw.get('logger', None) is None else kw.get('logger')
+        self._logger = kw.get('logger')
         if kw.get('bank', None):
             self.bank = kw.get('bank')
-            self.start() if kw.get('selenium_opts', None) is None else self.start(kw.get('selenium_opts'))
-            self.load_references()
+            try:
+                # self.start() if kw.get('selenium_opts', None) is None else self.start(kw.get('selenium_opts'))
+                self.start()
+                self.load_references()
+            except Exception as e:
+                self._logger.debug("Error al iniciar Selenium -> {}".format(e))
+
+    '''
+    elem = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, '//*[@id=\"logged-in-message\"]/h2'))
+            )
+
+        def is_visible(locator, timeout = 30): 
+            try: 
+                ui.WebDriverWait(chrome, timeout).until(EC.visibility_of_element_located((By.XPATH, locator))) 
+                return True
+            except TimeoutException: 
+                return False
+
+    '''
 
     def load_references(self):
 
@@ -50,29 +71,99 @@ class SeleniumController(object):
         self.ec_ref = self.ec_references()
         self.login_dict_methods = {'standard_login': self.standard_login,
                                    'iframe_login': self.iframe_login,
-                                   'login_bello': self.login_bello
+                                   'login_bello': self.login_bello,
+                                   'multifactor_login': self.multifactor_login
                                    }
+
+    def create_boleto(self):
+
+        try:
+            # Apertura de la web de la entidad
+            # self.driver.get(self.bank.get('login_url'))
+
+            self.driver.get(self.bank.get('boleto_url'))
+            # self.save_cookie()
+            # Comprobamos si son necesarias llevar a cabo acciones antes de iniciar el proceso de logado
+            self._logger.debug("create_boleto, creacion del boleto")
+            # @todo, eliminar los sleeps...sustituir por ec
+            sleep(2)
+            # comprobamos si son necesarias llevar a cabo acciones posteriores al logado
+
+            self.do_boleto_workflow()
+
+        except Exception as ex:
+            self._logger.error("Excepcion en do_the_process -> {}".format(ex))
+
+    def do_boleto_workflow(self):
+        try:
+
+            for action in self.bank.get('boleto_workflow'):
+                # tipo de busqueda para localizar al elemento
+
+                tipo = action.get('tipo')
+                target = action.get('target')
+                desc = action.get('description', None)
+                mode = action.get('mode')
+
+                self._logger.info(
+                    "{} -> tipo busqueda: {} , expresion: {} , mode: {}".format(desc, tipo, target, mode))
+
+                if len(self.finds_method[tipo](target)):
+                    self._logger.info("matched condition {} !! ".format(desc))
+                    element = self.find_method[tipo](target)
+                    sleep(1)
+                    if mode == 'click':
+                        element.click()
+
+                    if mode == 'fill':
+                        # previamente a send_keys se requiere un clear
+                        if action.get('clear', None):
+                            element.clear()
+                        if action.get('focus', None):
+                            element.click()
+
+                        element.send_keys(action.get('data'))
+                        self._logger.info("seteado  {} ->  {}!! ".format(target, action.get('data')))
+                    if action.get('expected_conditions'):
+                        wait(self.driver, 10).until(ec.element_to_be_clickable((By.XPATH, action.get('expect_cond'))))
+
+                    time_wait = action.get('time_wait', 2)
+                    sleep(time_wait)
+
+                    # self.navigated_elements.append({slugify(target): element})
+
+        except Exception as e:
+            self._logger.error("Error durante la ejecucion del workflow: {}".format(e))
+
+        self.driver_close()
 
     def do_the_process(self):
 
         try:
             # Apertura de la web de la entidad
-            self.driver.get(self.bank.get('login_url'))
+            # self.driver.get(self.bank.get('login_url'))
 
+            self.driver.get('https://oficinaempresas.bankia.es/bole/es/#/posicion-global')
+            if os.path.exists(COOKIE_FILE):
+                self.load_cookie()
+
+            # self.save_cookie()
             # Comprobamos si son necesarias llevar a cabo acciones antes de iniciar el proceso de logado
             if self.bank.get('pre_login_actions'):
                 self._logger.debug("Se requieren acciones previas al logado")
                 self.pre_post_login_actions(self.bank.get('pre_login_actions'), stage="pre")
+                sleep(2)
 
             auth_meth = self.bank.get('login_method')
+
             self.login_dict_methods[auth_meth]()
             # @todo, eliminar los sleeps...sustituir por ec
-
+            sleep(2)
             # comprobamos si son necesarias llevar a cabo acciones posteriores al logado
             if self.bank.get('post_login_actions'):
                 self._logger.debug("Se requieren acciones posteriores al logado")
                 self.pre_post_login_actions(self.bank.get('post_login_actions'), stage="post")
-
+                sleep(3)
             self.do_workflow()
 
         except Exception as ex:
@@ -121,6 +212,16 @@ class SeleniumController(object):
         Se entiende un formulario de login simple
         usuario, pwd y [algun otro dato adicional]
     '''
+
+    def multifactor_login(self):
+
+        login_form = self.bank.get('login_form')
+        id_auth_meth = self.bank.get('id_authentication_methods').get('default')
+        '''
+        1-seleccionar del combo el method de autencicacion
+        # suponiendo q sea multifactor...
+
+        '''
 
     def standard_login(self):
 
@@ -176,8 +277,8 @@ class SeleniumController(object):
                 target_iframe = self.bank.get('iframe_login_form')['target']
                 tipo = self.bank.get('iframe_login_form')['tipo']
                 element_iframe = self.find_method[tipo](target_iframe)
-                # self.driver.switch_to.frame(element_iframe)
-                self.switch_to_frame(element_iframe)
+                self.driver.switch_to.frame(element_iframe)
+                # self.switch_to_frame(element_iframe)
 
                 self.standard_login()
 
@@ -215,15 +316,19 @@ class SeleniumController(object):
             element.send_keys('%')
             sleep(2)
 
-            teclado = Teclado({'bankname': self.bank.get('bankname')})
+            teclado = Teclado({'bankname': self.bank.get('bankname'), 'logger': self._logger})
             teclado.write(credentials.get('pin'))
 
             tipo = login_form.get('submit')['tipo']
             target = login_form.get('submit')['target']
             submit = self.find_method[tipo](target)
-            submit.click()
 
-            # driver.get('https://www.kutxabank.es/NASApp/BesaideNet2/Gestor?PRESTACION=login&FUNCION=login&ACCION=preseleccion')
+            if 'mode' in login_form.get('submit').keys():
+                mode = login_form.get('submit')['mode']
+                if mode == 'swap_window':
+                    self.swap_window(submit)
+            else:
+                submit.click()
 
             return self.driver
 
@@ -235,7 +340,7 @@ class SeleniumController(object):
     # </editor-fold>
 
     def wait_for_expected_conditions(self, actions):
-        tipo = actions.get('tipo')
+        tipo = actions.get('tipo')  # tipo de ec
         target = actions.get('target')
         time_wait = actions.get('time_wait')
         e_description = actions.get('e_description')
@@ -276,6 +381,18 @@ class SeleniumController(object):
 
         return None
 
+    def switch_to_frame_by_element(self, actions=None):
+        try:
+            # self.driver.switch_to.default_content()
+
+            wait(self.driver, 10).until(
+                ec.frame_to_be_available_and_switch_to_it((By.XPATH, actions.get('target'))))
+
+        except Exception as e:
+            pass
+
+        return None
+
     def navigate_to_element(self, actions):
 
         self.driver.switch_to_default_content()
@@ -283,7 +400,7 @@ class SeleniumController(object):
             target = e['target']
             switch = e['switch']
             if switch:
-                self.switch_to_frame(target)
+                pass
             else:
                 self.driver.find_element_by_xpath(target)
 
@@ -301,6 +418,8 @@ class SeleniumController(object):
                 desc = actions.get('description')
                 mode = actions.get('mode')
                 ec = actions.get('expected_conditions', None)
+                time_wait = actions.get('time_wait', 2)
+                sleep(time_wait)
                 try:
 
                     self._logger.info(
@@ -313,31 +432,41 @@ class SeleniumController(object):
                         self.driver.switch_to.parent_frame()
 
                     else:
+                        if tipo:
+                            elements_finded = self.finds_method[tipo](target)
+                            if len(elements_finded):
+                                self._logger.info("matched condition {} !! ".format(desc))
+                                elem = self.find_method[tipo](target)
 
-                        elements_finded = self.finds_method[tipo](target)
-                        if len(elements_finded):
-                            self._logger.info("matched condition {} !! ".format(desc))
-                            elem = self.find_method[tipo](target)
+                                if mode == 'click':
+                                    elem.click()
 
-                            if mode == 'click':
-                                elem.click()
+                                if mode == 'swap_window':
+                                    self.swap_window(elem)
 
-                            if mode == 'swap_window':
-                                self.swap_window(elem)
+                                if mode == 'fill':
+                                    # previamente a send_keys se requiere un clear
+                                    if actions.get('clear', None):
+                                        elem.clear()
+                                    if actions.get('focus', None):
+                                        elem.click()
 
+                                    elem.send_keys(actions.get('data'))
+                                    self._logger.info("seteado  {} ->  {}!! ".format(target, actions.get('data')))
                         if ec:
                             self.wait_for_expected_conditions(ec)
 
+                    time_wait = actions.get('time_wait', 2)
+                    sleep(time_wait)
                 except Exception as e:
                     pass
-
-
 
     def do_workflow(self):
         try:
 
             for action in self.bank.get('workflow'):
                 # tipo de busqueda para localizar al elemento
+
                 tipo = action.get('tipo')
                 target = action.get('target')
                 desc = action.get('description', None)
@@ -357,17 +486,21 @@ class SeleniumController(object):
                         # previamente a send_keys se requiere un clear
                         if action.get('clear', None):
                             element.clear()
-                        element.send_keys(action.get('data'))
+                        if action.get('focus', None):
+                            element.click()
 
+                        element.send_keys(action.get('data'))
+                        self._logger.info("seteado  {} ->  {}!! ".format(target, action.get('data')))
                     if action.get('expected_conditions'):
                         wait(self.driver, 10).until(ec.element_to_be_clickable((By.XPATH, action.get('expect_cond'))))
-                    else:
-                        sleep(1)
+
+                    time_wait = action.get('time_wait', 2)
+                    sleep(time_wait)
 
                     # self.navigated_elements.append({slugify(target): element})
 
-        except Exception:
-            self._logger.error("Error duante el workflow")
+        except Exception as e:
+            self._logger.error("Error durante la ejecucion del workflow: {}".format(e))
 
         self.driver_close()
 
@@ -376,9 +509,13 @@ class SeleniumController(object):
         @:param, lista de opciones con las que inicializar el driver de selenium
         '''
         options = webdriver.ChromeOptions()
+        # options.add_experimental_option("excludeSwitches", ["ignore-certificate-errors"])
         for opc in default_opc:
+            #
             options.add_argument(opc)
 
+        # options.add_argument('user-data-dir={}'.format(CHROME_DIR))
+        options.add_argument('user-data-dir=selenium')
         self._driver = webdriver.Chrome(SELENIUM_DRIVER_PATH, chrome_options=options)
 
         if self._driver:
@@ -386,6 +523,17 @@ class SeleniumController(object):
             return self._driver
 
         return None
+
+    def save_cookie(self):
+        pickle.dump(self.driver.get_cookies(), open(COOKIE_FILE, "wb"))
+
+    def load_cookie(self):
+
+        try:
+            for cookie in pickle.load(open(COOKIE_FILE, "rb")):
+                self.driver.add_cookie(cookie)
+        except Exception as e:
+            self._logger.error("Error en meth-> load_cookie: {}".format(e))
 
     def driver_close(self):
         if self.driver:

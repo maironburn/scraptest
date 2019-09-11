@@ -4,6 +4,15 @@ __pycache__/
 *$py.class
 .idea
 logger/B4nk_Sr4py
+
+#local bank
+src/localBanks.py
+selenium/
+#selenium user_data
+src/controllers/selenium/
+# cookie
+src/controllers/TestCookies.pkl
+
 # C extensions
 *.so
 img/temps_imgs
@@ -33,7 +42,7 @@ MANIFEST
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
-*.spec
+#*.spec
 
 # Installer logs
 pip-log.txt

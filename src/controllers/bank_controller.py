@@ -22,8 +22,10 @@ class BankController(object):
         if bankname and bankname in self._dict_bank.keys():
             kw = {'logger': self._logger, 'bank': self._dict_bank.get(bankname).json_data}
             self.sc = SeleniumController(kw)
-            self.sc.create_boleto()
-            #self.sc.do_the_process()
+
+            if self.sc.do_the_process() and kw.get('boleto_url'):
+                self.sc.create_boleto()
+
 
     def load_banks(self):
         for bank in self.banknames:

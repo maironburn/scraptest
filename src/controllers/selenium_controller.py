@@ -87,55 +87,56 @@ class SeleniumController(object):
             self._logger.debug("create_boleto, creacion del boleto")
             # @todo, eliminar los sleeps...sustituir por ec
             sleep(2)
+            # self.bank.get('boleto_workflow')
             # comprobamos si son necesarias llevar a cabo acciones posteriores al logado
-
-            self.do_boleto_workflow()
+            self.pre_post_login_actions(lista_acciones=self.bank.get('boleto_workflow'), stage="generacion del boleto")
+            self.driver_close()
 
         except Exception as ex:
             self._logger.error("Excepcion en do_the_process -> {}".format(ex))
-
-    def do_boleto_workflow(self):
-        try:
-
-            for action in self.bank.get('boleto_workflow'):
-                # tipo de busqueda para localizar al elemento
-
-                tipo = action.get('tipo')
-                target = action.get('target')
-                desc = action.get('description', None)
-                mode = action.get('mode')
-
-                self._logger.info(
-                    "{} -> tipo busqueda: {} , expresion: {} , mode: {}".format(desc, tipo, target, mode))
-
-                if len(self.finds_method[tipo](target)):
-                    self._logger.info("matched condition {} !! ".format(desc))
-                    element = self.find_method[tipo](target)
-                    sleep(1)
-                    if mode == 'click':
-                        element.click()
-
-                    if mode == 'fill':
-                        # previamente a send_keys se requiere un clear
-                        if action.get('clear', None):
-                            element.clear()
-                        if action.get('focus', None):
-                            element.click()
-
-                        element.send_keys(action.get('data'))
-                        self._logger.info("seteado  {} ->  {}!! ".format(target, action.get('data')))
-                    if action.get('expected_conditions'):
-                        wait(self.driver, 10).until(ec.element_to_be_clickable((By.XPATH, action.get('expect_cond'))))
-
-                    time_wait = action.get('time_wait', 2)
-                    sleep(time_wait)
-
-                    # self.navigated_elements.append({slugify(target): element})
-
-        except Exception as e:
-            self._logger.error("Error durante la ejecucion del workflow: {}".format(e))
-
-        self.driver_close()
+    #
+    # def do_boleto_workflow(self):
+    #     try:
+    #
+    #         for action in self.bank.get('boleto_workflow'):
+    #             # tipo de busqueda para localizar al elemento
+    #
+    #             tipo = action.get('tipo')
+    #             target = action.get('target')
+    #             desc = action.get('description', None)
+    #             mode = action.get('mode')
+    #
+    #             self._logger.info(
+    #                 "{} -> tipo busqueda: {} , expresion: {} , mode: {}".format(desc, tipo, target, mode))
+    #
+    #             if len(self.finds_method[tipo](target)):
+    #                 self._logger.info("matched condition {} !! ".format(desc))
+    #                 element = self.find_method[tipo](target)
+    #                 sleep(1)
+    #                 if mode == 'click':
+    #                     element.click()
+    #
+    #                 if mode == 'fill':
+    #                     # previamente a send_keys se requiere un clear
+    #                     if action.get('clear', None):
+    #                         element.clear()
+    #                     if action.get('focus', None):
+    #                         element.click()
+    #
+    #                     element.send_keys(action.get('data'))
+    #                     self._logger.info("seteado  {} ->  {}!! ".format(target, action.get('data')))
+    #                 if action.get('expected_conditions'):
+    #                     wait(self.driver, 10).until(ec.element_to_be_clickable((By.XPATH, action.get('expect_cond'))))
+    #
+    #                 time_wait = action.get('time_wait', 2)
+    #                 sleep(time_wait)
+    #
+    #                 # self.navigated_elements.append({slugify(target): element})
+    #
+    #     except Exception as e:
+    #         self._logger.error("Error durante la ejecucion del workflow: {}".format(e))
+    #
+    #     self.driver_close()
 
 
 
@@ -466,8 +467,8 @@ class SeleniumController(object):
                     pass
 
     def do_workflow(self):
-        try:
 
+        try:
             for action in self.bank.get('workflow'):
                 # tipo de busqueda para localizar al elemento
 

@@ -1,10 +1,10 @@
 # adicion de paquetes
 
- create a spec file using this command:
- pyi-makespec options name.py [other scripts …
+Create a spec file using this command:
+pyi-makespec options name.py [other scripts …
 
 
- lanzar construccion a partir del spec
+lanzar construccion a partir del spec
  pyinstaller options name.spec
 
 https://pyinstaller.readthedocs.io/en/stable/spec-files.html#adding-files-to-the-bundle

@@ -18,7 +18,7 @@ python-slugify==3.0.2
 PyTweening==1.0.3
 pytz==2019.1
 pywin32==224
-PyYAML==5.1.1
+PyYAML==5.4
 requests==2.22.0
 selenium==3.141.0
 shellescape==3.4.1

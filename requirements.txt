@@ -24,6 +24,6 @@ selenium==3.141.0
 shellescape==3.4.1
 six==1.12.0
 text-unidecode==1.2
-urllib3==1.25.3
+urllib3==1.25.8
 win32core==221.36
 win32gui==221.6
